@@ -1,16 +1,23 @@
+from __future__ import unicode_literals
 import re
 
 
-def split_chapter(chapter):
-    return re.split(r'(?<=[^A-Z].[.?]) +(?=[A-Z])', chapter.replace('\n', ' ').replace('  ', ' ').strip())
+def create_gap_filled_question(body, subject):
+    question = body.replace(subject, '_' * len(subject))
+    print(question)
+    print('Answer:', subject)
+    
 
-# 
+def split_chapter(chapter, sentence_spliter):
+    return [str(i).replace('\n', ' ').replace('  ', ' ').strip() for i in sentence_spliter(chapter)]
+
+
 def read_file(filename):
     with open(filename, encoding='utf-8', mode='r', errors='ignore') as file:
         return file.read().strip()
 
 
-def get_one_chapter_strang(chapter_number, book, subsections=False):
+def get_one_chapter_strang(chapter_number, book, split=False, sentence_spliter=None, subsections=False):
     s_chapter_number = str(chapter_number)
     chapter_starts = re.search('Chapter\s' + s_chapter_number + '\s\n.*\s\n' + s_chapter_number + '\.1.*\n', book)
     chapter_ends = re.search('Chapter\s' + str(chapter_number + 1) + '\s\n.*\s\n' + str(chapter_number + 1) + '\.1',
@@ -29,7 +36,7 @@ def get_one_chapter_strang(chapter_number, book, subsections=False):
         subs_name = chapter[subs_start.start():subs_start.end() - 1]  # exclude \n
         subs = chapter[subs_start.end():subs_end.start()]
         if subsections:
-            yield subs_name[subs_name.find(' ') + 1:], split_chapter(subs)
+            yield subs_name[subs_name.find(' ') + 1:], (subs if not split else split_chapter(subs, sentence_spliter))
         else:
             to_return += subs + ' '
         chapter = chapter[subs_end.start():]
@@ -40,7 +47,7 @@ def get_one_chapter_strang(chapter_number, book, subsections=False):
             break
         i += 1
     if not subsections:
-        yield split_chapter(to_return)
+        yield to_return if not split else split_chapter(to_return, sentence_spliter)
 
 
 def get_one_chapter(chapter_number, book):
