@@ -1,0 +1,273 @@
+adjoint matrix obj
+adjoint of a matrix obj
+adjoint typ
+affine set obj
+affine transformation act
+algebraic multiplicity obj
+angle between two vectors obj
+approximation of functions trm
+argument obj
+augmented coefficient matrix obj
+augmented matrix obj
+back-substitution act
+basis obj
+best approximation act
+best rank one approximations act
+cartesian product obj
+cauchy-buniakowsky-schwarz trm
+cauchy-schwarz-buniakowsky trm
+change of basis act
+change of variable act
+change-of-basis problem trm
+characteristic equation obj
+characteristic polynomial obj
+closure under addition and scalar multiplication act
+coefficient matrix obj
+cofactor expansion act
+cofactor obj
+column exchange act
+column expansion act
+column method trm
+column space obj
+column vector obj
+complex conjugate obj
+complex euclidean inner product obj
+complex matrix obj
+complex n-tuple obj
+complex number obj
+complex vector space obj
+condition number obj
+conjugate transpose obj
+consistent linear system obj
+consistent system obj
+coordinate obj
+coordinate vector obj
+cosine obj
+cosine theorem trm
+cramer’s rule trm
+cross product term obj
+definition obj
+dependent variable obj
+determinant obj
+determinant test act
+determinant test for invertibility act
+diagonal matrix obj
+diagonal typ
+diagonalizable matrix obj
+difference equation obj
+difference obj
+differential equation obj
+dimension obj
+dimension theorem trm
+distance between points obj
+dot product obj
+dual problem trm
+echelon form typ
+eigendecomposition act
+eigendecomposition of a matrix act
+eigenspace obj
+eigenvalue decomposition act
+eigenvalue obj
+eigenvector obj
+elementary row operation act
+entry obj
+equal matrices obj
+euclidean typ
+euclidean norm obj
+euclidean space obj
+factor obj
+finite element method trm
+finite-dimensional typ
+finite-dimensional vector space obj
+forward substitution act
+four fundamental subspaces obj
+fourier coefficients obj
+fourier series obj
+free variable obj
+fundamental spaces obj
+game theory trm
+gauss-jordan act
+gauss-jordan method trm
+gaussian elimination act
+gauss–jordan elimination act
+general solution obj
+general solution to a linear system obj
+geometric multiplicity obj
+gram–schmidt act
+gram-schmidt process trm
+gram-schmidt orthogonalization act
+hermitian matrix obj
+hermitian typ
+homogeneous typ
+identity matrix obj
+imaginary part obj
+inconsistent linear system obj
+indefinite quadratic form typ
+independent variable obj
+infinite-dimensional vector space obj
+initial condition obj
+initial-value problem trm
+inner product obj
+intersection obj
+intersection of spaces obj
+intersection of vector spaces obj
+inverse obj
+invertible matrix obj
+invertible typ
+iterative method trm
+kronecker product obj
+kronecker form typ
+least squares act
+least squares approximation act
+least squares error trm
+least squares error vector obj
+least squares problem trm
+least squares solution obj
+least-squares solution obj
+length obj
+line obj
+linear combination obj
+linear dependence trm
+linear equation obj
+linear form typ
+linear independence trm
+linear inequality obj
+linear span obj
+linear system obj
+linear transformation act
+linearly dependent set obj
+linearly independent set obj
+lower triangular matrix obj
+magnitude obj
+main diagonal obj
+markov matrix obj
+markov typ
+matrices obj
+matrix factorization act
+matrix multiplication act
+matrix norm obj
+matrix notation obj
+matrix obj
+matrix of cofactors obj
+matrix operation act
+mean square error trm
+minimax principle trm
+minimum principle trm
+minor obj
+modulus obj
+negative definite quadratic form typ
+negative semidefinite quadratic form typ
+network models trm
+noninvertible matrix obj
+noninvertible typ
+nonsingular matrix obj
+nonsingular typ
+nontrivial solution obj
+norm obj
+normal equation obj
+normal to a line obj
+normal to a plane obj
+normal typ
+normalized vector obj
+normalizing act
+null space obj
+nullity obj
+nullspace obj
+orthogonal change of variable act
+orthogonal projection obj
+orthogonal set obj
+orthogonal typ
+orthogonal vector obj
+orthogonally diagonalizable matrix obj
+orthonormal basis obj
+orthonormal set obj
+orthonormal typ
+pairwise distinct typ
+parallelogram equation obj
+parameter obj
+parametric equation obj
+particular solution obj
+permutation formula obj
+permutation matrix obj
+perpendicular vector obj
+pivot obj
+pivot variable obj
+plane obj
+point-normal equation obj
+polar form of z obj
+positive definite quadratic form typ
+positive semidefinite quadratic form typ
+principal axes theorem trm
+projection matrix obj
+projection obj
+projection onto a line obj
+property obj
+pythagoras’s law trm
+pythagorean theorem trm
+qr decomposition act
+qr factorization act
+quadratic form typ
+rank obj
+rank of a matrix obj
+real matrix obj
+real part obj
+reduced row echelon form typ
+reversible typ
+row echelon form typ
+row exchange act
+row expansion act
+row leading entry obj
+row method trm
+row obj
+row reduction act
+row space obj
+row vector obj
+row-column method trm
+scalar multiplication act
+scalar product obj
+schwarz inequality trm
+similar matrices obj
+similarity invariant obj
+similarity transformation act
+simplex method trm
+singular value decomposition trm
+slope obj
+solution space obj
+span obj
+spectral decomposition act
+square matrix obj
+square typ
+standard bases obj
+standard basis obj
+standard unit vector obj
+subspace obj
+sum obj
+sum of spaces obj
+sum of vector spaces obj
+svd trm
+symmetric matrix obj
+symmetric typ
+system of linear equations obj
+tensor product obj
+test for invertibility trm
+the jordan form typ
+theorem trm
+trace obj
+transition matrix obj
+transpose matrix obj
+transpose typ
+triangle inequality trm
+triangular matrix obj
+triangular typ
+trigonometric polynomial obj
+trivial solution obj
+unit vector obj
+upper triangular matrix obj
+vector obj
+vector form of a line obj
+vector form of a plane obj
+vector form typ
+vector space obj
+vector subspace obj
+wronskian obj
+zero subspace obj
