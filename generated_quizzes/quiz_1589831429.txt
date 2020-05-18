@@ -1,0 +1,32 @@
+This is a LinearUp - automatically generated quiz
+
+
+1. in an __________, every vector is perpendicular to every other vector.
+(a) zero	(b) orthogonal basis	(c) fourier series	(d) projection	
+
+2. the gram-schmidt process and its interpretation as a new __________ a = qr.
+(a) factorization	(b) inner product	(c) sum	(d) gram-schmidt orthogonalization	
+
+3. a basis is a set of __________ vectors that span a space.
+(a) orthogonal	(b) independent	(c) diagonal	(d) invertible	
+
+4. improvement is easy: divide each __________ by its length, to make it a unit __________.
+(a) matrix	(b) vector	(c) projection	(d) fourier series	
+
+5. 1 0  reflects every __________ (x;y) into (y;x), its mirror image across the 45 line.
+(a) fourier series	(b) point	(c) euclidean space	(d) basis	
+
+6. the fourier series is __________ in infinite dimensions.
+(a) linear algebra	(b) difference	(c) physical	(d) central	
+
+7. all the terms in the series are __________ onto a sine or cosine.
+(a) inverses	(b) projections	(c) lengths	(d) properties	
+
+8. __________ in this direction is exactly b1 sin x.
+(a) its component p	(b) vector	(c) columns	(d) inverse	
+
+9. __________ of qx = b, either n by n or rectangular (least squares).
+(a) product	(b) the solution	(c) sum	(d) columns	
+
+10. at the right is the __________ that separates c into c0 and c00.
+(a) permutation matrix	(b) diagonal matrix	
