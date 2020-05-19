@@ -1,0 +1,3173 @@
+In this section, we will define the product of two matrices and state the basic
+properties of the resulting matrix algebra. Let R
+m×n denote the set of all
+m×n matrices with real entries, and let (F2)
+m×n denote the set of all m×n
+matrices over F2.
+We have already defined matrix addition and the multiplication of a
+matrix by a scalar, and we’ve seen how to multiply an m × n matrix and a
+column vector with n components. We wil now define matrix multiplication.
+In general, the product AB of two matrices A and B is defined only when
+the number of columns of A equals the number of rows of B. Suppose
+A = (a1 a2 · · · an) is m × n and B =
+
+b1 b2 · · · bp
+
+is n × p. Since we
+already know the definition of each Abj , let us simply put
+AB =
+
+Ab1 Ab2 · · · Abp
+
+. (3.1)
+To write this out more precisely, let C = AB, and suppose the entry of
+C in the i-th row and k-th column is denoted cik. Then, using summation
+
+38
+notation, we have
+cik =
+Xn
+j=1
+aij bjk,
+so
+AB =
+Xn
+j=1
+aij bjk
+.
+Thus, for real matrices, we have
+R
+m×n
+· R
+n×p ⊂ R
+m×p
+,
+where · denotes matrix multiplication.
+Another way of putting the definition is to say that if the columns of A
+are a1, . . . , an, then the r-th column of AB is
+b1ra1 + b2ra2 + . . . bnran. (3.2)
+Hence the r-th column of AB is the linear combination of all n columns of
+A using the n entries in the r-th column of B as the scalars. One can also
+express AB as a linear combination of the rows of B. The reader is invited
+to work this out explicitly. We will in fact use it to express row operations
+in terms of matrix multiplication. below
+Example 3.1. Here are two examples.
+
+1 3
+2 4  6 0
+−2 7
+=
+
+1 · 6 + 3 · (−2) 1 · 0 + 3 · 7
+2 · 6 + 4 · (−2) 2 · 0 + 4 · 7
+
+=
+
+0 21
+4 28
+.
+Note how the columns of the product are linear combinations. Computing
+the product in the opposite order gives a different result:
+
+6 0
+−2 7 1 3
+2 4
+=
+
+6 · 1 + 0 · 2 6 · 3 + 0 · 4
+−2 · 1 + 7 · 2 −2 · 3 + 7 · 4
+
+=
+
+6 18
+12 22
+.
+This example points out that for there exist 2×2 matrices A and B such
+that AB 6= BA, even though both products AB and BA are defined. In
+general, matrix multiplication is not commutative. In fact, almost any pair
+of 2×2 matrices you choose will not commute. In general, the multiplication
+of n × n matrices is not commutative. The only exception is that all 1 × 1
+commute (why?)
+39
+3.1.1 The Transpose of a Matrix
+Another operation on matrices is transposition, or taking the transpose. If
+A is m × n, the transpose AT of A is the n × m matrix AT
+:= (crs), where
+crs = asr. This is easy to remember: the ith row of AT
+is just the ith column
+of A.
+Example 3.2. If
+A =
+
+1 2
+3 4
+,
+then
+A
+T =
+
+1 3
+2 4
+.
+An example of a 2 × 2 symmetric matrix is
+
+1 3
+3 5
+.
+Note that A and AT have the same entries on the diagonal. Another
+simple fact is that
+(A
+T
+)
+T = A.
+Definition 3.1. A matrix A which is equal to its transpose (that is, A =
+AT
+) is called symmetric.
+Clearly, every symmetric matrix is square. The symmetric matrices over
+R turn out to be especially fundamental, as we will see later.
+The dot product v·w of two vectors v, w ∈ R
+n
+is defined to be the matrix
+product
+v · w = v
+T w =
+Xn
+i=1
+viwi
+.
+Proposition 3.1. Let A and B be m × n matrices. Then
+(A
+T + B
+T
+) = A
+T + B
+T
+.
+Furthermore,
+
+ABT = B
+T A
+T
+.
+Proof. The first identity is left as an exercise. The product transpose identity can be seen as follows. The (i, j)-entry of BT AT
+is the dot product of
+the i-th row of BT and the j-th column of AT
+. Since this is the same thing
+as the dot product of the j-th row of A and the i-th column of B, which
+is the (j, i)-entry of AB, and hence the (i, j)-entry of (AB)
+T
+, we see that
+(AB)
+T = BT AT
+. Suggestion: try this out on an example
+40
+3.1.2 The Algebraic Laws
+Except for the commutativity of multiplication, the usual algebraic properties of addition and multiplication in the reals also hold for matrices.
+Proposition 3.2. Assuming all the sums and products below are defined,
+then matrix addition and multiplication satisfy:
+(1) the associative law: Matrix addition and multiplication are associative:
+
+A + B
+
++ C = A +
+
+B + C
+
+and
+AB
+C = A
+
+BC
+.
+(2) the distributive law: Matrix addition and multiplication are distributive:
+A
+
+B + C
+
+= AB + AC and
+A + B
+
+C = AC + BC.
+(3) the scalar multiplication law: For any scalar r,
+
+rA
+B = A
+
+rB
+= r
+
+AB
+.
+(4) the commutative law for addition: Matrix addition is commutative: A + B = B + A.
+Verifying these properties is a routine exercise, so we will omit the details.
+I suggest working a couple of examples to convince yourself, if necessary.
+Though the associative law for multiplication doesn’t seem to be exciting, it
+often turns to be extremely useful. We will soon see some examples of why.
+Recall that the n×n identity matrix In is the matrix having one in each
+diagonal entry and zero in each entry off the diagonal. For example,
+I2 =
+
+1 0
+0 1
+and I3 =
+
+
+1 0 0
+0 1 0
+0 0 1
+
+ .
+Note the inteersting fact that we can also construct the identity matrix over
+F2. The off diagonal entries are 0, of course, and the diagonal entries consist
+of the nonzero element 1, which is is the multiplicative identity of F2.
+We have
+Proposition 3.3. If A is an m × n matrix (over R or F2), then AIn = A
+and ImA = A.
+Proof. This is an exercise in using the definition of multip
+41
+Exercises
+Exercise 3.1. Make up three matrices A, B, C so that AB and BC are
+defined. Then compute AB and (AB)C. Next compute BC and A(BC).
+Compare your results.
+Exercise 3.2. Prove the assertion (A+B)
+T = AT +BT
+in Proposition 3.1.
+Exercise 3.3. Suppose A and B are symmetric n × n matrices. (You can
+even assume n = 2.)
+(a) Decide whether or not AB is always symmetric. That is, whether
+(AB)
+T = AB for all symmetric A and B?
+(b) If the answer to (a) is no, what condition ensures AB is symmetric?
+Exercise 3.4. Suppose B has a column of zeros. How does this affect a
+product of the form AB? What if A has a row or a column of zeros?
+Exercise 3.5. Show how to express the rows of the matrix product AB as
+linear combinations of the rows of B.
+Exercise 3.6. Verify Proposition 3.3 for all A in either R
+m×n or F
+m×n
+2
+.
+Exercise 3.7. Find all 2 × 2 matrices A =
+
+a b
+c d
+such that AB = BA,
+where B =
+
+1 2
+3 4
+.
+Exercise 3.8. Find all 2 × 2 matrices A =
+
+a b
+c d
+such that AC = CA,
+where C =
+
+1 2
+1 2
+. Is your result here any different from the result you
+obtained in Exercise 3.7.
+Exercise 3.9. Prove that if S ∈ R
+2×2
+
+commutes with every matrix A =
+a b
+c d
+∈ R
+2×2
+, then S = sI2 for some s ∈ R. Matrices of the form aIn are
+called scalar matrices.
+Exercise 3.10. Let A be the 2×2 matrix over F2 such that aij = 1 for each
+i, j. Compute Am for any integer m > 0. Does this question make sense if
+m < 0? (Note Aj
+is the product AA · · · A of A with itself j times.)
+Exercise 3.11. Let A be the n × n matrix over R such that aij = 2 for all
+i, j. Find a formula for Aj
+for any positive integer j.
+42
+Exercise 3.12. Give an example of a 2 × 2 matrix A such that every entry
+of A is either 0 or 1 and A2 = I2 as a matrix over F2, but A2 6= I2 as a
+matrix over the reals.
+43
+3.2 Elementary Matrices and Row Operations
+The purpose of this section is make a connection between matrix multiplication and row operations. What we will see is that row operations can be
+done by matrix multiplication. This may be somewhat unexpected, so the
+reader might want to recall the result of Exercise 3.5.
+Let us first consider the 2 × n case. Here, the following three types of
+2 × 2 matrices are used:
+E1 =
+
+0 1
+1 0
+, E2 =
+
+r 0
+0 1
+or 
+1 0
+0 r
+
+, E3 =
+
+1 s
+0 1
+or 
+1 0
+s 1
+
+.
+These matrices enable us to do row operations of types I, II and III respectively via left or pre-multiplication. Hence they are called elementary
+matrices. For example,
+
+0 1
+1 0 a b
+c d
+=
+
+c d
+a b
+,
+
+r 0
+0 1 a b
+c d
+=
+
+ra rb
+c d 
+,
+and
+
+1 s
+0 1 a b
+c d
+=
+
+a + sc b + sd
+c d 
+.
+The same idea works in general.
+Definition 3.2. An n × n matrix obtained from In by performing a single
+row operation is called an elementary n × n matrix.
+Here is the main point.
+Proposition 3.4. Let A be n × p, and assume E is an elementary n × n
+matrix. Then EA is the matrix obtained by performing the row operation
+corresponding to E on A.
+Proof. Recall that for any E ∈ R
+n×n
+, the rows of EA are linear combinations
+of the rows of A using the entries of E = (eij ) as scalars. In fact, if ai
+is the
+i-th row of A, then the i-th row of EA is
+ei1a1 + ei2a2 + · · · + einan.
+Thus, if E is obtained by interchanging the j-th and k-th rows of In, then in
+EA, the j-th and k-th rows of A have been interchanged, and the other rows
+44
+are unchanged. For example, suppose we wish to interchange the first and
+second rows of A. If we put EA = B, then we want to have b1 = a2, b2 = a1
+and bj = aj if j 6= 1, 2. Thus we let e12 = e21 = 1, e11 = e22 = 0 and let eij
+be the corresponding element of In for the other pairs (i, j). Similarly, if E
+is the matrix obtained by multiplying the i-th row of In by r, then in EA the
+i-th row of A has been multiplied by r, and all other rows are unchanged.
+The argument for the third type of row operation is similar.
+In fact, since EIn = E, the matrix E performing the desired row operation is unique. We can now state an easy but important result.
+Proposition 3.5. An arbitrary n×p matrix A can be put into reduced form
+by a performing sequence of left multiplications on A using n×n elementary
+matrices. In other words, we can write Ared = BA, where B is a product of
+elementary n × n matrices.
+Proof. We know from Proposition 2.2 that any matrix can be put into reduced form by a sequence of row operations. But row operations are performed by left multiplication by elementary matrices.
+This procedure can be represented as follows. First, replace A with
+A1 = E1A, then A1 with A2 = E2(E1A) and so forth. Hence we get the
+sequence
+A → A1 = E1A → A2 = E2(E1A) → · · · → Ek(Ek−1(· · ·(E1A)· · ·)),
+the last matrix being Ared. This gives us a matrix
+B = (Ek(Ek−1 · · ·(E1A)· · ·))
+with the property that BA = Ared.
+It needs to be emphasized that there is no reason B should be unique,
+since one can easily devise other sequences of row operations that reduce A,
+Nevertheless, it does turn out B is unique in certain cases. One of these is
+the case where A is a nonsingular.
+By the associative law, we can express B without using parentheses,
+writing it simply as B = EkEk−1 · · · E1.
+Example 3.3. Let’s compute the matrix B produced by the sequence of
+row operations in Example 2.5 which puts the counting matrix C in reduced
+form. Examining the sequence of row operations, we see that B is the
+45
+product
+
+
+1 −2 0
+0 1 0
+0 0 1
+
+
+
+
+1 0 0
+0 −1/3 0
+0 0 1
+
+
+
+
+1 0 0
+0 1 0
+0 −2 1
+
+
+
+
+1 0 0
+0 1 0
+−7 0 1
+
+
+
+
+1 0 0
+−4 1 0
+0 0 1
+
+ .
+Thus
+B =
+
+
+−5/3 2/3 0
+4/3 −1/3 0
+1 −2 1
+
+ .
+Be careful to express the product in the correct order. The first row operation is done by the matrix on the far right and the last by the matrix on
+the far left. Thus
+BC =
+
+
+−5/3 2/3 0
+4/3 −1/3 0
+1 −2 1
+
+
+
+
+1 2 3
+4 5 6
+7 8 9
+
+ =
+
+
+1 0 −1
+0 1 2
+0 0 0
+
+ .
+That is, BC = Cred.
+In the above computation, you do not need to explicitly multiply the
+elementary matrices out. Just start at the right and apply the sequence
+of row operations working to the left. A convenient way of doing this is
+to begin with the 3 × 6 matrix (A|I3) and carry out the sequence of row
+operations. The final result will be (Ared|B). Thus if we start with
+(A|I3) =
+
+
+1 2 3 1 0 0
+4 5 6 0 1 0
+7 8 9 0 0 1
+
+ ,
+we end with
+(Ared|B) =
+
+
+1 0 −1 −5/3 2/3 0
+0 1 2 4/3 −1/3 0
+0 0 0 1 −2 1
+
+ .
+Example 3.4. To do another example, consider the matrix
+A =
+
+
+1 0 1
+0 1 1
+1 1 1
+
+
+46
+with the catch that we consider A as a 3×3 matrix over F2. To row reduce A,
+we can use the following steps: R3 → R3+R1, R3 → R3+R2, R2 → R2+R3,
+and R1 → R1 + R3. Hence the matrix B such that BA = Ared is
+
+
+1 0 1
+0 1 0
+0 0 1
+
+
+
+
+1 0 0
+0 1 1
+0 0 1
+
+
+
+
+1 0 0
+0 1 0
+0 1 1
+
+
+
+
+1 0 0
+0 1 0
+1 0 1
+
+ .
+Computing the product, we obtain
+B =
+
+
+0 1 1
+1 0 1
+1 1 1
+
+ .
+The reader should check that BA = I3.
+3.2.1 Application to Linear Systems
+How does this method apply to solving a linear system Ax = b? Starting
+with Ax = b and multiplying by an elementary matrix E gives a new linear
+system EAx = Eb equivalent to the original system (by Proposition 2.3).
+Continuing in this way, we obtain
+Proposition 3.6. Given a linear system Ax = b, there exists a square
+matrix B which is a product of elementary matrices, such that the original
+system is equivalent to Aredx = Bb.
+Proof. Just apply Propositions 3.5 and 2.3.
+The advantage of knowing the matrix B which brings A into reduced
+form is that one can handle an arbitrary number of systems as easily as one.
+That is, one can just as easily solve a matrix linear equation AX = D, where
+X = (xij ) is a matrix of variables and D = (Djk) is a matrix of constants.
+If A is m × n and D has p columns, then X is n × p and D is m × p. This
+matrix equation is equivalent to AredX = BD.
+47
+Exercises
+Exercise 3.13. Find the reduced row echelon form for each of the following
+matrices, which are assumed to be over R:
+A1 =
+
+
+1 1 0
+2 3 1
+1 2 1
+
+ , A2 =
+
+
+1 2 −1 1
+2 3 1 0
+0 1 2 1
+
+ , A3 =
+
+
+1 0 1 0
+0 1 1 0
+1 1 0 0
+1 0 0 1
+
+ .
+Exercise 3.14. Find matrices B1, B2 and B3 which are products of elementary matrices such that BiAi
+is reduced, where A1, A2, A3 are the matrices
+of Exercise 3.13.
+Exercise 3.15. Find the reduced row echelon form for each of the following
+matrices, assuming each matrix is defined over F2:
+C1 =
+
+
+1 1 0
+0 1 1
+1 0 1
+
+ , C2 =
+
+
+1 0 1 1
+0 1 1 0
+0 1 0 1
+
+ , C3 =
+
+
+1 0 1 0
+0 1 1 0
+1 1 0 0
+1 0 0 1
+
+ .
+Exercise 3.16. Find matrices D1, D2 and D3 defined over F2 which are
+products of elementary matrices such that DiCi
+is reduced, where C1, C2, C3
+are the matrices of Exercise 3.15.
+Exercise 3.17. Prove carefully that if E is an elementary n × n matrix
+and F is the elementary matrix that performs the reverse operation, then
+F E = EF = In.
+Exercise 3.18. Write down all the 3 × 3 elementary matrices E over F2.
+For each E, find the matrix F defined in the previous exercise such that
+F E = EF = I3.
+Exercise 3.19. List all the row reduced 2 × 3 matrices over F2.
+Exercise 3.20. Let E be an arbitrary elementary matrix.
+(i) Show that ET
+is also an elementary matrix.
+(ii) Explain how to compute AE.
+Exercise 3.21. In this exercise, we will introduce column operations. The
+reader should base their answers on the case of row operations.
+(1) Define the notion of reduced column echelon form for an m×n matrix.
+48
+(2) Next, define the three types of column operations.
+(3) Show how to perform column operations using elementary matrices.
+49
+3.3 Matrix Inverses
+Given an elementary n × n matrix E, one can easily see that there exists an
+elementary matrix F such that F E = In. A little thought will convince you
+that EF = In as well. Doing a row operation then undoing it produces the
+same result as first undoing it and then doing it. Either way you are back
+to where you started. This essential property is generalized in the next
+Definition 3.3. Suppose two n × n matrices A and B have the property
+that AB = BA = In. Then we say A is an inverse of B (and B is an inverse
+of A). A matrix with an inverse is said to be invertible.
+Let us first show
+Proposition 3.7. Suppose A ∈ R
+n×n or A ∈ (F2)
+n×n and A has an inverse
+B. Then B is unique.
+Proof. Suppose that A has two inverses B and C. Then
+B = BIn = B(AC) = (BA)C = InC = C.
+Thus B = C, so the inverse is unique.
+Note that the associative law was used in the above proof in an essential
+way. From now on, we will use A−1
+to denote the (unique) inverse of A, if
+it exists.
+The reader should check that any elementary matrix E has an inverse,
+which is also elementary.
+Example 3.5. For example, the inverses of the 2 × 2 elementary matrices
+are given as follows:
+E1 =
+
+0 1
+1 0
+⇒ E
+−1
+1 =
+
+0 1
+1 0
+,
+E2 =
+
+r 0
+0 1
+⇒ E
+−1
+2 =
+
+r
+−1 0
+0 1
+,
+and
+E3 =
+
+1 s
+0 1
+⇒ E
+−1
+3 =
+
+1 −s
+0 1 
+.
+50
+3.3.1 A Necessary and Sufficient Condition for Existence
+Recall that a linear system Ax = b is called nonsingular if the coefficient
+matrix A is square of maximal rank. In general, we say that an n×n matrix
+A is nonsingular if A has rank n or, equivalently, Ared = In. We therefore
+have the
+Proposition 3.8. If an n×n matrix A is nonsingular, there exists an n×n
+matrix B such that BA = In.
+Proof. This follows from Proposition 3.4 since Ared = In.
+Thus a nonsingular matrix has a left inverse. We will now prove the
+main result on matrix inverses. It will tell us that in particular a left inverse
+of a square matrix is a two sided inverse.
+Theorem 3.9. Suppose A ∈ R
+n×n or A ∈ (F2)
+n×n
+. Then we have the
+following:
+(i) A is nonsingular if and only if A has a left inverse;
+(ii) if A has a left inverse B, then A is invertible and B is A’s unique inverse
+(that is, if BA = In, then AB = In, and so B = A−1
+); and
+(iii) in particular, A is nonsingular if and only if it is invertible.
+Proof. We’ll suppose A ∈ R
+n×n
+. The other case is handled just the same.
+We already know that if A is nonsingular, it has a left inverse. Hence
+suppose A has a left inverse B. To show that the rank of A is n, it suffices,
+by Proposition 2.6, to show that if Ax = 0, then x = 0. Suppose Ax = 0,
+then
+0 = B0 = B(Ax) = (BA)x = Inx = x. (3.3)
+Thus indeed, x = 0, so A has rank n. Hence, if A has a left inverse, A is
+nonsingular, and (i) is finished. Next suppose A has a left inverse. Then,
+by (i), A has rank n, so we know the system Ax = b is consistent for every
+b ∈ R
+n
+. Hence, the system Ax = ei has a solution for each i, where ei
+is
+the ith column of In. It follows that there exists an n × n matrix X so that
+AX = In. We now show that B = X. In fact, repeating the argument in
+Proposition 3.7, we see that
+Thus, if A has a left inverse, it has an inverse, proving (ii). Finally, suppose
+BA = In. Then A has rank n, so A has an inverse, say C. Repeating the
+51
+argument just given replacing X with C, it follows that B = C. Thus a left
+inverse of A is necessarily A−1
+.
+One of the appealing applications of Theorem 3.9 is the following formula
+for the unique solution of a nonsingular system.
+Corollary 3.10. If A nonsingular, then the system
+Ax = b
+has the unique solution x = A−1b.
+Proof. This is an exercise.
+Notice that this solution is analogous to the solution of ax = b which
+one may express as x = b/a when a 6= 0. The difference is that b/A is not
+defined. We have to express the solution in the only sensical way, namely
+x = A−1b.
+The product of any two invertible n×n matrices A and B is also invertible. Indeed, (AB)
+−1 = B−1A−1
+. For
+(B
+−1A
+−1
+)AB = B
+−1
+(A
+−1A)B = B
+−1
+InB = B
+−1B = In.
+This is used in the proof of the following useful Proposition.
+Proposition 3.11. Any product of elementary matrices is invertible, and,
+conversely, any invertible matrix is a product of elementary matrices.
+The proof is left as an exercise.
+3.3.2 Methods for Finding Inverses
+We have two ways of finding the matrix B so that BA = Ared. The first
+is simply to multiply out the sequence of elementary matrices which row
+reduces A. This is not as bad as it sounds since multiplying elementary
+matrices is elementary. The second method is to form the augmented matrix
+(A | In) and row reduce. The final result will be in the form (In | B). This
+is the method used in most textbooks. Let’s begin with an example.
+Example 3.6. Suppose we want to find an inverse for
+A =
+
+
+1 2 0
+1 3 1
+0 1 2
+
+ .
+52
+Since we only need to solve the matrix equation XA = I3, we can use our
+previous strategy of row reducing (A | I3).
+(A | I3) =
+
+
+1 2 0 1 0 0
+1 3 1 0 1 0
+0 1 2 0 0 1
+
+ →
+
+
+1 2 0 1 0 0
+0 1 1 −1 1 0
+0 1 2 0 0 1
+
+ →
+
+
+1 2 0 1 0 0
+0 1 1 −1 1 0
+0 0 1 1 −1 1
+
+ →
+
+
+1 2 0 1 0 0
+0 1 0 −2 2 −1
+0 0 1 1 −1 1
+
+ →
+
+
+1 0 0 5 −4 2
+0 1 0 −2 2 −1
+0 0 1 1 −1 1
+
+ .
+Hence
+A
+−1 = B =
+
+
+5 −4 2
+−2 2 −1
+1 −1 1
+
+ ,
+since, by construction, BA = I3.
+Example 3.7. To take a slightly more interesting example, let
+A =
+
+
+1 0 0 1
+1 1 0 0
+0 1 1 1
+1 1 1 1
+
+ ,
+where the entries of A are elements of F2. Using the above procedure, we
+see that
+A
+−1 =
+
+
+0 0 1 1
+0 1 1 0
+1 1 1 1
+1 0 1 1
+
+ .
+Note that the correctness of this result may be (and generally should) be
+checked by computing directly that
+I4 =
+
+
+0 0 1 1
+0 1 1 1
+1 1 1 0
+1 0 1 1
+
+
+
+
+1 0 0 1
+1 1 0 0
+0 1 1 1
+1 1 1 1
+
+ .
+53
+There is somewhat less obvious third technique which is sometimes also
+useful. If we form the augmented coefficient matrix (A | b), where b represents the column vector with components b1, b2, . . . bm and perform the row
+reduction of this augmented matrix, the result will be in the form (In | c),
+where the components of c are certain linear combinations of the components of b. The coefficients in these linear combinations give us the entries
+of A−1
+. Here is an example.
+Example 3.8. Again let
+A =
+
+
+1 2 0
+1 3 1
+0 1 2
+
+ .
+Now form
+
+
+1 2 0 a
+1 3 1 b
+0 1 2 c
+
+
+and row reduce. The result is
+
+
+1 0 0 5a − 4b + 2c
+0 1 0 −2a + 2b − c
+0 0 1 a − b + c
+
+ .
+Thus,
+A
+−1 =
+
+
+5 −4 2
+−2 2 −1
+1 −1 1
+
+ .
+3.3.3 Matrix Groups
+In this section, we will introduce the concept of a matrix group and give a
+number of examples. Matrix groups are sometimes also called linear groups.
+The matrix group structure will be useful later in stating and proving some
+of the main results on matrices. The basic example of a matrix group is the
+set GL(n, R) of all invertible elements of R
+n×n
+. That is,
+GL(n, R) = {A ∈ R
+n×n
+| A
+−1
+exists}. (3.4)
+Notice that, by definition, every element in GL(n, R) has an inverse. Moreover, In is an element of GL(n, R), and if A and B are elements of GL(n, R),
+then so is their product AB. These three properties define what we mean
+by a matrix group.
+54
+Definition 3.4. A subset G of R
+n×n
+is called a matrix group if the following
+three conditions hold:
+(i) if A, B ∈ G, then AB ∈ G,
+(ii) In ∈ G, and
+(iii) if A ∈ G, then A−1 ∈ G.
+It turns out that these three axioms are enough to give the class of matrix
+groups an extremely rich structure. Of course, as already noted above,
+GL(n, R) is a matrix group (commonly called the general linear group ). In
+fact, if G ⊂ R
+n×n
+is a matrix group, then, by definition, G ⊂ GL(n, R).
+A subset of GL(n, R) which is also a matrix group is called a subgroup of
+GL(n, R). Thus matrix groups are subgroups of some GL(n, R).
+The simplest example of a subgroup of GL(n, R) is {In}: this is the so
+called trivial subgroup. To get some more interesting interesting examples,
+let us consider permutation matrices.
+Example 3.9 (Permutation Matrices). A matrix P obtained from In by a finite (possibly vacuous) sequence of row swaps is called a permutation matrix.
+In other words, a permutation matrix is a matrix P ∈ R
+n×n
+such that there
+are row swap matrices S1, . . . , Sk ∈ R
+n×n
+for which P = S1 · · · Sk. (Recall
+that a row swap matrix is by definition an elementary matrix obtained by
+interchanging two rows of In.) Clearly, In is a permutation matrix, and any
+product of permutation matrices is also a permutation matrix. It remains
+to see that the inverse of a permutation matrix is also a permutation matrix. Let P = S1 · · · Sk be a permutation matrix. Then P
+−1 = S
+−1
+k
+· · · S
+−1
+1
+.
+But every row swap S has the property that S = S
+−1
+, so P
+−1
+is indeed a
+permutation matrix, namely Sk · · · S1.
+Let P(n) denote the set of n × n permutation matrices. One can also
+describe P(n) as the set of all matrices obtained from In by permuting the
+rows of In. Thus P(n) is the set of all n × n matrices whose only entries are
+0 or 1 such that every row and every column has exactly one non-zero entry.
+It follows from elementary combinatorics that P(n) has exactly n! elements.
+The inverse of a permutation matrix has a beautiful expression.
+Proposition 3.12. If P is a permutation matrix, then P
+−1 = P
+T
+.
+Proof. We leave this as an exercise.
+55
+Example 3.10. P(3) consists of the following five 3 × 3 permutation matrices and I3:
+
+
+1 0 0
+0 0 1
+0 1 0
+
+ ,
+
+
+0 1 0
+1 0 0
+0 0 1
+
+ ,
+
+
+0 1 0
+0 0 1
+1 0 0
+
+ ,
+
+
+0 0 1
+1 0 0
+0 1 0
+
+ ,
+
+
+0 0 1
+0 1 0
+1 0 0
+
+ .
+The first, second and fifth matrices in the above list are row swaps, and the
+other two are products of row swaps.
+Definition 3.5 (The orthogonal group). Let Q ∈ R
+n×n
+. Then we say that
+Q is orthogonal if and only if QTQ = In. The set of all n × n orthogonal
+matrices is denoted by O(n, R). We call O(n, R) the orthogonal group.
+Proposition 3.13. O(n, R) is a subgroup of GL(n, R).
+Proof. It follows immediately from the definition and Theorem 3.9 that if
+Q is orthogonal, then QT = Q−1
+. Thus Q = (Q−1
+)
+T
+, and we see that
+(Q−1
+)
+TQ−1 = QQ−1 = In. Consequently, if Q is orthogonal, then Q−1
+is
+orthogonal. The identity In is clearly orthogonal, so it remains to show
+that the product of two orthogonal matrices is orthogonal. Let Q and R be
+orthogonal. Then
+(QR)
+T
+(QR) = (R
+TQ
+T
+)(QR) = R
+T
+(Q
+TQ)R = R
+T
+InR = In.
+Hence O(n, R) is a subgroup of GL(n, R).
+By Proposition 3.12, we have P(n) ⊂ O(n, R). That is, every permutation matrix is orthogonal. Hence P(n) is also a subgroup of O(n, R).
+The orthogonal group for O(2, R) is especially interesting. It has an
+important subgroup which is denoted as SO(2) and called the rotation group
+because rotation matrices act on R
+2 as rotations. This subgroup consists of
+the matrices
+Rθ =
+
+cos θ − sin θ
+sin θ cos θ
+
+.
+The fact that SO(2) is a subgroup of O(2, R) follows from trigonometry. For
+example, the sum formulas for cos(θ + µ) and sin(θ + µ), are equivalent to
+the formula
+RθRµ = RµRθ = Rθ+µ. (3.5)
+We will investigate other aspects of O(2, R) in the Exercises.
+56
+Exercises
+Exercise 3.22. Find the inverse of each of the following real matrices or
+show that the inverse does not exist.
+(a) 
+1 2
+4 1
+(b)
+
+
+1 0 1
+0 1 −1
+1 1 0
+
+ (c)
+
+
+1 0 −2
+0 1 1
+1 1 0
+
+ (d)
+
+
+1 0 1 0
+0 1 0 −1
+1 0 −1 0
+0 1 0 1
+
+.
+Exercise 3.23. If possible, invert
+B =
+
+
+1 2 −1 −1
+−2 −1 3 1
+−1 4 3 −1
+0 3 1 −1
+
+ .
+Exercise 3.24. If possible, find the inverse of A =
+
+
+1 0 1
+0 1 1
+1 1 0
+
+ over F2.
+Exercise 3.25. Let A =
+
+
+0 1 1
+1 0 1
+1 1 0
+
+. Show that A has an inverse over R
+but A does not have an inverse over F2.
+Exercise 3.26. Determine whether the following 5 × 5 matrix A over F2
+has an inverse, and if it does find it:
+A =
+
+
+1 0 1 1 1
+1 1 0 1 0
+1 1 0 0 1
+1 0 1 1 0
+1 1 1 0 1
+
+
+.
+Exercise 3.27. Suppose A =
+
+a b
+c d 
+, and assume that ∆ = ad − bc 6= 0.
+Show that A−1 =
+1
+∆
+
+d −b
+−c a 
+. What does the condition ∆ 6= 0 mean in terms
+of the rows of A?
+Exercise 3.28. Suppose A has an inverse. Find a formula for the inverse
+of AT
+?
+Exercise 3.29. Prove Proposition 3.11. That is, show that A is invertible
+if and only if A is a product of elementary matrice
+57
+Exercise 3.30. Suppose A is n × n and there exists a right inverse B, i.e.
+AB = In. Show A invertible.
+Exercise 3.31. Let C =
+ 1 a b
+0 1 c
+0 0 1
+
+. Find a general formula for C
+−1
+.
+Exercise 3.32. Show that if A and B are n × n and have inverses, then
+(AB)
+−1 = B−1A−1
+. What is (ABCD)
+−1
+if all four matrices are invertible?
+Exercise 3.33. Suppose A is invertible m × m and B is m × n. Solve the
+equation AX = B.
+Exercise 3.34. Suppose A and B are both n × n and AB is invertible.
+Show that both A and B are invertible. (See what happens if Bx = 0.)
+Exercise 3.35. Let A and B be two n × n matrices over R. Suppose
+A3 = B3
+, and A2B = B2A. Show that if A2 + B2
+is invertible, then A = B.
+(Hint: Consider (A2 + B2
+)A.)
+Exercise 3.36. Let A and B be n × n matrices over R.
+(i) If the inverse of A2
+is B, show that the inverse of A is AB.
+(ii) If A, B, and A + B are all invertible, find the inverse of A−1 + B−1
+in terms of A, B and A + B.
+Exercise 3.37. Is it TRUE or FALSE that if an n × n matrix with integer
+entries has an inverse, then the inverse also has integer entries?
+Exercise 3.38. Show that a symmetric orthogonal matrix is its own inverse.
+Exercise 3.39. Without computing, try to guess the inverse of the matrix
+A =
+
+
+1 0 1 0
+0 1 0 −1
+1 0 −1 0
+0 1 0 1
+
+ .
+(Hint: compute QTQ.)
+Exercise 3.40. Using the sum formulas for cos(θ +µ) and sin(θ +µ), prove
+that RθRµ = Rθ+µ for all real numbers θ and µ.
+Exercise 3.41. Two vectors x, y ∈ R
+2 are said to be orthogonal if x
+T y = 0:
+that is, x1y1 +x2y2 = 0. Using the definition of an orthogonal matrix, prove
+that the columns of an orthogonal matrix are orthogonal as are the rows,
+and, furthermore, each column and row has length one. (Note: the square
+of the length of x is x
+T x.
+58
+Exercise 3.42. ∗ Show that every element H of O(2, R) that isn’t a rotation
+matrix satisfies HT = H, H2 = I2 and H 6= I2.
+Exercise 3.43. Let S1 =
+
+
+0 1 0
+1 0 0
+0 0 1
+
+ , and S2 =
+
+
+1 0 0
+0 0 1
+0 1 0
+
+ . Show that
+every 3 × 3 permutation matrix is a product of S1 and S2.
+Exercise 3.44. Let S1 and S2 be the permutation matrices defined in Exercise 3.43. Show that (S1S2)
+3 = I3.
+Exercise 3.45. Show that every permutation matrix is orthogonal. Deduce
+that if P is a permutation matrix, then P
+−1 = P
+T
+. This proves Proposition
+3.12.
+Exercise 3.46. Show that the following two matrices are permutation matrices and find their inverses:
+
+
+0 0 0 0 1
+0 0 0 1 0
+0 0 1 0 0
+0 1 0 0 0
+1 0 0 0 0
+
+
+,
+
+
+0 0 1 0 0
+0 0 0 0 1
+1 0 0 0 0
+0 1 0 0 0
+0 0 0 1 0
+
+
+.
+Exercise 3.47. You are a code-breaker (more accurately, a cryptographer)
+assigned to crack a secret cipher constructed as follows. The sequence 01
+represents A, 02 represents B and so forth up to 26, which represents Z. A
+space between words is indicated by inserting 00. A text can thus be encoded
+as a sequence. For example, 1908040002090700041507 stands for ”the big
+dog”. We can think of this as a vector in R
+22. Suppose a certain text has
+been encoded as a sequence of length 14,212=44×323, and the sequence has
+been broken into 323 consecutive intervals of length 44. Next, suppose each
+sub-interval is multiplied by a single 44 × 44 matrix C. The new sequence
+obtained by laying the products end to end is called the cipher text, because
+it has now been enciphered, and it is your job to decipher it. Discuss the
+following questions.
+(i) How does one produce an invertible 44×44 matrix in an efficient way,
+and how does one find its inverse?
+(ii) How many of the sub-intervals will you need to decipher to break
+the whole cipher by deducing the matrix C?
+59
+3.4 The LP DU Factorization
+Recall that an invertible matrix A in R
+n×n
+can be expressed as a product
+of elementary n × n matrices. In this section, we will prove a much more
+explicit and general result: every n × n matrix A can be expressed in the
+form A = LP DU, where each of the matrices L, P, D and U is built up from
+a single type of elementary matrix. This LP DU factorization is one of the
+most basic tools for understanding the properties of matrices. For example,
+we will use it below to show that the reduced row echelon form of a matrix
+is unique. It will also be important when we determine the signs of the
+eigenvalues of an arbitrary symmetric matrix in Chapter 12. The LP DU
+decomposition is an important theoretical tool for research in matrix theory,
+and it is widely used for solving large systems of linear equations.
+3.4.1 The Basic Ingredients: L, P, D and U
+Let us now introduce the cast of characters in the LP DU decomposition.
+First of all, a matrix A is called lower triangular if all the entries of A
+strictly above the diagonal are zero. Put another way, aij = 0 if i < j. SIMILARLY, A is upper triangular if its entries strictly below the diagonal are
+zero. Clearly, the transpose of a lower triangular matrix is upper triangular
+and vice versa. A square matrix A which is either upper or lower triangular
+and such that each diagonal entry aii = 1 is called unipotent. In our cast, the
+L’s will be lower triangular unipotent, and the U’s will be upper triangular
+unipotent.
+Example 3.11. A lower triangular 3 × 3 unipotent matrix has the form
+L =
+
+
+1 0 0
+a 1 0
+b c 1
+
+ .
+The transpose U = L
+T
+is
+U =
+
+
+1 a b
+0 1 c
+0 0 1
+
+ .
+One can easily check that
+L
+−1 =
+
+
+1 0 0
+−a 1 0
+ac − b −c 1
+
+ .
+60
+Thus L
+−1
+is also lower triangular unipotent.
+Notice that a type III row operations where a row is replaced by itself
+plus a multiple of a higher row is performed via left multiplication by a
+lower triangular unipotent matrix. We will usually call these downward row
+operations. Here is a basic fact.
+Proposition 3.14. The class Ln of all lower triangular unipotent n × n
+matrices is a subgroup of GL(n, R). Similarly, the class Un of all upper
+triangular unipotent matrices is also a subgroup of GL(n, R).
+Proof. It follows from the definition of matrix multiplication that the product of two lower triangular matrices is also lower triangular. If A and B
+are lower triangular unipotent, then the diagonal entries of AB are all 1.
+Indeed, if AB = (cij ), then
+cii =
+Xn
+k=1
+aikbki = aiibii = 1,
+since aij = bij = 0 if i < j. The identity In is also lower triangular unipotent,
+so to show Ln is a subgroup of GL(n, R), it remains to show that the inverse of a lower triangular unipotent matrix A is also in Ln. But this follows
+since inverting a lower triangular unipotent matrix only requires downward
+row operations. (Row swaps aren’t needed since A is lower triangular, and
+dilations aren’t needed either since lower triangular unipotent matrices only
+have 1’s on the diagonal.) Thus, A−1
+is a product of lower triangular elementary matrices of type III. But these are elements of Ln, so A−1
+is also
+in Ln. The proof for Un is similar. In fact, one can simply transpose the
+proof just given.
+As just noted, every lower triangular unipotent matrix is the product of
+downward row operations. Indeed, there exist E1, E2, . . . , Ek of this type
+such that Ek · · · E2E1L = In. Therefore, L = E
+−1
+1 E
+−1
+2
+· · · E
+−1
+k
+. But the
+inverse of each Ei
+is also a lower triangular elementary matrix of type III.
+Hence, L = E
+−1
+1 E
+−1
+2
+· · · E
+−1
+k
+. The analogous fact holds for upper triangular
+unipotent matrices.
+Continuing the introduction of the cast of characters, recall from Example 3.9, that an n × n matrix which can be expressed as a product of
+elementary matrices of type II (i.e. row swaps) is called a permutation matrix. We’ve already seen that the set P(n) of n × n permutation matrices
+is a matrix group, and, moreover, the inverse of a permutation matrix P
+is P
+T
+. The n × n permutation matrices are exactly those matrices which
+61
+can be obtained by rearranging the rows of In. We now make the following
+definition:
+Definition 3.6. An n × n matrix which is obtained from a permutation
+matrix by replacing some of the 1s by 0s is called a partial permutation
+matrix. The set of n × n partial permutation matrices is denoted by Πn.
+Note that by definition, an invertible partial permutation matrix is a
+permutation matrix. Note also that the product of two n×n partial permutation matrices is also a partial permutation matrix. However, the partial
+permutation matrices don’t form a matrix group (why?).
+The last character D stands for a diagonal matrix. Recall a matrix
+D = (dij ) is called diagonal if and only if dij = 0 whenever i 6= j. Since
+a diagonal matrix is invertible if and only if its diagonal entries dii are all
+different from 0 and the product of two diagonal matrices is also diagonal,
+the set of invertible diagonal matrices is a matrix subgroup of GL(n, R). We
+will denote this matrix group by Dn.
+3.4.2 The Main Result
+We now arrive at the main theorem, which gives a normal form for an
+arbitrary square matrix.
+Theorem 3.15. Every n × n matrix A over R or F2 can be expressed in
+the form A = LP DU, where L is lower triangular unipotent, P is a partial
+permutation matrix, D is an invertible diagonal matrix, and U is upper
+triangular unipotent. If A is invertible, then P is a full permutation matrix,
+and P and D are unique. In fact, the partial permutation matrix P is unique
+in all cases.
+This result can be expressed in the product form
+R
+n×n = Ln · Πn · Dn · Un.
+That is, every n×n matrix is the product of the four types of matrices: Ln,
+Πn, Dn and Un. Specializing to the invertible matrices, we have
+GL(n, R) = Ln · P(n) · Dn · Un.
+In particular, GL(n, R) is the product of its four subgroups: Ln, P(n), Dn
+and Un. The F2 case is actually easier since there are only three types of
+matrices involved.
+The idea behind the proof is very simple. Starting from A, one do
+downwaresd row operations on the left and rightward column operations on
+62
+the right until all that is left of A is P D. Before reading the proof, the
+reader may wish to look at the examples after the proof to see explicitly
+what to do.
+Proof. Let an arbitrary n × n A be given. If the first column of A consists
+entirely of zeros, go immediately to the second column. Otherwise, let ai1be
+the first nonzero entry in A’s first column. Perform a sequence of row
+operations to make the entries below ai1 equal to zero. This transforms the
+first column of A into
+(0, . . . , 0, d1, 0, . . . , 0)T
+, (3.6)
+where d1 = ai1. This reduction is performed by downward row operations:
+in other words, by pre-multiplying A by a sequence of lower triangular elementary matrices of type III. By Proposition 3.14, we therefore obtain a
+lower triangular unipotent matrix L1 so that the first column of L1A has
+the form (3.6). The next step is to use the first non zero entry d1 in the first
+column to annihilate all the entries in the i-th row of A to the right of the
+first column. Since post multiplying by elementary matrices performs column operations, this amounts to multiplying L1A on the right by a sequence
+of upper triangular unipotent matrices. This produces an upper triangular
+unipotent matrix U1 such that the first column of (L1A)U1 has the form
+(3.6) and the i-th row is
+(d1, 0, . . . , 0). (3.7)
+We now have the first column and i-th row of A in the desired form and
+from now on, they will be unchanged. If the first column of A is zero, we
+will for convenience put L1 = U1 = In.
+To continue, scan to the right until we find a nonzero column in L1AU1,
+say this is the j-th. Let bkj be its first nonzero entry, and put dj = bkj .
+Of course, k 6= i. Then we can find lower and upper triangular unipotent
+matrices L2 and U2 such that the first and j-th columns of L2L1AU1U2
+have the single nonzero entry d1 and dj , and the same holds for i-th and
+k-th rows. Furthermore, the columns between the first and j-th columns,
+if any, are all zero. Continuing, we eventually obtain a lower triangular
+unipotent matrix L
+0 and an upper triangular unipotent matrix U
+0
+such that
+each row and column of L
+0AU0 has at most one nonzero entry.
+Since multiplying a matrix B on the right by a diagonal matrix D multiplies the i-th column of B by dii, any matrix C with the property that every
+row and column has at most one nonzero entry can be written C = P D,
+where P is a partial permutation matrix and D is an invertible diagonal
+63
+matrix. If C is invertible, then P is a full permutation matrix, and D and
+P are unique. In fact, dii is the nonzero entry in C’s i-th column. If C is
+singular, D isn’t unique. It follows that L
+0A0U = P D, where P is a partial
+permutation matrix and D is a diagonal matrix.
+We now show that the partial permutation matrix P is always unique.
+Let A have two decompositions
+A = L1P1D1U1 = L2P2D2U2 (3.8)
+according to the Theorem. Then we can write
+LP1D1 = P2D2U, (3.9)
+where L = (L2)
+−1L1 and U = U2(U1)
+−1
+. As L is lower triangular unipotent
+and U is upper triangular unipotent, LP1D1 can have nonzero elements
+below a nonzero entry of P1, but no nonero entries to the right of a nonzero
+entry of P1. The reverse is the case for P2D2U, so the only conclusion is that
+LP1D1 = P1D1 and P2D2 = P2D2U. But this implies P1D1 = P2D2. Since
+P1 and P2 are partial permutation matrices and D1 and D2 are invertible,
+P1 and P2 have to coincide.
+Finally, if A is invertible and A = LP DU, then P is invertible, so P is
+a permutation matrix. We still have to show that if A is invertible, then
+D is unique, Suppose (3.9) holds. Repeating the previous argument, we see
+that P1D1 = P2D2. But P1 = P2 = P, and P is invertible, so it follows
+immediately that D1 = D2.
+Note that the above proof even gives an algorithm for finding the LP DU
+factorization.
+Example 3.12. To illustrate, let
+A =
+
+
+0 2 −2
+0 4 −5
+−1 −2 −1
+
+ .
+Since the first non zero entry in the first column of A is a13 = −1, we can
+put L1 = I3. Then next two steps are to subtract the first column twice
+from the second and to subtract it once from the third. The result is
+AU1 = L1AU1 =
+
+
+0 2 −2
+0 4 −5
+−1 0 0
+
+ ,
+64
+where
+U1 =
+
+
+1 −2 −1
+0 1 0
+0 0 1
+
+ .
+Next we subtract twice the first row from the second, which gives
+L2L1AU1 =
+
+
+0 2 −2
+0 0 −1
+−1 0 0
+
+ ,
+where
+L2 =
+
+
+1 0 0
+−2 1 0
+0 0 1
+
+ .
+Finally, we add the second column to the third, getting
+L2L1AU1U2 =
+
+
+0 2 0
+0 0 −1
+−1 0 0
+
+ ,
+with
+U2 =
+
+
+1 0 0
+0 1 1
+0 0 1
+
+ .
+Now
+U = U1U2 =
+
+
+1 −2 −3
+0 1 1
+0 0 1
+
+ .
+Also,
+P D =
+
+
+0 1 0
+0 0 1
+1 0 0
+
+
+
+
+−1 0 0
+0 2 0
+0 0 −1
+
+ .
+After computing L = (L2L1)
+−1 = L
+−1
+2
+and U = (U1U2)
+−1
+, we obtain the
+LP DU factorization
+A =
+
+
+1 0 0
+2 1 0
+0 0 1
+
+
+
+
+0 1 0
+0 0 1
+1 0 0
+
+
+
+
+−1 0 0
+0 2 0
+0 0 −1
+
+
+
+
+1 2 1
+0 1 −1
+0 0 1
+
+ .
+Here is another example.
+65
+Example 3.13. Let A be the matrix
+A =
+
+
+1 0 1
+1 0 0
+0 1 1
+
+ .
+Then
+
+
+1 0 0
+1 1 0
+0 0 1
+
+ A =
+
+
+1 0 1
+0 0 1
+0 1 1
+
+ .
+Thus
+
+
+1 0 0
+1 1 0
+0 0 1
+
+ A
+
+
+1 0 1
+0 1 0
+0 0 1
+
+ =
+
+
+1 0 0
+0 0 1
+0 1 1
+
+ .
+Hence
+
+
+1 0 0
+1 1 0
+0 0 1
+
+ A
+
+
+1 0 1
+0 1 0
+0 0 1
+
+
+
+
+1 0 0
+0 1 1
+0 0 1
+
+ =
+
+
+1 0 0
+0 0 1
+0 1 0
+
+ .
+This has the form LAU = P, so A = L
+−1P U −1
+, so the Example is complete
+once L
+−1 and U
+−1 have been calculated. We leave this to the reader.
+3.4.3 Further Uniqueness in LP DU
+If A is invertible, the Theorem says that P and D in A = LP DU is unique.
+The i-th diagonal entry dii of D is called the i-th pivot of A. It turns out
+that the pivots of A have quite a bit of significance. (See Chapter 12.)
+Example 3.14. Let A =
+
+a b
+c d 
+be invertible. That is, suppose ad − bc 6= 0.
+If a 6= 0, then the LP DU decomposition of A is
+A =
+
+1 0
+−c/a 1
+ 1 0
+0 1 a 0
+0 (ad − bc)/a 1 −b/a
+0 1 
+.
+However, if a = 0, then bc 6= 0 and A can be expressed either as
+LP D =
+
+1 0
+d/b 1
+ 0 1
+1 0 c 0
+0 b
+
+or
+P DU =
+
+0 1
+1 0 c 0
+0 b
+ 1 d/c
+0 1 
+.
+This tells us that, in general, L and U aren’t necessarily unique
+66
+3.4.4 Further Uniqueness in LP DU
+If A is invertible, the Theorem says that P and D in A = LP DU is unique.
+The i-th diagonal entry dii of D is called the i-th pivot of A. It turns out
+that the pivots of A have quite a bit of significance. (See Chapter 12.)
+The general two by two case occurs when a11 6= 0. Here, the permutation
+matrix P turns out to be I2. In this case, A can be row reduced without row
+swaps. For a general n×n A, a11 6= 0, since having a11 = 0 puts a condition
+on A. Similarly, after putting the first column of A in the form (1, 0, . . . , 0)T
+,
+the new (2, 2) entry will in general still be nonzero. Continuing in this way,
+we see that a sufficiently general matrix A will have permutation matrix
+P = In. This is exactly the situation where A can be row reduced without
+row swaps.
+The next Proposition points out an extremely nice property of the general case.
+Proposition 3.16. If an invertible matrix A admits an LDU decomposition
+(i.e. P = In), then the matrices L, D and U are unique.
+Proof. We already know D is unique. So if A has two LDU decompositions,
+we have
+A = L1DU1 = L2DU2.
+Thus
+L
+−1
+1 L2 = DU1U
+−1
+2 D−1
+. (3.10)
+But in (3.10), the left hand side is lower triangular unipotent and the right
+hand side is upper triangular, since D is diagonal. This tells us immediately
+that L
+−1
+1 L2 = In. Hence L1 = L2, so it also follows that U1U
+−1
+2 = D−1D =
+In. Hence U1 = U2 too, and the proof is finished.
+Going back to the 2 × 2 case considered in Example 3.14, the LDU
+decomposition for A is therefore unique when a 6= 0 . We also pointed out
+in the same example that if a = 0, then L and U are not unique, although
+P and D are.
+Now consider an n×n system Ax = b. If A is invertible, solving consists
+of finding A−1
+. If we write A = LP DU, then A−1 = U
+−1D−1P
+−1L
+−1
+. In
+theory, it is simpler to invert each of L, P, D and U and to multiply them
+than to compute A−1 directly. Indeed, D−1
+is easy to find, and P
+−1 = P
+T
+,
+so it boils down to computing L
+−1 and U
+−1
+, both of which are expressed
+by simple formulas. In the non invertible case, we put x = (DU)
+−1y. The
+system then becomes LPy = b, which is equivalent to Py = L
+−1b and
+easily solved.
+67
+With a linear system Ax = b, where A = LP DU is invertible, one can
+avoid having to deal with the permutation matrix P. In fact, it is always
+possible to post multiply A by another permutation matrix Q, suitably
+concocted to move zero pivots out of the way by switching columns, so as
+to get a matrix AQ which which has a factorization AQ = L
+0D0U
+0
+. The
+only affect on the system is renumbering the variables. As above, let y =
+Q−1x = QT x. Then
+Ax = A(QQ−1
+)x = A(QQT
+)x = (AQ)y = (L
+0D0U
+0
+)y,
+so we only have to solve (L
+0D0U
+0
+)y = b.
+3.4.5 The symmetric LDU decomposition
+Suppose A is an invertible symmetric matrix which has an LDU decomposition. Then it turns out that L and U are not only unique, but they are
+related. In fact, U = L
+T
+. This makes finding the LDU decomposition very
+simple. The reasoning for this goes as follows. If A = AT and A = LDU,
+then
+LDU = (LDU)
+T = U
+T DTL
+T = U
+T DLT
+since D = DT
+. Therefore the uniqueness of L, D and U implies that U = L
+T
+.
+The upshot is that to factor A = LDU in the general symmetric case,
+all one needs to do is perform downward row operations on A until A is
+upper triangular.This is expressed by the equality L
+0A = B, where B is
+upper triangular. Then B = DU, where D is the diagonal matrix such that
+dii = bii for all indices i, and (since all the bii are nonzero) U = D−1B. Thus
+by construction, U is upper triangular unipotent, and we have A = LDU,
+where L = U
+T by the result proved in the previous paragraph.
+Example 3.15. Consider the symmetric matrix
+A =
+
+
+1 1 1
+1 3 −1
+1 −1 2
+
+ .
+First bring A into upper triangular form, which is our DU. Doing so, we
+find that A reduces to
+DU =
+
+
+1 1 1
+0 2 −2
+0 0 −1
+
+ .
+68
+Hence
+D =
+
+
+1 0 0
+0 2 0
+0 0 −1
+
+ and U =
+
+
+1 1 1
+0 1 −1
+0 0 1
+
+ .
+Thus A = LDU where U is as above, L = U
+T and D = diag(1, 2, −1).
+Summarizing, we state
+Proposition 3.17. If A is an (invertible) n × n symmetric matrix whose
+LP DU decomposition has P = In, then A can be uniquely factored in the
+form A = LDLT
+.
+The interested reader may wish to consider what happens when an invertible symmetric matrix A has zero pivots (see Exercise 3.60).
+3.4.6 LP DU and Reduced Row Echelon Form
+The purpose of this Section is to relate the LP DU decomposition of A to
+its reduced row echelon form. We will ultimately show that the reduced row
+echelon form of A of an arbitrary m × n matrix is unique. Let us make a
+series of observations.
+Observation 1. It is enough to assume m = n. Indeed, if m < n, one can
+make A n × n by adjoining n − m rows of zeroes at the bottom of A, and if
+n < m, one can adjoin m − n columns of zeroes on the right of A.
+Observation 2. If A = LP DU, then the nonzero columns of P are exactly the
+columns where A has a corner. This follows from comparing the algorithm
+for row reducing A with the method for finding the LP DU factorization.
+Observation 3. Suppose the rows of the partial permutation matrix P are
+permuted to get a partial permutation matrix Q whose first k rows are
+nonzero, where k is the number of ones in P. Then QDU is reduced (but is
+not necessarily in reduced row echelon form), where D and U are the same
+as in LP DU.
+Observation 4. Any reduced row echelon form of A has the form QU0
+for
+some upper triangular unipotent matrix U
+0
+. For we can write QD = D0Q
+for some (invertible) diagonal matrix D0
+. Then replacing D0 by In is the
+same thing as making the corner entries all ones.
+Now we show
+Proposition 3.18. The reduced row echelon form of an m × n matrix is
+unique. In particular, the rank of a matrix is well defined.
+Proof. As noted in Observation 1, we can restrict ourselves to n×n matrices
+A. By post multiplying A by a suitable permutation matrix, say R, we may
+69
+assume that the matrix Q in Observation 3 has the form Q =
+
+Ik 0
+0 0
+.
+Thus any matrix in reduced row echelon form obtained from AR has the
+form
+
+Ik a
+O1 O2
+
+,
+where a is k × (n − k), O1 is the (n − k) × k zero matrix and O2 is the
+(n − k) × (n − k) zero matrix. Suppose
+
+Ik b
+O1 O2
+
+is another such matrix obtained from A by row operations. Then there
+exists a nonsingular n × n matrix G such that
+G
+
+Ik a
+O1 O2
+
+=
+
+Ik b
+O1 O2
+
+.
+Now write
+G =
+
+J K
+L M
+,
+where J is k×k, K is k×(n−k), L is k×(n−k) and M is (n−k)×(n−k).
+Carrying out the multiplication, we see that JIk = Ik and Ja = b. But
+this means a = b, so the reduced row echelon form of AR is indeed unique.
+It follows that the reduced row echelon form of A is also unique, since the
+reduced row echelon form of A is just BR−1
+, where B is the reduced row
+echelon form of AR. It also follows immediately that the rank of A is
+uniquely defined.
+Thus if A = LP DU, then the rank of A is the rank of its partial permutation matrix P. This leads to an interesting, even surprising, Corollary.
+Corollary 3.19. For any matrix A, the rank of A equals the rank of AT
+.
+We’ll leave the proof as an Exercise.
+The reason this Corollary is surprising is that there isn’t any obvious
+connection between the reduced row echelon form of A and that of AT
+.
+Nevertheless, we’ve done a lot of work to get the LP DU factorization, so
+we should expect some payoffs. Another quite different proof of Proposition
+3.18 is given in Chapter 5.
+70
+Exercises
+Exercise 3.48. Find the LP DU decompositions of the following matrices:
+
+
+0 1 1
+2 0 1
+1 1 0
+
+ ,
+
+
+0 0 3
+0 2 1
+1 1 1
+
+ ,
+
+
+1 0 1
+0 2 −1
+1 −1 0
+
+ .
+Exercise 3.49. Find the LP DU factorization of the F2 matrix
+A =
+
+
+1 1 1 0
+1 0 1 1
+1 1 0 0
+0 1 1 1
+
+ .
+Exercise 3.50. Find the LP DU factorization of the F2 matrix
+A =
+
+
+1 1 1 0
+1 0 1 1
+1 1 0 0
+0 1 1 1
+
+ .
+Exercise 3.51. Let
+A =
+
+
+1 a b
+0 1 c
+0 0 1
+
+ .
+Find a formula expressing A as a product of upper triangular elementary
+matrices of type III.
+Exercise 3.52. Find the general formula for the inverse of the general 4×4
+upper triangular unipotent matrix
+U =
+
+
+1 a b c
+0 1 d e
+0 0 1 f
+0 0 0 1
+
+ .
+Exercise 3.53. Show directly that an invertible upper triangular matrix
+B can be expressed B = DU, where D is a diagonal matrix with non zero
+diagonal entries and U is upper an triangular matrix all of whose diagonal
+entries are ones. Is this still true if B is singular?
+71
+Exercise 3.54. Find the LP DU decomposition of
+
+
+0 1 2 1
+1 1 0 2
+2 0 0 1
+1 2 1 0
+
+ .
+Exercise 3.55. Find a 3 × 3 matrix A such that the matrix L in the A =
+LP DU decomposition isn’t unique.
+Exercise 3.56. Let A be n × n, say A = LP DU. Show how to express the
+LP DU decomposition of AT
+.
+Exercise 3.57. Assume A is symmetric and has an LDU decomposition.
+Show that if all the diagonal entries of D are non-negative, then A can be
+written A = CCT
+, where C is lower triangular. This expression is called the
+Cholesky decomposition of A. The Cholesky decomposition is frequently
+used in biostatistics, where A may typically be at least 5000 × 5000.
+Exercise 3.58. Find the LDU decomposition of the matrix
+A =
+
+
+1 1 1
+1 −1 0
+2 0 0
+
+ .
+Exercise 3.59. Write each of the matrices
+
+
+1 1 2 1
+1 −1 0 2
+2 0 0 1
+1 2 1 −1
+
+
+and
+
+
+0 0 0 1
+0 0 2 2
+0 2 4 4
+1 2 4 −3
+
+
+in the form LP DU where U = L
+T
+.
+Exercise 3.60. Prove the following:
+Proposition 3.20. Let A be a symmetric invertible matrix. Then there
+exists an expression A = LP DU with L, P, D, U as usual such that :
+(i) U = L
+T
+,
+(ii) P = P
+T = P
+−1
+, and
+(iii) P D = DP.
+Conversely, if L, P, D, U satisfy the above three conditions, then LP DU is
+symmetric.
+72
+Exercise 3.61. Let P be a partial permutation matrix. Show that the rank
+of P equals the rank of P
+T
+. (Hint: how is the rank related to the number
+of 1s?)
+Exercise 3.62. Let A be n × n and write A = LP DU. Show that the rank
+of A is the same as the rank of P. Deduce from this that the rank of A is
+the rank of AT
+. (Hint: the rank of LP DU is the same as the rank of P DU.
+But DU is upper triangular of rank n. If the ith row of P is zero, then so
+is the ith row of P DU. This implies P and P DU have the same rank.)
+Exercise 3.63. If A is nonsingular, what is the rank of AB? How about
+BA?
+Exercise 3.64. True or False: If A and B are n × n, then AB and BA
+have the same rank. Explain your reasoning. For example, if F give a
+counter-example.
+73
+3.5 Summary
+We began this Chapter with the notion of matrix multiplication. To form
+the product AB, the number of rows of B must be the same as the number
+of columns of A. We saw that matrix multiplication is associative. We
+introduced elementaary matrices and showed that left multiplication by an
+elementary matrix performs a row operation. Thus matrices can be row
+reduced by pre-multiplication by elementary matrices. This leads naturally
+to the notion of the inverse of an n × n matrix A, which is a matrix B such
+that AB = BA = In. We saw BA = In is enough to guarantee AB = In
+also, and we also saw that the invertible n × n matrices are exactly those
+of rank n. A key fact is that a square linear system Ax = b with invertible
+coefficient matrix has the unique solution x = A−1b.
+After discussing inverses, we introduced matrix groups, or as they are
+also known, linear groups, and gave several examples. We then applied the
+notion of a matrix group to find way of factoring an arbitrary matrix into the
+form LP DU. This is an often used method both in applied mathematics,
+for solving large systems, and in pure mathematics, in the study of matrix
+groups and other branches of algebra.
+74
+Chapter 4
+Fields and Vector Spaces
+In the first two chapters, we considered linear equations and matrices over
+the reals. We also introduced the off-on field F2 = {0, 1}, where 1 + 1 = 0,
+to give an example where we can solve linear systems and invert matrices
+without having to rely on the real numbers. We will begin this chapter with
+the introduction of the general notion of a field, which generalizes both the
+reals R and F2. This will immediately give us a whole new way considering
+of matrices, matrix algebra and, of course, linear systems.
+Our second goal here is to introduce the notion of an abstract vector
+space, which generalizes both the set of all real n-tuples R
+n and the set of
+all n-bit strings (F2)
+n
+. We will make a few other general definitions, and,
+finally, conclude by considering a special class of vector spaces known as
+inner product spaces.
+4.1 What is a Field?
+The goal of this section is to define the notion of a field and to give some of
+the basic examples: the rational numbers, the smallest field containing the
+integers, the real numbers and the complex numbers, unquestionably the
+most important of all the fields we will consider. We will also introduce the
+prime fields Fp. These are the finite fields defined by arithmetic modulo a
+prime p.
+4.1.1 The Definition of a Field
+Since algebra is the business of solving equations, let’s consider the most
+trivial equation ax = b. First consider what happens if a and b are elements
+75
+76
+of the integers Z, say a = 4 and b = 3. Thus we want to solve the equation
+4x = 3. The algebraic operation we use for solving this problem is, of course,
+known as division, and it expresses x as 3/4. This is the only solution, so
+we have to go outside of the of the integers to find a solution. Thus we
+introduce fractions, or quotients of integers.
+The quotient r/s, where r, s are integers and s 6= 0 is called a rational
+number . The set of all rational numbers will be denoted by Q, which reminds
+us of the term quotient. Two rationals r/s and u/v are equal if there is an
+integer k such that r = ku and s = kv. Addition and multiplication in Q
+are defined by:
+a
+b
++
+c
+d
+=
+ad + bc
+bd , (4.1)
+and
+a
+b
+·
+c
+d
+=
+ac
+bd. (4.2)
+Clearly the sum and product of two rational numbers is a well defined rational number (since bd 6= 0 if b, d 6= 0).
+The same problem would occur if we were given the less trivial job of
+solving a system of linear equations over the integers such as
+ax + by = m
+cx + dy = n,
+where a, b, c, d, m, n are all integers. Using Gaussian reduction to arrive at
+a solution, we will find that if ad − bc 6= 0, then
+x =
+dm − bn
+ad − bc
+y =
+−cm + an
+ad − bc .
+is a unique solution. Once again the rationals are needed.
+More generally, solving any linear system addition, subtraction, multiplication and division. A field will be a set which has these four algebraic
+operations provided they satisfy certain other properties we haven’t mentioned yet.
+We will first define the notion of a binary operation. Addition and multiplication on the integers are two basic examples of binary operations. Let
+S be any set, finite or infinite. The Cartesian product of S with itself is the
+set S ×S of all ordered pairs (x, y) of elements x, y ∈ S. Note, we call (x, y)
+an ordered pair to emphasize that (x, y) 6= (y, x) unless x = y. Thus,
+S × S = {(x, y) | x, y ∈ S}.
+77
+Definition 4.1. A binary operation on S is a function F with domain S ×S
+which takes its values F(x, y) in S.
+The notation for a function, or equivalently a mapping, F whose domain
+is a set A whose values are in a set B is F : A → B. Thus an operation is a
+function F : S ×S → S. We will often express a binary operation by writing
+something like x · y or x ∗ y for F(x, y). So, for example, the operation of
+addition on Z is a function S : Z × Z → Z defined by S(m, n) = m + n.
+We also need the notion of a subset being closed with respect to a binary
+operation.
+Definition 4.2. Let F be a binary operation on a set S. A subset T of S
+such that F(x, y) ∈ T for allwhenever x, y ∈ T is said to be closed under the
+binary operation.
+For example, the positive integers are closed under both addition and
+multiplication. The odd integers are closed under multiplication, but not
+closed under addition since, for instance, 1 + 1 = 2.
+We now state the definition of a field.
+Definition 4.3. Assume F is a set with two binary operations which are
+called addition and multiplication. The sum and product of two elements
+a, b ∈ F will be denoted by a + b and ab respectively. Suppose addition and
+multiplication satisfy the following properties are satisfied for all a, b, c ∈ F:
+(i) a + b = b + a (addition is commutative);
+(ii) (a + b) + c = a + (b + c) (addition is associative);
+(iii) ab = ba (multiplication is commutative);
+(iv) a(bc) = (ab)c (multiplication is associative);
+(v) a(b + c) = ab + ac (multiplication is distributive);
+Suppose further that
+(vi) F contains an element 0 called the additive identity such that a+ 0 = a
+and an element 1 called the multiplicative identity such that 1a = a
+for all a ∈ F;
+(vii) 0 6= 1;
+(viii) for every a ∈ F, there is an element −a called the additive inverse of
+a such that a + (−a) = 0; and
+78
+(ix) for every a 6= 0 in F, there is an element a
+−1
+, called the multiplicative
+inverse of a such that aa−1 = 1.
+Then F is called a field.
+We will write a − b for a + (−b). In particular, a − a = 0. In any field F,
+a0 = a(0 + 0) = a0 + a0,
+For adding −a0 to both sides and using the associativity of addition, we get
+0 = a0 − a0 = (a0 + a0) − a0 = a0 + (a0 − a0) = a0 + 0 = a0.
+Hence
+a0 = 0
+for all a ∈ F. The converse of this fact is one of the most important properties
+of a field.
+Proposition 4.1. Let F be a field. Then a0 = 0 for all a ∈ F. Moreover,
+whenever ab = 0, either a = 0 or b = 0. Put another way, if neither a nor b
+is zero, then ab 6= 0.
+Proof. The first claim was just proven. For the second claim, suppose ab = 0
+but a 6= 0. Then
+0 = a
+−1
+0 = a
+−1
+(ab) = (a
+−1
+a)b = 1b = b.
+Hence b = 0, which completes the proof.
+The property that ab = 0 implies either a = 0 or b = 0 will be used
+repeatedly. Another basic fact is
+Proposition 4.2. In any field F, the additive and multiplicative identities are unique. Moreover, the additive and multiplicative inverses are also
+unique.
+Proof. To show 0 is unique, suppose 0 and 00 are two additive identities. By
+definition,
+0
+0 = 00 + 0 = 0
+so 0 is indeed unique. The proof that 1 is unique is similar. To see additive inverses are unique, let a ∈ F have two additive inverses b and c. By
+associativity,
+b = b + 0 = b + (a + c) = (b + a) + c = 0 + c = c.
+79
+Thus b = c. The proof for multiplicative inverses is similar
+It follows from the uniqueness that for all a ∈ F,
+−a = (−1)a.
+For
+0 = 0a = (1 − 1)a = 1a + (−1)a.
+4.1.2 Arbitrary Sums and Products
+In a field, we can take the sum and product of any finite collection of elements. However, we have to say how to define and interpret expressions
+such as
+X
+k
+i=1
+xi and Y
+k
+i=1
+xi
+.
+Suppose we want to define the sum x1 +x2 +· · ·+xn of n arbitrary elements
+of a field F. We accomplish this with mathematical induction. The sum
+or product of one element is unambiguously defined. So suppose the sum
+x1 + x2 + · · · + xn−1 has been unambiguously defined. Then put
+x1 + x2 + · · · + xn−1 + xn = (x1 + x2 + · · · + xn−1) + xn.
+Likewise, put
+x1x2 · · · xn = (x1x2 · · · xn−1)xn.
+Then it follows from induction that the sum and product of any number of
+elements is well defined. In fact, in the above sum and product, the parens
+can be put anywhere, as we now show.
+Proposition 4.3. In any field F,
+x1 + x2 + · · · + xn−1 + xn =
+Xr
+i=1
+xi
+
++
+ Xn
+i=r+1
+xi
+
+, (4.3)
+for any r with 1 ≤ r < n. Similarly,
+x1x2 · · · xn =
+Yr
+i=1
+xi
+ Yn
+j=r+1
+xj
+
+, (4.4)
+for all r with 1 ≤ r ≤ n − 1. Moreover, the sum and product on the left
+hand side of (4.3) and (4.4) respectively can be reordered in any man
+80
+Proof. We will give the proof for sums and leave products to the reader, as
+the details in both cases are the same. We use induction on n. There is
+nothing to show for n = 1, so suppose n > 1 and the result is true for n − 1.
+If r = n − 1, there is also nothing to show. Thus assume r < n − 1. Then
+x1 + x2 + · · · + xn−1 + xn = (x1 + x2 + · · · + xn−1) + xn
+=
+Xr
+i=1
+xi +
+nX−1
+j=r+1
+xj
+
++ xn
+=
+Xr
+i=1
+xi +
+
+nX−1
+j=r+1
+xj + xn
+
+=
+Xr
+i=1
+xi
+
++
+ Xn
+j=r+1
+xj
+
+Hence the result is true for n, which completes the proof.
+To see that the left hand side of (4.3) can we written in any order, let
+y1, y2, . . . , yn be any reordering. Here n > 1 since otherwise. there’s nothing
+to prove. Assume the result holds for n − 1. Now yn = xk for some index k,
+and we can assume k < n. By the first argument,
+x1 + x2 + · · · + xn = (x1 + · · · + xk) + (xk+1 + · · · + xn)
+= (xk+1 + · · · + xn) + (x1 + · · · + xk)
+= (xk+1 + · · · + xn + x1 + · · · + xk−1) + xk
+= (xk+1 + · · · + xn + x1 + · · · + xk−1) + yn
+= (y1 + · · · + yn−1) + yn
+= y1 + · · · + yn−1 + yn.
+The next to last step uses the induction hypothesis since y1, y2, . . . , yn−1
+forms a rearrangement of x1, . . . , xk−1, xk+1, . . . , xn.
+4.1.3 Examples
+We now give some examples.
+Example 4.1 (Q). The fact that the rationals satisfy all the field axioms is a
+consequence of the basic arithmetic properties of the integers: associativity,
+commutativity and distributivity and the existence of 0 and 1. Indeed, all
+one needs to do is to use (4.1) and (4.2) to prove the field axioms for Q 
+81
+these properties of the integers. Note that the integers Z are not a field,
+since field axiom (viii) isn’t satisfied by Z. The only integers which have
+multiplicative inverses are ±1.
+Example 4.2 (R). The second example of a field is the set of real numbers
+R. The construction of the real numbers is actually somewhat technical, so
+we won’t try to explain it. For most purposes, it suffices to think of R as
+being the set of all decimal expansions
+±a1a2 · · · ar.b1b2 · · · ,
+where all ai and bj are integers between 0 and 9 and a1 6= 0. Note that
+there can be infinitely many bj to the right of the decimal point. We also
+have to make appropriate identifications for repeating decimals such as 1 =
+.999999 . . . . A very useful property of the reals is the fact that they have
+an ordering > such that any real number x is either positive , negative or 0,
+and the product of two numbers with the same sign is positive. This makes
+it possible to solve linear inequalities such as a1x1 + a2x2 + · · · + anxn > c.
+The reals also have the Archimedean property: if a, b > 0, then there exists
+an x > 0 so that ax > b. In other words, linear inequalities have solutions.
+Example 4.3 (F2). The field F2 consisting of 0 and 1 was introduced in
+the previous chapter. The condition 1 + 1 = 0 is forced on us, for 1 + 1 = 1
+would give 1 = 0, violating the definition of a field. However, we haven’t
+completely verified the field axioms for F2 since associativity hasn’t been
+fully verified. We wll leave this as an exercise.
+Another of the basic fields is C, the complex numbers, but we will postpone discussing it until the next section.
+4.1.4 An Algebraic Number Field
+Many examples of fields arise by extending a given field. We will now give
+an example of a field called an algebraic number field which is obtained by
+adjoining the square root of an integer to the rationals Q. In order to explain
+this example, let us first recall the
+Theorem 4.4 (Fundamental Theorem of Arithmetic). Let m be an integer
+greater than 1. Then m can be factored m = p1p2 · · · pk, where p1, p2, . . . , pk
+are primes. Moreover, this factorization is unique up to the order of the
+factors.
+Recall that a positive integer p is called prime if p > 1 and its only
+positive divisors are 1 and itself. For a proof of the Fundamental Theorem
+82
+of Arithmetic, the reader is referred to a text on elementary number theory.
+We say that a positive integer m is square free if its prime factorization has
+no repeated factors. For example, 10 = 2 · 5 is square free while 12 = 4 · 3
+isn’t.
+Let m ∈ Z be positive and square free, and let Q(
+√
+m) denote the set of
+all real numbers of the form a + b
+√
+m, where a and b are arbitrary rational
+numbers. It is easy to see that sums and products of elements of Q(
+√
+m) are
+also elements of Q(
+√
+m). Clearly 0 and 1 are elements of Q(
+√
+m). Hence,
+assuming the field axioms for Q allows us to conclude without any effort
+that all but one of the field axioms are satisfied in Q(
+√
+m). We still have to
+prove that any non zero element of Q(
+√
+m) has a multiplicative inverse.
+So assume a + b
+√
+m 6= 0. Thus at least one of a or b is non zero. It
+suffices to assume the a and b are integers without common prime factors;
+that is, a and b are relatively prime . The trick is to notice that
+(a + b
+√
+m)(a − b
+√
+m) = a
+2 − mb2
+.
+Hence, if a
+2 − mb2 6= 0, then
+1
+a + b
+√
+m
+=
+a − b
+√
+m
+a
+2 − mb2
+,
+so(a + b
+√
+m)
+−1
+exists in R and by definition is an element of Q(
+√
+m).
+To see that indeed a
+2 − mb2 6= 0, suppose not. Then
+a
+2 = mb2
+.
+This implies that m divides a
+2
+, hence any prime factor pi of m has to divide
+a itself. In other words, a = cm for some m ∈ Z. Hence c
+2m2 = mb2
+, so
+b
+2 = mc2
+. Repeating the argument, we see that m divides b. This implies
+that the original assumption that a and b are relatively prime is violated, so
+a
+2 − mb2 6= 0. Therefore we have proven
+Proposition 4.5. If m is a square free positive integer, then Q(
+√
+m) is a
+field.
+The field Q(
+√
+m) is in fact the smallest field containing both the rationals
+Q and √
+m.
+83
+Exercises
+Exercise 4.1. Prove that in any field (−1)a = −a.
+Exercise 4.2. Show directly that F = {a + b
+√
+2 | a, b ∈ Q} is a field
+under the usual operations of addition and multiplication in R. Also, find
+(1 −
+√
+2)−1 and (3 − 4
+√
+2)−1
+.
+Exercise 4.3. Let Z denote the integers. Consider the set Q of all pairs
+(a, b) where a, b ∈ Z and b 6= 0. Consider two pairs (a, b) and (c, d) to be
+the same if ad = bc. Now define operations of addition and multiplication
+on Q as follows:
+(a, b) + (c, d) = (ad + bc, bd) and (a, b)(c, d) = (ac, bd).
+Show that Q is a field. Can you identify Q?
+84
+4.2 The Integers Modulo a Prime p
+Let p denote an arbitrary prime. The purpose of this section is to define a
+field Fp with p elements for every prime p.
+Let us first make a definition.
+Definition 4.4. A field with only a finite number of elements is called a
+Galois field. A field with a prime number of elements is known as a prime
+field.
+Since every field has to contain at least two elements, the simplest example of a Galois field is F2. Of course, F2 is also a prime field. To define
+a field Fp with p elements for any p > 1, we will use modular arithmetic, or
+arithmetic modulo p.
+Everyone knows how to tell time, which is an example of using addition
+modulo 12. The thirteenth hour is 1pm, the fourteenth is 2pm and so forth.
+Arithmetic modulo p is addition and multiplication in which all that is used
+are remainders after division by p.
+To begin, put
+Fp = {0, 1, 2, . . . , p − 1}. (4.5)
+The elements of Fp are integers, but they should be thought of as remainders.
+The way we will add them is as follows. If a and b in Fp, first take their
+sum in the usual way to get the integer a + b. If a + b < p, then we define
+the sum a + b in Fp to be a + b. But, if a + b ≥ p, we use division with
+remainder. This is the principle explained in the next Proposition.
+Proposition 4.6. Suppose a and b are non-negative integers with b 6= 0.
+Then one can uniquely express a as a = qb + r, where q is a non-negative
+integer and 0 ≤ r < b.
+Proof. If a < b, put r = a, and if a = b, put r = 0. If a > b, some positive
+multiple sb of b satisfies sb > a. Let s be the least positive integer such
+that this happens. Here we are using the fact that every non-empty set of
+positive integers has a least element. Put q = s − 1. Thus a = qb + (a − qb),
+so we are done if we show that r = a − qb satisfies 0 ≤ r < b. Now
+a − qb = a − (s − 1)b ≥ 0 by definition. Also a − qb = (a − sb) + b < b since
+a < sb. Thus 0 ≤ r < b, so the proof is finished.
+Thus, if a + b ≥ p, write
+a + b = qp + r,
+85
+where q is a nonnegative integer and r is an integer such that 0 ≤ r <
+p. Then the sum of a and b in Fp is defined to be r. This operation is
+called addition modulo p. It is a special case of modular addition. To define
+the product of a and b in Fp, we use the remainder upon dividing ab by
+p in exactly the same way. Note that 0 and 1 are clearly additive and
+multiplicative identities.
+Example 4.4. Let’s carry out the definitions of addition and multiplication
+in F3 = {0, 1, 2}. Of course, 0 and 1 are always the identities, so all sums and
+products involving them are determined. To completely determine addition
+in F3, we only have to define 1 + 1, 1 + 2 and 2 + 2. First of all, 1 + 1 < 3,
+so by definition, 1 + 1 = 2. To find 2 + 2, first take the usual sum 4, then
+express 4 = 3 + 1 as in Proposition 4.6. The remainder is 1, so 2 + 2 = 1
+in F3. Similarly, 1 + 2 = 0 in F3. Thus −2 = 1 and −1 = 2. To find all
+products, it remains to find 2·2. But 2·2 = 4 in usual arithmetic, so 2·2 = 1
+in F3. Thus 2−1 = 2. A good way to summarize addition and multiplication
+is to construct addition and multiplication tables. The addition table for F3
+is
++ 0 1 2
+0 0 1 2
+1 1 2 0
+2 2 0 1
+We suggest that the reader construct the multiplication table for F3.
+With the above definitions of addition and multiplication, we can prove
+Theorem 4.7. If p is a prime, then Fp, as defined above, is a field.
+We will skip the proofs that addition and multiplication are commutative, associative and distributive. The existence of additive inverses is easy
+to see; the inverse of a is p − a. We have already noted that 0 and 1 are the
+identities, and clearly 0 6= 1. The rest of the proof involves showing that
+multiplicative inverses exist. This will require the basic facts about the integers stated above and an interesting diversion into some of the combinatorics
+of finite sets, namely the Pigeon Hole Principle.
+Let us first make a general definition.
+Definition 4.5. Let X and Y be sets, and let φ : X → Y be a mapping.
+The set X is called the domain of φ and Y is called the target of φ. The
+mapping φ is called one to one or injective if φ(x) = φ(x
+0
+) implies x = x
+0
+.
+If every y ∈ Y has the form y = φ(x) for some x ∈ X. then φ is said to be
+86
+onto or surjective. In other words, φ is surjective if the image of φ
+φ(X) = {φ(x) | x ∈ X} ⊂ Y
+of φ is Y . If φ is both injective and surjective, then φ is said to be a bijection.
+A bijection is also called a one to one correspondence.
+If X is finite, the number of elements of X is denoted by |X|.
+Proposition 4.8 (The Pigeon Hole Principle). Let X and Y be finite sets
+with |X| = |Y |, and suppose φ : X → Y is a map. If φ is either injective or
+surjective, then φ is a bijection.
+Proof. If φ is injective, then X and its image φ(X) have the same number of
+elements. But this implies φ(X) = Y , so φ is surjective, hence a bijection.
+On the other hand, suppose φ is surjective, i.e. φ(X) = Y . Then |X| ≥ |Y |.
+But if φ(x) = φ(x
+0
+) where x 6= x
+0
+, then in fact |X| > |Y |. This contradicts
+the assumption that |X| = |Y |, hence φ is a bijection.
+We now return to the proof that every nonzero element a of Fp has an
+inverse a
+−1
+. First, we show multiplication in Fp satisfies the conclusion of
+Proposition 4.1:
+Proposition 4.9. Let p be a prime number. If ab = 0 in Fp, then either
+a = 0 or b = 0 (or both).
+Proof. Since ab = 0 in Fp is the same thing as saying that p divides the
+usual product ab in Z, the Proposition follows from the fact that if the prime
+number p divides ab, then p divides a or p divides b. This is an immediate
+consequence of the Fundamental Theorem of Arithmetic (Theorem 4.4).
+This Proposition implies that multiplication by a fixed non-zero element
+a ∈ Fp induces an injective map
+φa : Fp \ {0} −→ Fp \ {0}
+x 7−→ ax
+Here Fp \ {0} is the set Fp without 0. To see that φa is injective, let φa(x) =
+φa(y), that is ax = ay. Thus a(x − y) = 0, so x − y = 0 since a 6= 0
+(Proposition 4.9). Therefore φa is indeed injective. Since Fp \ {0} is a finite
+set, the Pigeon Hole Principle says that φa is a bijection. In particular, there
+exists an x ∈ Fp \ {0}, such that ax = 1. Hence we have shown the existence
+of an inverse of a.
+If we relax the definition of a field by not assuming multiplicative inverses
+exist, the resulting system is called a ring. Every field is a ring, but there
+87
+exist rings such as the integers which aren’t fields. For another example,
+consider Z4 to be {0, 1, 2, 3} with addition and multiplication modulo 4.
+Then Z4 is a ring, but not a field since 2 · 2 = 0 in Z4 (hence 2 is not
+invertible). In fact, if q is a composite number, then the ring Zq (defined in
+an analogous way) is a not a field. Note that the integers Z also form a ring
+which is not a field.
+4.2.1 A Field with Four Elements
+To show there exist fields that aren’t prime fields, we will now construct
+a field F = F4 with 4 elements. The method is to simply explicitly write
+down F’s addition and multiplication tables. Let 0, 1, α, and β denote the
+elements of F. The addition table is defined as follows. (Note that we have
+ignored addition by 0.)
++ 1 α β
+1 0 β α
+α β 0 1
+β α 1 0
+The multiplication table (omitting the obvious cases 0 and 1) is
+· α β
+α β 1
+β 1 α
+Then we have
+Proposition 4.10. The set F4 = {0, 1, α, β} having 0 and 1 as identities
+and addition and multiplication defined as above is a field.
+The verification that F4 satifies the field axioms can be done by hand,
+and so we will omit it. A general way of constructing the Galois fields will
+be given in a later chapter.
+Since α
+2 = β and β
+2 = α, it follows that α
+3 = β
+3 = 1. Hence α
+4 = α and
+β
+4 = β, so all elements of F4 satisfy the equation x
+4 − x = 0 since 0 and 1
+trivially do. Now by Section 4.12 below, we can view x
+4 −x as a polynomial
+in a variable x over the field F2, where we have the identity x
+4 −x = x
+4 +x.
+Thus, we can factor x
+4 − x = x(x + 1)(x
+2 + x + 1) (remember 1 + 1 = 0 so
+2x = 2x
+2 = 0). The elements α and β are the roots of x
+2 + x + 1 = 0. We
+will give appropriate generalizations of these statements for all Galois fields
+in a later chapter.
+We will prove in the next chapter that the number of elements in a Galois
+field F is always a power of a prime, i.e. is p
+n
+for some prime p. This prime
+88
+is called the characteristic of the field and is the topic of the next section.
+In fact, it will be shown later that for every prime p and integer n > 0,
+there eists a Galois field with p
+n
+elements, and any two Galois fields with
+the same number of elements are essentially the same.
+4.2.2 The Characteristic of a Field
+If F is a finite field, then some positive multiple r of the identity 1 ∈ F has
+to be 0. Indeed, the positive multiples r1 of 1 can’t all be different, so there
+have to be an m > 0 and n > 0 with say m > n such that m1 = n1 in F. But
+this implies r1 = 0 with r = m − n. I claim that the least positive integer r
+such that r1 = 0 is a prime. For if r can be expressed as a product r = st,
+where s, t are integers greater than 1, then r1 = (st)1 = (s1)(t1) = 0. As F
+is a field, it follows that either s1 = 0 or t1 = 0, contradicting the choice of
+r. Therefore r is a prime. We now make the following definition:
+Definition 4.6. Let F be an arbitrary field. If q1 = 0 for some positive
+integer q, then, we say that F has positive characteristic. In that case, the
+least such q, which we showed above to be a prime, is called the characteristic
+of F. If q1 6= 0 for all q > 0, we say F has characteristic 0.
+To summarize, we state
+Proposition 4.11. If a field F has positive characteristic, then its characteristic is a prime p, and pa = 0 for all a ∈ F.
+Proof. We already proved that if the characteristic of F is nonzero, then it’s
+a prime. If p1 = 0, then pa = p(1a) = (p1)a = 0a = 0 for all a ∈ F.
+Example 4.5. The characteristic of Fp is p. The characteristic of the field
+F4 of Example 4.2.1 is 2.
+Proposition 4.12. The characteristics of Q, R and C are all 0. Moreover,
+the characteristic of any subfield of a field of characteristic 0 is also 0.
+The notion of the characteristic has a nice application.
+Proposition 4.13. If F is a field of characteristic p > 0, then for any
+a1, . . . , an ∈ F,
+(a1 + · · · + an)
+p = a
+p
+1 + · · · + a
+p
+n
+.
+This can be proved by induction using the Binomial Formula, which says
+that if x and y are commuting variables and n is a positive integer,
+(x + y)
+n =
+Xn
+i=0
+
+n
+i
+
+x
+n−i
+y
+i
+, (4.6)
+89
+where
+
+n
+i
+
+=
+n!
+(n − i)!i!
+.
+Another application of the characteristic is:
+Proposition 4.14. For every non zero a ∈ Fp, a
+p−1 = 1. In particular,
+a
+−1 = a
+p−2
+.
+Proof. This is an exercise.
+Example 4.6. For example, suppose we want to compute the inverse of
+5 in F23. If you have a calculator handy, then you will see that 521 =
+476837158203125, which is congruent to 14 modulo 23. Thus, 5−1 = 14.
+4.2.3 Connections With Number Theory
+Proposition 4.14 implies a basic result in number theory (and conversely).
+First, we state the definition of a congruence.
+Definition 4.7. Let a, b, c be integers. Then we say a is congruent to b
+modulo c if a − b is divisible by c.
+The congruence is expressed by writing a ≡ b mod c. Stating Proposition
+4.14 in terms of congruences gives a classical result due to Fermat.
+Theorem 4.15 (Fermat’s Little Theorem ). Suppose p > 1. Then for any
+integer a 6≡ 0 mod p, a
+(p−1) ≡ 1 mod p.
+There are further connections between properties of prime fields and
+elementary number theory. For any integers a and b which are not both 0,
+let d > 0 be the largest integer which divides both a and b. We call d the
+greatest common divisor of a and b. The greatest common divisor, or simply,
+gcd of a and b is traditionally denoted (a, b). For example, (4, 10) = 2. A
+basic fact about the gcd proved in any book on number theory is
+Proposition 4.16. Let a and b be integers which are not both 0, and let
+d be their gcd. Then there exist integers u and v such that au + bv = d.
+Conversely, if there exist integers u and v such that au + bv = d, then
+d = (a, b).
+Definition 4.8. Let a, b, c be integers. Then we say a is congruent to b
+modulo c if a − b is divisible by c. If a is congruent to b modulo c, we write
+a ≡ b mod c.
+90
+The following result gives another proof that non-zero elements of Fp
+have multiplicative inverses.
+Proposition 4.17. Let a, b, q be positive integers. Then the congruence
+equation ax ≡ 1 mod q has a solution if and only if (a, q) = 1.
+Fermat’s Little Theorem suggests that one way to test whether m is
+prime is to see if a
+(m−1) ≡ 1 mod m for a few well chosen integers a. This
+doesn’t give a foolproof test, but it is very good, and in fact it serves as the
+basis of the of some of the recent research in number theory on the topic of
+testing for primeness.
+91
+Exercises
+Exercise 4.4. Prove that in any field (−1)a = −a.
+Exercise 4.5. Show directly that F = {a + b
+√
+2 | a, b ∈ Q} is a field
+under the usual operations of addition and multiplication in R. Also, find
+(1 −
+√
+2)−1 and (3 − 4
+√
+2)−1
+.
+Exercise 4.6. Describe addition and multiplication for the field Fp having
+p elements for p = 5. That is, construct addition and multiplication tables
+for F5. Check that every element a 6= 0 has a multiplicative inverse.
+Exercise 4.7. Construct addition and multiplication tables for F7, and use
+them to find both −(6 + 6) and (6 + 6)−1
+in F7.
+Exercise 4.8. Let F be a field and suppose that F
+0 ⊂ F is a subfield, that
+is, F
+0
+is a field for the operations of F. Show that F and F
+0 have the same
+characteristic.
+Exercise 4.9. Show that the characteristic of Fp is p.
+Exercise 4.10. Strengthen Proposition 4.11 by showing that if F is a field
+of characteristic p > 0, and m1 = for some integer m, then m is a multiple
+of p.
+Exercise 4.11. Suppose the field F contains Fp as a subfield. Show that
+the characteristic of F is p.
+Exercise 4.12. Suppose that F has characteristic p > 0. Show that the
+multiples of 1 (including 0) form a subfield of F with p elements.
+Exercise 4.13. Show that if F is a finite field of characteristic p, then for
+any a, b ∈ F, we have (a + b)
+p = a
+p + b
+p
+.
+Exercise 4.14. Prove Proposition 4.13. That is, show that if F is a finite
+field of characteristic p, then for any a1, . . . , an ∈ F,
+(a1 + · · · + an)
+p = a
+p
+1 + · · · + a
+p
+n
+.
+Hint: Use induction with the aid of the result of Exercise 4.13 and the
+binomial theorem.
+Exercise 4.15. Use Proposition 4.13 to show that a
+p = a for all a ∈ Fp.
+Use this to deduce Proposition 4.14.
+92
+Exercise 4.16. In the definition of the field F4, could we have altered the
+definition of multiplication by requiring α
+2 = β
+2 = 1, but leaving all the
+other rules as is, and still get a field?
+Exercise 4.17. Suppose F is a field of characteristic p. Show that if a, b ∈ F
+and a
+p = b
+p
+, then a = b.
+Exercise 4.18. Show that F is a finite field of characteristic p, then F is
+perfect. That is, every element in Fp is a pth power. (Hint: use the Pigeon
+Hole Principle.)
+Exercise 4.19. Use Fermat’s Theorem to find 9−1
+in F13. Use this to solve
+the equation 9x ≡ 15 mod 13.
+Exercise 4.20. Find at least one primitive element β for F13? (Calculators
+should be used here.) Also, express 9−1 using this primitive element instead
+of Fermat’s Theorem.
+Exercise 4.21. Write out the addition and multiplication tables for F6. Is
+F6 is a field? If not, why not?
+93
+4.3 The Field of Complex Numbers
+We will now introduce the field C of complex numbers. The complex numbers are astonishingly rich, and an incredible amount of mathematics depends on them. From our standpoint, the most notable fact about the
+complex numbers is that they form an algebraically closed field in the sense
+that every polynomial function
+f(x) = x
+n + a1x
+n−1 + · · · + an−1x + an
+with complex coefficients has a root in C. (See Example 4.12 for a complete
+definition of the notion of a polynomial.) That is, there exists an α ∈ C
+such that f(α) = 0. This statement, which is due to C. F. Gauss, is called
+the Fundamental Theorem of Algebra.
+4.3.1 The Construction
+The complex numbers arise from the problem that if a is a positive real
+number, then x
+2 + a = 0 apparently doesn’t have any roots. In order to
+give it roots, we have to make sense of an expression such as √
+−a. The
+solution turns turns out to be extremely natural. The real xy-plane R
+2
+with its usual component-wise addition also has a multiplication such that
+certain points (namely points on the y-axis), when squared, give points on
+the negative x-axis. If we interpret the points on the x-axis as real numbers,
+this solves our problem. It also turns out that under this multiplication on
+R
+2
+, every nonzero pair (a, b)
+T has a multiplicative inverse. The upshot is
+that we obtain the field C of complex numbers. The marvelous and deep
+consequence of this definition is that C contains not only numbers such as
+√
+−a, it contains the roots of all polynomial equations with real coefficients.
+Let us now give the details. The definition of multiplication on R
+2
+is
+easy to state and has a natural geometric meaning discussed below. First
+of all, we will call the x-axis the real axis, and identify a point of the form
+(a, 0)T with the real number a. That is, (a, 0)T = a. Hence multiplication
+on R can be reformulated as ab = (a, 0)T
+·(b, 0)T = (ab, 0)T
+. We extend this
+multiplication to all of R
+2 by putting
+(a, b)
+T
+· (c, d)
+T = (ac − bd, ad + bc)
+T
+. (4.7)
+(Note: do not confuse this with the inner product on R
+2
+.)
+We now make the following definition.
+Definition 4.9. Define C to be R
+2 with the usual component-wise addition
+(vector addition) and with the multiplication defined by (4.7).
+94
+Addition and multiplication are clearly binary operations. Notice that
+(0, a)
+T
+· (0, a)
+T = (−a
+2
+, 0)T
+, so that (0, a)
+T
+is a square root of −a
+2
+. It is
+customary to denote (0, 1)T by i so
+i =
+√
+−1.
+Since any point of R
+2
+can be uniquely represented
+(a, b)
+T = a(1, 0)T + b(0, 1)T
+, (4.8)
+we can therefore write
+(a, b)
+T = a + ib.
+In other words, by identifying the real number a with the vector a(1, 0)T on
+the real axis, we can express any element of C as a sum of a real number, its
+real part, and a multiple of i, its imaginary part. Thus multiplication takes
+the form
+(a + ib)(c + id) = (ac − bd) + i(ad + bc).
+The Fundamental Theorem of Algebra is stated as follows:
+Theorem 4.18. A polynomial equation
+f(z) = z
+n + an−1z
+n−1 + · · · + a1z + a0 = 0
+with complex (but possibly real) coefficients has n complex roots.
+There are many proofs of this theorem, but none of them are elementary
+enough to repeat here. Every known proof draws on some deep result from
+another field, such as complex analysis or topology.
+An easy but important consequence is that given any polynomial p(z)
+with complex coefficients, there exist r1, . . . , rn ∈ C which are not necessarily
+all distinct such that
+p(z) = (z − r1)(z − r2). . .(z − rn).
+We now prove
+Theorem 4.19. C is a field containing R as a subfield.
+Proof. The verification of this theorem is simply a computation. The real
+number 1 is the identity for multiplication in C, and 0 = (0, 0)T
+is the
+identity for addition. If a + ib 6= 0, then a + ib has a multiplicative inverse,
+namely
+(a + ib)
+−1 =
+a − ib
+a
+2 + b
+2
+. (4.9)
+The other properties of a field follow easily from the fact that R is a field.
+95
+4.3.2 The Geometry of C
+We now make some more definitions which lead to some beautiful geometric
+properties of C. First of all, the conjugate z of z = a + ib is defined by
+z = a − ib. It is easy to check the following identities:
+w + z = w + z and (4.10)
+wz = w z. (4.11)
+The real numbers are obviously the numbers which are equal to their conjugates. Complex conjugation is the transformation from R
+2
+to itself which
+sends a point to its reflection through the real axis.
+Formula (4.9) for (a + ib)
+−1 above can now be expressed in a new way.
+Let z = a + ib 6= 0. Since zz = a
+2 + b
+2
+, we get
+z
+−1 =
+z
+a
+2 + b
+2
+.
+Notice that the denominator of the above formula is the square of the length
+of z. The length of a complex number z = a + ib is called its modulus and
+is denoted by |z|. Thus
+|z| = (zz)
+1/2 = (a
+2 + b
+2
+)
+1/2
+,
+and
+z
+−1 =
+z
+|z|
+2
+.
+Since wz = w z, the modulus of a product is the product of the moduli:
+|wz| = |w||z|. (4.12)
+In particular, the product of two unit length complex numbers also has
+length one. Now the complex numbers of unit length are just those on the
+unit circle C={x
+2 + y
+2 = 1}. Every point of C can be represented in the
+form (cos θ,sin θ) for a unique angle θ such that 0 ≤ θ < 2π. It is convenient
+to use a complex valued function of θ ∈ R to express this. We define the
+complex exponential to be the function
+e
+iθ := cos θ + isin θ. (4.13)
+The following proposition is geometrically clear.
+Proposition 4.20. Any z ∈ C can be represented as z = |z|e
+iθ for some
+θ ∈ R. θ is unique up to a multiple of 2π.
+96
+The value of θ in [0, 2π) such that z = |z|e
+iθ is called the argument of z.
+The key property of the complex exponential is the identity
+e
+i(θ+µ) = e
+iθe
+iµ
+, (4.14)
+which follows from the standard trigonometric formulas for the sine and
+cosine of the sum of two angles. (We will give a simple geometric proof of this
+when we study rotations in the plane.) This gives complex multiplication a
+geometric interpretation. Writing w = |w|e
+iµ, we see that
+wz = (|w|e
+iµ)(|z|e
+iθ) = (|w||z|)e
+i(µ+θ)
+.
+In other words, the product wz is obtained by multiplying the lengths of
+w and z and adding their arguments. (This gives another verification that
+|wz| = |w||z|.)
+97
+Exercises
+Exercise 4.22. Express all solutions of the equation z
+3 + 1 = 0 in the form
+e
+iθ and interpret them as complex numbers.
+Exercise 4.23. Factor z
+4 −1 into the form (z −α1)(z −α2)(z −α3)(z −α4).
+Exercise 4.24. Find all solutions of the linear system
+ix1 + 2x2 + (1 − i)x3 = 0
+−x1 + ix2 − (2 + i)x3 = 0
+Exercise 4.25. Suppose p(x) ∈ R[x]. Show that the roots of p(x) = 0 occur
+in conjugate pairs, that is λ, µ ∈ C where λ = µ.
+Exercise 4.26. Let a, b, c, d be arbitrary integers. Show that there exist
+integers m and n such that (a
+2 + b
+2
+)(c
+2 + d
+2
+) = m2 + n
+2
+.
+98
+4.4 Vector Spaces
+Whenever term ”space“ is used in a mathematical context, it refers to a
+vector space, viz. real or complex n-space, the space of continuous functions
+on the line, the space of self adjoiont linear operators and so on. The
+purpose of this section is to define the notion of a vector space and to give
+some examples.
+4.4.1 The Notion of a Vector Space
+There many situations in which one deals with sets whose elements can be
+added and multiplied by scalars, in a way that is analogous with vector
+addition and scalar multiplication in R
+n
+. For example, consider the set of
+all real valued functions whose domain is a closed interval [a, b] in R, which
+we will denote by R
+[a,b]
+. Addition and scalar multiplication of functions is
+usually defined pointwise. That is, if f and g are elements of R
+[a,b]
+, then
+f + g is defined at x ∈ [a, b] by putting
+(f + g)(x) = f(x) + g(x).
+Likewise, if r is any real number, then rf ∈ R
+[a,b]
+takes the value
+(rf)(x) = rf(x)
+at x ∈ [a, b]. The key point is that we have defined sums and scalar multiples
+such that R
+[a,b]
+is closed under these two operations in the sense introduced
+in Section 4.1. and all scalar multiples of a single f ∈ R
+[a,b] are also elements
+of R
+[a,b]
+. When a set S admits an addition (resp. scalar multiplication) with
+this property, we will say that S is closed under addition (resp. scalar
+multiplication).
+A more refined example is the set C[a, b] of all continuous real valued
+functions on [a, b]. Since C[a, b] ⊂ R
+[a,b]
+, and the definitions of addition
+and scalar multiplication already been given for R
+[a,b]
+, we can just adopt
+the addition and scalar multiplication we already have in R
+[a,b]
+. There is
+something to worry about, however. We need to chack that C[a, b] is closed
+under the addition and scalar multiplication from R
+[a,b]
+. But this is guaranteed by a basic theorem from calculus: the pointwise sum of two continuous
+functions is continuous and any scalar multiple of a continuous function is
+continuous. Hence f + g and rf belong to C[a, b] for all f and g in C[a, b]
+and any real scalar r.
+We now give the definition of a vector space over a field F. It will be
+clear that, under the definitions of addition and scalar multiplication given
+above, R
+[a,b]
+is a vector space over R.
+99
+Definition 4.10. Let F be a field and V a set. Assume that there is a
+binary operation on V called addition which assigns to each pair of elements
+a and b of V a unique sum a + b ∈ V . Assume also that there is a second
+operation, called scalar multiplication, which assigns to any r ∈ F and any
+a ∈ V a unique scalar multiple ra ∈ V . Suppose that addition and scalar
+multiplication together satisfy the following axioms.

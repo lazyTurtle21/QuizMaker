@@ -1,6 +1,8 @@
-adjoint matrix obj
+adjacency matrix obj
+adjoint matrix mtrx
+adjunct matrix mtrx
 adjoint of a matrix obj
-adjoint typ
+adjoint obj
 affine set obj
 affine transformation act
 algebraic multiplicity obj
@@ -13,7 +15,9 @@ back-substitution act
 basis obj
 best approximation act
 best rank one approximations act
-cartesian product obj
+block typ
+block matrix mtrx
+cartesian product act
 cauchy-buniakowsky-schwarz trm
 cauchy-schwarz-buniakowsky trm
 change of basis act
@@ -21,8 +25,9 @@ change of variable act
 change-of-basis problem trm
 characteristic equation obj
 characteristic polynomial obj
+cholesky factorization act
 closure under addition and scalar multiplication act
-coefficient matrix obj
+coefficient matrix mtrx
 cofactor expansion act
 cofactor obj
 column exchange act
@@ -31,8 +36,9 @@ column method trm
 column space obj
 column vector obj
 complex conjugate obj
-complex euclidean inner product obj
-complex matrix obj
+complex euclidean inner product act
+complex matrix mtrx
+complex symmetric matrix mtrx
 complex n-tuple obj
 complex number obj
 complex vector space obj
@@ -46,21 +52,23 @@ cosine obj
 cosine theorem trm
 cramer’s rule trm
 cross product term obj
-definition obj
+dependent typ
 dependent variable obj
 determinant obj
 determinant test act
 determinant test for invertibility act
-diagonal matrix obj
+diagonal matrix mtrx
 diagonal typ
-diagonalizable matrix obj
+diagonalizable matrix mtrx
+diagonalizable typ
+diagonalization act
 difference equation obj
-difference obj
+difference act
 differential equation obj
 dimension obj
 dimension theorem trm
 distance between points obj
-dot product obj
+dot product act
 dual problem trm
 echelon form typ
 eigendecomposition act
@@ -70,15 +78,22 @@ eigenvalue decomposition act
 eigenvalue obj
 eigenvector obj
 elementary row operation act
+empty set obj
+nonempty set obj
 entry obj
+even number obj
+odd number obj
 equal matrices obj
 euclidean typ
 euclidean norm obj
 euclidean space obj
+euclidean vector space obj
 factor obj
+factorization act
 finite element method trm
 finite-dimensional typ
 finite-dimensional vector space obj
+forward elimination act
 forward substitution act
 four fundamental subspaces obj
 fourier coefficients obj
@@ -93,29 +108,35 @@ gauss–jordan elimination act
 general solution obj
 general solution to a linear system obj
 geometric multiplicity obj
-gram–schmidt act
+gram-schmidt act
+gram-schmidt method trm
 gram-schmidt process trm
 gram-schmidt orthogonalization act
-hermitian matrix obj
+hermitian matrix mtrx
+conjugate transpose mtrx
+hermitian transpose mtrx
 hermitian typ
 homogeneous typ
-identity matrix obj
+identity matrix mtrx
 imaginary part obj
 inconsistent linear system obj
 indefinite quadratic form typ
+independent typ
 independent variable obj
 infinite-dimensional vector space obj
 initial condition obj
 initial-value problem trm
-inner product obj
+inner product act
 intersection obj
 intersection of spaces obj
 intersection of vector spaces obj
 inverse obj
-invertible matrix obj
+invertible matrix mtrx
+gram-Schmidt method trm
 invertible typ
+isomorphism trm
 iterative method trm
-kronecker product obj
+kronecker product act
 kronecker form typ
 least squares act
 least squares approximation act
@@ -132,17 +153,17 @@ linear equation obj
 linear form typ
 linear independence trm
 linear inequality obj
+linear map obj
 linear span obj
 linear system obj
 linear transformation act
 linearly dependent set obj
 linearly independent set obj
-lower triangular matrix obj
+lower triangular matrix mtrx
 magnitude obj
 main diagonal obj
-markov matrix obj
+markov matrix mtrx
 markov typ
-matrices obj
 matrix factorization act
 matrix multiplication act
 matrix norm obj
@@ -155,19 +176,26 @@ minimax principle trm
 minimum principle trm
 minor obj
 modulus obj
+multiplication act
+negative definite typ
+negative semidefinite typ
+negative definite matrix mtrx
+negative semidefinite matrix mtrx
 negative definite quadratic form typ
 negative semidefinite quadratic form typ
 network models trm
-noninvertible matrix obj
+non-homogeneous typ
+noninvertible matrix mtrx
 noninvertible typ
-nonsingular matrix obj
+nonsingular matrix mtrx
 nonsingular typ
 nontrivial solution obj
 norm obj
+normal typ
 normal equation obj
 normal to a line obj
 normal to a plane obj
-normal typ
+normal matrix mtrx
 normalized vector obj
 normalizing act
 null space obj
@@ -177,8 +205,11 @@ orthogonal change of variable act
 orthogonal projection obj
 orthogonal set obj
 orthogonal typ
-orthogonal vector obj
-orthogonally diagonalizable matrix obj
+orthogonal basis obj
+orthogonal complement obj
+orthogonal matrix mtrx
+orthogonal vectors obj
+orthogonally diagonalizable matrix mtrx
 orthonormal basis obj
 orthonormal set obj
 orthonormal typ
@@ -188,19 +219,25 @@ parameter obj
 parametric equation obj
 particular solution obj
 permutation formula obj
-permutation matrix obj
+permutation matrix mtrx
 perpendicular vector obj
 pivot obj
 pivot variable obj
 plane obj
+point obj
 point-normal equation obj
+polar decomposition act
 polar form of z obj
+positive definite typ
+positive semidefinite typ
+positive definite matrix mtrx
+positive semidefinite matrix mtrx
 positive definite quadratic form typ
 positive semidefinite quadratic form typ
 principal axes theorem trm
-projection matrix obj
+product act
+projection matrix mtrx
 projection obj
-projection onto a line obj
 property obj
 pythagoras’s law trm
 pythagorean theorem trm
@@ -209,10 +246,12 @@ qr factorization act
 quadratic form typ
 rank obj
 rank of a matrix obj
-real matrix obj
+real matrix mtrx
 real part obj
 reduced row echelon form typ
 reversible typ
+right-hand rule trm
+rotation matrix mtrx
 row echelon form typ
 row exchange act
 row expansion act
@@ -224,50 +263,61 @@ row space obj
 row vector obj
 row-column method trm
 scalar multiplication act
-scalar product obj
+scalar product act
 schwarz inequality trm
+semidefinite quadratic form typ
+set obj
+similar typ
 similar matrices obj
 similarity invariant obj
 similarity transformation act
 simplex method trm
 singular value decomposition trm
+skew symmetric matrix mtrx
 slope obj
 solution space obj
 span obj
 spectral decomposition act
-square matrix obj
+square matrix mtrx
 square typ
 standard bases obj
 standard basis obj
 standard unit vector obj
 subspace obj
-sum obj
+sum act
 sum of spaces obj
 sum of vector spaces obj
 svd trm
-symmetric matrix obj
+symmetric matrix mtrx
 symmetric typ
 system of linear equations obj
-tensor product obj
+tensor product act
 test for invertibility trm
 the jordan form typ
 theorem trm
 trace obj
-transition matrix obj
-transpose matrix obj
-transpose typ
+transition matrix mtrx
+transpose obj
 triangle inequality trm
-triangular matrix obj
+triangular matrix mtrx
 triangular typ
 trigonometric polynomial obj
 trivial solution obj
 unit vector obj
-upper triangular matrix obj
+unitary typ
+unitary matrix mtrx
+unitarily diagonalizable matrix mtrx
+unitary vector space obj
+upper triangular matrix mtrx
+vandermonde matrix mtrx
 vector obj
-vector form of a line obj
-vector form of a plane obj
 vector form typ
+vector product act
 vector space obj
 vector subspace obj
 wronskian obj
+wilkinson matrix mtrx
 zero subspace obj
+zero vector space obj
+zero matrix mtrx
+zero obj

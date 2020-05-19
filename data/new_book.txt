@@ -311,7 +311,7 @@ Insteadof counting links,PageRank essentially interpretsalinkofpageAtopage
 Basavoteof pageAfor pageB.PageRank then assessesthe importanceofa page 
 by the number of received votes. PageRank also considers the importance of the 
 pagethat caststhevote, sincevotesofsome pageshaveahighervalue,andthusalso 
-assignahighervaluetothe page theypoint to.Important pages willbe ratedhigher 
+assignahighervaluetothe page they point to.Important pages willbe ratedhigher 
 and thus leadtoahigher positioninthe search results.2 
 
 Letusdescribe(model)thisidea mathematically.Our presentationusesideas from 
@@ -645,8 +645,8 @@ asitsaxes.This,however,does neitherholdinthisexamplenorin practice. Thereforeone
 aslittleas possible”fromthegiven 
 points.One possible approachisto choosethe parameters . 
 and . 
-in order to minimizethesumofthesquared 
-distances betweenthegiven pointsandthestraight line. 
+in order to minimize the sum of the squared 
+distances between the given points and the straight line. 
 Once the parameters . 
 and . 
 have been determined, the resulting line y(t) 
@@ -658,19 +658,19 @@ figure:
 The determination ofthe parameters . 
 and . 
 that minimize a sum of squares is 
-called a least squares problem.Wewill solveleastsquares problemsusing methodsof 
-Linear AlgebrainExample 12.16.The approach itselfissometimes calleda 
-parameter identification.InStatistics, themodelingofgiven data(herethe company 
-profits) usinga linear predictor function(here y(t) 
+called a least squares problem.We will solve least squares problems using methods of 
+Linear Algebra in Example 12.16.The approach itself is sometimes called a 
+parameter identification.In Statistics, the modeling of given data(here the company 
+profits) using a linear predictor function(here y(t) 
 = 
 .t + 
-.)is known aslinear 
+.)is known as linear 
 regression. 
 
-1.5 CircuitSimulation 
-The currentdevelopmentof electronicdevicesisvery rapid.In shortintervals,nowadaysoftenlessthanayear,
-newmodelsoflaptopsor mobilephoneshavetobe issued 
-tothemarket.To achievethis, continuouslynewgenerationsof computerchipshave 
+1.5 Circuit Simulation 
+The current development of electronic devices is very rapid.In short intervals,nowadays often less than a year,
+new models of laptops or mobile phones have to be issued 
+to the market.To achieve this, continuously new generations of computer chips have 
 tobedeveloped. Thesetypically becomesmallerand morepowerful,and naturally 
 shoulduse as little energy as possible.An importantfactorin thisdevelopmentis 
 to plan and simulate the chips virtually, i.e., in the computer and without producing 
@@ -687,13 +687,13 @@ currents andvoltages.Without going into details, consider thefollowing circuit:
 
 In this circuit description, VS(t) 
 is the given input current at time t, and the 
-characteristicvaluesofthe componentsare Rforthe resistor, Lforthe inductor, and 
-Cforthecapacitor.Thefunctionsforthe potentialdifferencesatthethree components 
+characteristic values of the components are R for the resistor, Lforthe inductor, and 
+C for the capacitor.The functions for the potential differences at the three components 
 are denoted by VR(t), VL(t), and VC(t);I(t) 
 is the current. 
 
 Applying the Kirchhoff laws4 of electrical engineering leads to the following 
-systemoflinear equationsanddifferential equationsthatmodelthedynamicbehavior 
+system of linear equations and differential equations that model the dynamic behavior 
 of the circuit: 
 
 d 
@@ -754,11 +754,11 @@ Finally we discuss relations and in particular equivalence relations on a set.
 Webeginourdevelopmentwiththe conceptofasetandusethefollowing definition 
 of Cantor.1 
 
-Definition 2.1 Aset isacollection Mof well determined and distinguishable objects 
-x of our perceptionor our thinking. The objectsare calledthe elements of M. 
+Definition 2.1 A set is a collection M of well determined and distinguishable objects 
+x of our perception or our thinking. The objects are called the elements of M. 
 
-The objects x in this definitionare well determined, and thereforewecan uniquely 
-decide whether x belongs toaset Mor not.Wewrite x .Mif x is an element of the 
+The objects x in this definition are well determined, and therefore we can uniquely 
+decide whether x belongs to a set M or not.We write x .M if x is an element of the 
 set M, otherwise we write x ./M. Furthermore, the elements are distinguishable, 
 which means that all elements of M are(pairwise) distinct. 
 
@@ -766,16 +766,16 @@ If two objects x and y are equal, then we write x =
 y, otherwise x 
 = 
 y.For 
-mathematical objectsweusuallyhavetogiveaformal definitionof equality.Asan 
+mathematical objects we usually have to give a formal definition of equality.As an 
 example consider the equality of sets; see Definition 2.2 below. 
 
-We describe sets with curly brackets{}that containeithera listofthe elements, 
+We describe sets with curly brackets{}that contain either a list of the elements, 
 for example 
 
 {red,yellow,green}, {1,2,3,4}, {2,4,6,...}, 
 
-1GeorgCantor(1845–1918), one of thefounders of settheory. Cantor publishedthisdefinitionin 
-thejournal “MathematischeAnnalen”in 1895. 
+1GeorgCantor(1845–1918), one of thefounders of settheory. Cantor published this definition in 
+the journal “MathematischeAnnalen”in 1895. 
 
 ©SpringerInternationalPublishing Switzerland 2015 
 
@@ -817,11 +817,11 @@ P(x)}.Here
 P is a predicate whichmay holdfor an object x or not, and P(x)is the assertion 
 “P holds for x”. 
 
-In general,anassertionisa statement that canbe classified as either “true” or 
-“false”.Forinstance thestatement “The set N 
-has infinitely manyelements” is true. 
+In general,anassertion is a statement that can be classified as either “true” or 
+“false”.For instance the statement “The set N 
+has infinitely many elements” is true. 
 The sentence “Tomorrow the weather will be good” is not an assertion, since the 
-meaningoftheterm“good weather”isunclearandtheweather predictionin general 
+meaning of the term“good weather”is unclear and the weather prediction in general 
 is uncertain. 
 
 The negation of an assertion Ais theassertion “not A”, whichwe denoteby ¬A. 
@@ -900,14 +900,14 @@ For all
 existential . 
 There exists 
 
-Nowwereturntoset theory and introduce subsets and the equalityof sets. 
+Now we return to set theory and introduce subsets and the equality of sets. 
 
 Definition 2.2 Let M, N be sets. 
 
 (1) 
-M is calleda subset of N, denoted by M .N,ifevery elementof M is also an 
+M is called a subset of N, denoted by M .N,if every element of M is also an 
 element of N.We write M . 
-N,ifthis does not hold. 
+N,if this does not hold. 
 (2) 
 M and N are called equal, denoted by M =N,if M .N and N .M.We 
 write M =N is this does not hold. 
@@ -921,7 +921,7 @@ N and
 M 
 = 
 N hold. 
-Usingthe notationofmathematical logicwe can write this definitionasfollows: 
+Using the notation of mathematical logic we can write this definition as follows: 
 
 (1) 
 M . 
@@ -964,14 +964,14 @@ x 
 x} 
 is calledthe empty set. 
 
-The notation “:=” means is defined as.Wehaveintroduced theempty setby a 
+The notation “:=” means is defined as.We have introduced the empty set by a 
 defining property:Every object x with x 
 = 
-x is anyelement of O. This cannot hold 
-foranyobject,and henceOdoesnot containanyelement.Asetthat containsat least 
+x is any element of O. This cannot hold 
+for any object,and hence Odoes not contain any element.A set that contains at least 
 one element is called nonempty. 
 
-Theorem 2.4 ForeverysetM the following assertions hold: 
+Theorem 2.4 For every setM the following assertions hold: 
 
 (1) O. 
 M. 
@@ -1251,9 +1251,9 @@ f :
 X >Y and g : 
 X >Y are called equal when f(x)=g(x) 
 holds for all x .X.Wethen write f =g. 
-In Definition 2.10 wehave assumedthat X and Y are nonempty, since otherwise 
+In Definition 2.10 we have assumed that X and Y are nonempty, since otherwise 
 there can be no rule that assigns an element of Y to each element of X.If one of 
-thesesetsisempty, one can define an empty map.However,inthe following we will 
+these sets is empty, one can define an empty map.However,in the following we will 
 always assume (but not always explicitly state) that the sets between which a given 
 map acts are nonempty. 
 
@@ -1282,7 +1282,7 @@ Definition 2.12 Let X, Y be nonempty sets.
 X > 
 X, x 
 > 
-x,is calledthe identity onX . 
+x,is called the identity onX . 
 (2) Let f : 
 X > 
 Y be a map and let M . 
@@ -17294,15 +17294,15 @@ V.
 
 
 11.3 SesquilinearForms 163 
-Proof Theresultfollows from multiplicationof(11.2)with iand adding the result 
+Proof The result follows from multiplication of (11.2)with iand adding the result 
 to(11.1). . 
 
 
-Corollary 11.19 showsthatasesquilinear form ona C-vector space V is uniquely 
+Corollary 11.19 shows that a sesquilinear form ona C-vector space V is uniquely 
 determined by the values of s( 
 for all .V. 
 
-Definition 11.20 The Hermitiantranspose of A=[aij ].Cnm is the matrix 
+Definition 11.20 The Hermitian transpose of A=[aij ].Cnm is the matrix 
 
 T .Cmn
 
@@ -18011,34 +18011,34 @@ Since thescalar productis positive definite,wehave v ..w =0, and thusv,w are
 linearly dependent. . 
 
 
-Theinequality(12.2)is calledCauchy-Schwarz inequality.3 It is an important 
-toolin Analysis,in particularin theestimationofapproximation and interpolation 
+The inequality(12.2)is called Cauchy-Schwarz inequality.3 It is an important 
+toolin Analysis,in particular in the estimation of approximation and interpolation 
 errors. 
 
 3AugustinLouisCauchy(1789–1857) andHermann Amandus Schwarz(1843–1921). 
 
 
-172 12 Euclidean andUnitaryVector Spaces 
+172 12 Euclidean and Unitary Vector Spaces 
 
-Corollary 12.6 If V isaEuclideanor unitary vector spacewiththescalarproduct 
+Corollary 12.6 If V is a Euclidean or unitary vector space with the scalar product 
 ·,·,then the map 
 
 	·. 
 . 
 V >R,v >	v	:=v,v1/2 , 
 
-isa normon V thatis calledthe norminducedby thescalar product. 
+is a norm on V that is called the norm induced by the scalar product. 
 
 Proof We have to prove the three defining properties of the norm. Since ·,·. 
 is 
 positive definite,wehave 	v	.0, with equality if and onlyifv =0.Ifv .V and 
 . 
-.K (whereinthe Euclidean case K =R and in the unitary case K =C), then 
+.K (where in the Euclidean case K =R and in the unitary case K =C), then 
 
 	.v	2 =.v, .v=..v,v=|.|2v,v, 
 
 and hence 	.v	=|.|	v	. In order to show the triangle inequality, we use the 
-Cauchy-Schwarzinequality and thefact thatRe(z).|z|forevery complex number 
+Cauchy-Schwarz inequality and the fact that Re(z).|z|for every complex number 
 
 z.For all v,w .V we have 
 	v +w	2 =v +w,v +w=v,v+v,w+w,v+w,w. 
@@ -18056,12 +18056,12 @@ z.For all v,w .V we have
 =(	v	+	w	)2 , 
 
 and thus 	v +w	.	v	+	w	. . 
-
+ 
 
 12.2 Orthogonality 
-Wewillnowusethescalarproductto introduceanglesbetweenvectors.Asmotivation 
-we consider theEuclideanvector space R2,1 with thestandardscalar product and the 
-induced Euclidean norm 	v	=v,v1/2.The Cauchy-Schwarzinequality shows 
+We will now use the scalar product to introduce angles between vectors.As motivation 
+we consider the Euclidean vector space R2,1 with the standard scalar product and the 
+induced Euclidean norm 	v	=v,v1/2.The Cauchy-Schwarz inequality shows 
 that 
 
 v,w. 
@@ -18094,7 +18094,7 @@ The vectors v,w are orthogonal if .
 0. Thus, v,w are 
 orthogonalif and onlyif v,w=0. 
 
-An elementary calculation now leads to the cosinetheorem fortriangles: 
+An elementary calculation now leads to the cosine theorem for triangles: 
 
 	v.w	2 =v.w,v.w=v,v.2v,w+w,w. 
 =	v	2 +	w	2 .2	v		w	cos(.). 
@@ -18105,13 +18105,13 @@ Pythagorean theorem4:
 
 	v.w	2 =	v	2 +	w	2 . 
 
-Thefollowing figures illustrate the cosinetheorem and the Pythagorean theorem for 
+The following figures illustrate the cosine theorem and the Pythagorean theorem for 
 vectorsin R2,1: 
 
 
-In thefollowing definitionwe generalizethe ideasof angles and orthogonality. 
+In the following definition we generalize the ideasof angles and orthogonality. 
 
-Definition 12.7 Let V beaEuclidean or unitaryvector space with thescalar product 
+Definition 12.7 Let V be a Euclidean or unitary vector space with the scalar product 
 ·,·. 
 
 (1) In the Euclidean case, the angle between two vectors v,w . 
@@ -18145,16 +18145,16 @@ we thereforehave vi,vj=.ij.)
 4Pythagorasof Samos(approx. 570–500 BC). 
 
 
-174 12 Euclidean andUnitaryVector Spaces 
+174 12 Euclidean and Unitary Vector Spaces 
 
-Note thatthetermsin(1).(3)are definedwith respecttothegiven scalar product. 
+Note that the terms in(1).(3)are defined with respect to the given scalar product. 
 Different scalar products yield different angles between vectors. In particular, the 
-orthogonalityoftwogivenvectorsmaybelostwhenwe consideradifferent scalar 
+orthogonality of two given vectors may be lost when we consider a different scalar 
 product. 
 
 Example 12.8 The standard basis vectors e1,e2 . 
 R2,1 are orthogonal and {e1,e2. 
-is an orthonormal basis of R2,1with respecttothestandardscalar product(cp.(1)in 
+is an orthonormal basis of R2,1 with respect to the standard scalar product(cp.(1)in 
 Example 12.2). Consider the symmetric and invertible matrix 
 
 21 
@@ -18166,13 +18166,13 @@ R,
 
 12 
 
-which definesasymmetric and non-degeneratebilinear form on R2,1 by 
+which defines asymmetric and non-degenerate bilinear form on R2,1 by 
 
 (v,w)
 > 
 w TAv 
 
-(cp.(1)inExample 11.10). This bilinear formis positive definite,sinceforall v . 
+(cp.(1)inExample 11.10). This bilinear formis positive definite,since for all v . 
 [.1,.2 
 T . 
 R2,1 we have 
@@ -18185,8 +18185,8 @@ v 1 .
 (.1 . 
 .2). 
 
-Thebilinear form thereforeisa scalar product on R2,1,which we denoteby ·,·A. 
-We denotethe induced normby	·	A. 
+The bilinear form therefore is a scalar product on R2,1,which we denote by ·,·A. 
+We denote the induced norm by	·	A. 
 
 With respect to the scalar product·,·A the vectors e1,e2 satisfy 
 
@@ -18227,7 +18227,7 @@ is an orthonormal
 
 basis of R2,1 with respect to the scalar product ·,·A 
 
-We nowshowthatevery finite dimensional Euclidean or unitaryvector space has 
+We now show that every finite dimensional Euclidean or unitary vector space has 
 an orthonormal basis. 
 
 Theorem 12.9 Let V be a Euclidean or unitary vector space with the basis 
@@ -18240,13 +18240,13 @@ span{v1,...,vk}, k .
 
 
 12.2 Orthogonality 175 
-Proof Wegive theproofby inductionondim(V)=n.Ifn =1, then we set u1 :. 
+Proof Wegive the proof by induction on dim(V)=n.Ifn =1, then we set u1 :. 
 	v1	.1 v1.Then 	u1	=1, and {u1}is an orthonormal basis of V with span{u1}. 
 span{v1}. 
 
-Letthe assertion holdfor an n .1. Letdim(V)=n +1and let{v1,...,vn+1. 
+Let the assertion hold for an n .1. Letdim(V)=n +1and let{v1,...,vn+1. 
 bea basisof V.Then Vn :=span{v1,...,vn}is an n-dimensional subspace of V.By 
-theinductionhypothesis thereexistsanorthonormal basis {u1,...,un}of Vn with 
+the induction hypothesis there exists an orthonormal basis {u1,...,un}of Vn with 
 span{u1,...,uk}=span{v1,...,vk}for k =1,...,n.We define 
 
 n 
@@ -18261,7 +18261,7 @@ span{u1,...,un},wemusthave
 un+1 
 . 
 0, and Lemma 9.16 
-yields span{u1,...,un+1}=span{v1,...,vn+1}. 
+yields span {u1,...,un+1}= span {v1,...,vn+1}. 
 
 For j=1,...,n we have 
 
@@ -18286,12 +18286,12 @@ Finally, un+1,un+1=	un+1	.2un+1,
 un+1=1which completes theproof. . 
 
 
-Theproofof Theorem 12.9 showshowagiven basis {v1,...,vn}can be orthonormalized, 
+The proof of Theorem 12.9 shows how a given basis {v1,...,vn}can be orthonormalized, 
 i.e., transformed into an orthonormal basis {u1,...,un}with 
 
 span{u1,...,uk}=span{v1,...,vk}, k =1,...,n. 
 
-Theresultingalgorithmis calledthe Gram-Schmidt method5: 
+The resulting algorithm is called the Gram-Schmidt method 5: 
 
 Algorithm 12.10 Given a basis {v1,...,vn}of V. 
 
@@ -18385,13 +18385,13 @@ standardscalar product)ofan m-dimensional subspace of Rn,1 or Cn,1,respectively.
 A“matrixversion”of Theorem 12.11 can thereforebeformulatedasfollows. 
 
 Corollary 12.12 LetK =RorK =Cand let v1,...,vm .Kn,1 be linearly independent. 
-Then thereexistsamatrixQ .Kn,m with itsm columns being orthonormal 
-withrespectto thestandard scalarproductofKn,1, i.e.,QTQ =Im forK =R or 
+Then there exists a matrixQ .Kn,m with itsm columns being orthonormal 
+withrespectto the standard scalar product ofKn,1, i.e.,QTQ =Im forK =R or 
 QHQ=Im forK =C, and an upper triangular matrixR .GLm(K), suchthat 
 
 [v1,...,vm ]=QR. (12.3) 
 
-Thefactorization(12.3)iscalledaQR-decompositionof thematrix [v1,...,vm . 
+The factorization(12.3)is called a QR-decomposition of the matrix [v1,...,vm . 
 The QR-decomposition has many applications in Numerical Mathematics (cp. 
 Example 12.16 below). 
 
@@ -21821,7 +21821,7 @@ of Algebra
 
 In this chapter we discuss polynomials in more detail. We consider the division 
 of polynomials and derive classical results from polynomial algebra, including the 
-factorizationintoirreduciblefactors.We also prove the Fundamental Theorem of 
+factorization into irreducible factors.We also prove the Fundamental Theorem of 
 Algebra, which states that every non-constant polynomial over the complex numbers 
 hasaleast one complex root.Thisimpliesthatevery complex matrix andevery 
 endomorphismona(finite dimensional)complexvectorspacehasatleastoneeigenvalue. 
@@ -21912,7 +21912,7 @@ degreeat least2is irreduciblemay dependonthe underlying field.
 
 Example 15.3 The polynomial2 . 
 t2 . 
-Q[t is irreducible,butthefactorization 
+Q[t is irreducible,but the factorization 
 . 
 v 
 . 
@@ -23242,7 +23242,7 @@ normal, i.e., f satisfies
 
 
 226 
-15 Polynomials andthe Fundamental TheoremofAlgebra 
+15 Polynomials and the Fundamental Theorem of Algebra 
 
 (a) Showthatif . 
 . 
@@ -23251,16 +23251,16 @@ C is an eigenvalue of f,then Vf(.
 is an f-invariant 
 subspace. 
 (b) Show(using(a))that 
-f is diagonalizable.(Hint: Showbyinduction on 
-dim(V ,that V is thedirect sumofthe eigenspacesof f.) 
-(c) Show(using(a) or (b)),that f iseven unitarily diagonalizable, i.e., there 
+f is diagonalizable.(Hint: Show by induction on 
+dim(V ,that V is the direct sum of the eigenspaces of f.) 
+(c) Show(using(a) or (b)),that f is even unitarily diagonalizable, i.e., there 
 exists an orthonormal basis Bof V such that [ 
-f BB isadiagonal matrix. 
+f BB is a diagonal matrix. 
 (d) Let g . 
-L(VV be unitarily diagonalizable. Showthat gis normal. 
-(Thisshows that an endomorphism onafinite dimensional unitaryvector 
-spaceis normalifand onlyifitis unitarily diagonalizable.We willgive 
-adifferent proof of this result in Theorem 18.2.) 
+L(VV be unitarily diagonalizable. Show that g is normal. 
+(This shows that an endomorphism on a finite dimensional unitary vector 
+spaceis normal if and only ifitis unitarily diagonalizable.We will give 
+a different proof of this result in Theorem 18.2.) 
 15.18. 
 Let Vbeafinite dimensional K-vector space, f . 
 L(VV and V . 
@@ -23332,19 +23332,20 @@ f2 for all p .
 K[t . 
 
 Chapter16 
-Cyclic Subspaces, Dualityand theJordan 
-CanonicalForm 
+Cyclic Subspaces, Duality and the Jordan 
+Canonical Form 
 
-Inthischapterweusethedualitytheorytoanalyzethepropertiesofanendomorphism 
+In this chapter we use the duality theory to analyze the proper ties of an 
+endomorphism 
 
-f onafinite dimensionalvector space Vin detail.Weare particularly interestedinthe 
-algebraicand geometricmultiplicitiesoftheeigenvaluesof f and the characterization 
+f on a finite dimensional vector space V in detail.We are particularly interested in the 
+algebraic and geometric multiplicities of the eigenvalues of f and the characterization 
 of the corresponding eigenspaces.Our strategy in this analysis is to decomposethe 
-vector space V intoadirect sumof f-invariant subspaces so that,with appropriately 
+vector space V into a direct sum of f-invariant subspaces so that,with appropriately 
 chosen bases,the essentialpropertiesof f will be obvious from its matrix representation. 
-Thematrixrepresentationthat we deriveis calledthe Jordan canonical form 
+The matrix representation that we derive is called the Jordan canonical form 
 of f.Becauseofits great importance therehave been manydifferent derivationsof 
-this form usingdifferent mathematical tools. Our approach using duality theoryis 
+this form using different mathematical tools. Our approach using duality theoryis 
 based on an article by Vlastimil Ptak (1925–1999) from 1956 [Pta56]. 
 
 16.1 Cyclic f-invariant Subspaces andDuality 
@@ -27294,122 +27295,21 @@ system and y =w1 +w2.
 . 
 
 
-In orderto describethe solutionsof systemsofordinarydifferential equations,we 
-consider for a given matrix A.Kn n the matrix exponentialfunction exp(tA from 
-Lemma17.5or(17.5)–(17.6),wherewenowconsidert .[0 a]as real variable.The 
-powerseriesofthe matrixexponentialfunctioninLemma 17.5converges,anditcan 
-bedifferentiatedtermwisewith respecttothevariable t, where again the derivative 
-of a matrix with respect to the variable t is considered entrywise.Thisyields 
-
-. 
+In order to describe the solutions of systems of ordinary differential equations ,we 
+consider for a given matrix A.Kn n the matrix exponential function exp(tA from 
+Lemma17.5or(17.5)–(17.6),where we now consider t .[0 a]as real variable.The 
+power series of the matrix exponential function in Lemma 17.5 converges,and it can 
+be differentiated termwise with respect to the variable t, where again the derivative 
+of a matrix with respect to the variable t is considered entrywise. This yields 
 
 
-dd 11 
-
-exp(tA . 
-I +(tA . 
-(tA 2 . 
-(tA 3 . 
-
-
-dt dt 26
-1 
-
-
-=A+tA2 . 
-t2A3 . 
-
-
-2 
-=Aexp(tA 
-
-Thesameresultis obtainedby the entrywise differentiationofthe matrixexp(tA in 
+The same result is obtained by the entrywise differentiation of the matrix exp(tA in 
 (17.5)–(17.6)with respect to t.With 
 
 
-17.2 Systemsof Linear Ordinary DifferentialEquations 265 
+17.2 Systems of Linear Ordinary Differential Equations 265 
 . 
-td.1 
-. 
-
-
-tt2
-
-1 
-
-2. 
-(d.1 . 
-
-
-.. 
-
-
-..
-
-1 t 
-
-.. 
-
-
-..
-
-M(t :. 
-. 
-t2 
-. 
-
-
-. 
-2. 
-. 
-
-
-.. 
-
-
-..
-
-t 
-
-1 
-
-we obtain 
-
-dd 
-. 
-
-
-exp(tJd(. 
-. 
-et. 
-M(t 
-
-dt dt 
-
-t.
-
-. 
-.et. 
-M(t . 
-eM.(t 
-. 
-.et. 
-M(t . 
-et. 
-Jd(0 M(t 
-
-. 
-(.Id . 
-Jd(0 et. 
-M(t 
-. 
-Jd(. 
-exp(tJd(. 
-
-
-d
-
-which alsogives dt exp(tA . 
+which also gives dt exp(tA . 
 Aexp(tA . 
 
 Theorem 17.11 
@@ -27424,69 +27324,22 @@ forms an n-dimensional K-vector space with the basis {exp(tAe1
 exp(tA en}. 
 Proof 
 
-(1) If y . 
-exp(tAy0,then 
-. 
-
-
-dd 
-
-y.. 
-(exp(tAy0 . 
-exp(tA y0 . 
-(Aexp(tA y0
-
-dt dt 
-
-. 
-A(exp(tAy0 . 
-Ay 
-
-and y(0 . 
-exp(0 y0 . 
-Iny0 . 
 y0.Hence yisasolutionof(17.10)that satisfies 
 theinitial condition.If w 
 is another such solution and u :. 
 exp(.tA )w,then 
 
-d 
-
-u.. 
-(exp(.tA w 
-=.Aexp(.tA w 
-. 
-exp(.tA w.
-
-dt 
-. 
-exp(.tA )(w.. 
-Aw 
-. 
-0. 
-Kn 1 
-
 
 whichshows that thefunction u has constant entries.In particular,wethenhave 
-u . 
-u(0 . 
-w(0 . 
-y0 . 
-y(0 andw 
-. 
-exp(tAy0,wherewehaveusedthat 
-exp(.tA . 
-(exp(tA .1 (cp. Lemma 17.6). 
 
-
-266 17 Matrix Functions andSystemsof DifferentialEquations 
+266 17 Matrix Functions and Systems of Differential Equations 
 
-(2)Eachof thefunctionsexp(tA ej exp(tA en :[0 a]>Kn 1, j=1 n, 
+(2)Each of the functions exp(tA ej exp(tA en :[0 a]>Kn 1, j=1 n, 
 . 
 Kn n is
 solves the homogeneous system y.. 
 Ay.Since the matrix exp(tA 
-invertible for every t .[0 a](cp. Lemma 17.6), thesefunctions are linearly 
+invertible for every t .[0 a](cp. Lemma 17.6), these functions are linearly 
 independent. 
 
 If 
@@ -27497,15 +27350,15 @@ Ay,then
 
 (1)then 
 
-y is the unique solutionofthe initialvalue problem with y(0 =y0,so 
+y is the unique solution of the initial value problem with y(0 =y0,so 
 that 
 
-y =exp(tAy0.Asaconsequence,
-yisalinear combinationofthe functions 
+y =exp(tAy0.As a consequence,
+y is a linear combination of the functions 
 exp(tAe1 exp(tA en. 
 
-To describethe solution of the non-homogeneous system(17.9), we need the 
-integralof functionsof theform 
+To describe the solution of the non-homogeneous system(17.9), we need the 
+integral of functions of the form 
 
 .. 
 
@@ -27522,7 +27375,7 @@ w
 
 wn 
 
-For everyfixed t .[0 a]we define 
+For every fixed t .[0 a]we define 
 
 .. 
 t . 
@@ -27546,7 +27399,7 @@ t
 
 0 wn(s ds 
 
-i.e., we applythe integral entrywise to thefunction w.Bythis definitionwehave 
+i.e., we apply the integral entrywise to the function w.By this definition we have 
 
 . 
 
@@ -27561,7 +27414,7 @@ dt
 
 0 
 
-for all t .[0 a].We can now determine anexplicit solutionformula forsystemsof 
+for all t .[0 a].We can now determine an explicit solution formula for systems of 
 linear differential equations based on the so-called Duhamel integral.2 
 
 Theorem 17.12 The unique solutionofthe non-homogeneous differential equation 
@@ -29735,7 +29588,7 @@ is special case of the LU-decompositioninTheorem 5.4.Infact,Theorem 18.26
 showsthat an LU-decomposition ofa (real) symmetric positive definite matrix can 
 be computed without row permutations. 
 
-In order to computethe Choleskyfactorizationofthe symmetric positive definite 
+In order to computethe Cholesky factorization of the symmetric positive definite 
 matrix A=[aij].Rnn, we consider the equation 
 
 4Andre-LouisCholesky(1875–1918). 
@@ -30085,7 +29938,7 @@ R
 
 012 
 
-is positive definite and computea Choleskyfactorizationof Ausing(18.3)– 
+is positive definite and compute a Cholesky factorization of A using(18.3)– 
 (18.6). 
 
 18.23 
@@ -30102,8 +29955,8 @@ TheSingularValue Decomposition
 
 The matrix decomposition introduced in this chapter is very important in many 
 practical applications, sinceit yields the best possible approximation(ina certain 
-sense)ofagiven matrixbyamatrixoflow rank.Alow rank approximation canbe 
-considereda“compression”ofthedatarepresentedbythegiven matrix.Weillustrate 
+sense)of a given matrix by a matrix of low rank.A low rank approximation can be 
+considereda“compression”ofthedatarepresentedbythegiven matrix.We illustrate 
 this below with anexamplefromimage processing. 
 
 We first prove the existence of the decomposition. 
@@ -30287,7 +30140,7 @@ PH .Cmm
 
 then U .Cnm has orthonormal columns, i.e., UHU = 
 Im, and P = 
-is positive semidefinite with theinertia (r 0 m .r .Thefactorization A =UP is 
+is positive semidefinite with theinertia (r 0 m .r .The factorization A =UP is 
 called a polar decomposition of A.Itcanbe viewed asa generalizationofthe polar 
 representation ofcomplex numbers, z =ei.|z|. 
 
@@ -31175,126 +31028,36 @@ map.
 
 
 306 20 TheKronecker Productand Linear Matrix Equations 
-
-Theorem 20.7 For A . 
-Km,m,B . 
-Kn,n andC . 
-Km,n we have 
-
-vec(ACB) 
-= 
-(BT . 
-A)vec(C). 
-
-
 Hence,in particular, 
-
-(1) vec(AC) 
-= 
-(In . 
-A)vec(C)and vec(CB) 
-= 
-(BT . 
-Im)vec(C), 
-(2) vec(AC + 
-CB) 
-= 
-(In . 
-A)+ 
-(BT . 
-Im) 
-vec(C). 
-Proof For j= 
 1,...,n,the jth column of ACB is givenby 
-
-nn 
-
-(ACB)ej = 
-(AC)(Bej) 
-= 
-bkj(AC)ek = 
-(bkjA)(Cek) 
-k=1 k=1 
-
-=] 
-b1jA, 
-b2jA,..., 
-bnjA] 
-vec(C), 
-
-
-whichimpliesthat vec(ACB) 
-= 
-(BT . 
-A)vec(C).With B = 
-In resp. A = 
-Im we 
+which implies that vec(ACB) 
 obtain (1), while (1)and the linearityofvecyield (2). . 
-
-
-Inordertostudytherelationship betweentheeigenvaluesofthematrices A,Band 
-thoseoftheKronecker product A.B,weusebivariate polynomials,i.e., polynomials 
-intwovariables(cp.Exercise 9.10).If 
-
-l 
-
-j
-
-p(t1,t2) 
-= 
-.ijt1it2 . 
-K[t1,t2]
-
-i,j=0 
+In order to study the relationship between the eigenvalues of the matrices A,B and 
+those of the Kronecker product A.B, we use bivariate polynomials,i.e., polynomials 
+in two variables(cp.Exercise 9.10).If 
 
 is such a polynomial, then for A. 
 Km,m and B . 
 Kn,n we define the matrix 
 
-l 
+Here we have to be careful with the order of the factors, since in general Ai . 
 
-p(A,B) 
-:= 
-.ijAi . 
-Bj . 
-(20.1) 
-i,j=0 
 
-Herewehavetobe carefulwiththeorderofthefactors,sinceingeneral Ai . 
-Bj 
-= 
-Bj . 
-Ai (cp. Exercise 20.2). 
+The following result is known as Stephanos’ theorem. 2 
 
-Example 20.8 For A. 
-Rm,m ,B . 
-Rn,n and p(t1,t2) 
-= 
-2t1+3t1t22 = 
-2t11t20+3t11t22 . 
-R[t1,t2] 
-we get the matrix p(A,B) 
-= 
-2A. 
-In + 
-3A. 
-B2. 
-
-Thefollowing resultis known as Stephanos’theorem.2 
-
-2Namedafter CyparissosStephanos (1857–1917) whoin 1900 showed besidesthisresultalsothe 
-assertionofLemma 20.3. 
+2 Named after Cyparissos Stephanos (1857–1917) who in 1900 showed besides this result also the 
+assertion of Lemma 20.3. 
 
 
-20 TheKronecker Productand Linear Matrix Equations 307 
+20 The Kronecker Product and Linear Matrix Equations 307 
 
 Theorem 20.9 LetA. 
 Km,m andB . 
-Kn,nbe twomatrices that haveJordan normalforms 
-and theeigenvalues .1,...,.m . 
+Kn,nbe two matrices that have Jordan normal forms 
+and the eigenvalues .1,...,.m . 
 K and.1,...,.n . 
 K, respectively. 
-If p(A,B)is defined asin(20.1), then thefollowing assertions hold: 
+If p(A,B)is defined as in(20.1), then the following assertions hold: 
 
 (1) The eigenvalues of p(A,B)are p(.k,.)fork = 
 1,...,m and . 
@@ -31307,7 +31070,7 @@ fork =
 1,...,m and . 
 = 
 1,...,n. 
-(3) TheeigenvaluesofA.In+Im.Bare.k+.fork = 
+(3) The eigenvalues of A.In+Im.Bare.k+.fork = 
 1,...,m and. 
 = 
 1,...,n. 
@@ -31315,7 +31078,7 @@ Proof Let S .
 GLm(K)and T . 
 GLn(K)be such that S.1AS = 
 JA and T.1BT = 
-JB areinJordan canonical form.The matrices JA and JB are upper triangular.Thus, 
+JB are in Jordan canonical form.The matrices JA and JB are upper triangular.Thus, 
 forall i, 
 j. 
 N0 thematrices JAi , JBj and JAi . 
@@ -31333,72 +31096,8 @@ m
 1,...,n, are the diagonal entries of the matrix p(JA,JB).Using 
 Lemma 20.3 we obtain 
 
-ll 
-
-j 
-AS.1BT.1
-
-p(A,B) 
-= 
-.ij(SJAS.1)i . 
-(TJBT.1)= 
-.ij(SJi ). 
-(TJj 
-) 
-i,j=0 i,j=0 
-
-l 
-	. 
-
-
-= 
-.ij (SJAi ). 
-(TJBj)(S.1 . 
-T.1) 
-
-
-i,j=0 
-
-l 
-
-.1
-
-= 
-.ij(S. 
-T)(JAi . 
-JBj)(S. 
-T)
-i,j=0 
-
-
-.. 
-
-
-l 
-
-.1 
-
-. 
-
-
-= 
-(S. 
-T) 
-.ij(JAi . 
-JBj). 
-(S. 
-T)
-i,j=0 
-
-
-= 
-(S. 
-T)p(JA,JB)(S. 
-T).1 , 
-
-
-whichimplies(1). 
-Theassertions (2) and (3)follow from(1) with p(t1,t2) 
+which implies(1). 
+The assertions (2) and (3)follow from(1) with p(t1,t2) 
 = 
 t1t2 and p(t1,t2) 
 = 
@@ -31406,7 +31105,7 @@ t1 +
 t2, respectively. . 
 
 
-Thefollowing result on thematrixexponentialfunctionofa Kronecker product 
+The following result on the matrix exponential function of a Kronecker product 
 is helpful in applications that involve systems of linear differential equations. 
 
 Lemma 20.10 For A. 
@@ -31423,88 +31122,13 @@ exp(A).
 exp(B). 
 
 
-Proof From Lemma 20.3 we knowthat thematrices A. 
+Proof From Lemma 20.3 we know that the matrices A. 
 In and Im . 
 B commute. 
 UsingLemma 17.6 we obtain 
 
 
-308 20 TheKronecker Productand Linear Matrix Equations 
-
-exp(C) 
-= 
-exp(A. 
-In + 
-Im . 
-B) 
-= 
-exp(A. 
-In) 
-exp(Im . 
-B) 
-
-
-.. 
-
-
-
-
-..
-
-11
-
-ji 
-
-.. 
-
-
-= 
-(A. 
-In)(Im . 
-B)
-
-j! 
-i! 
-
-
-j=0 i=0 
-
-..
-
-11 
-
-ji
-
-= 
-(A. 
-In)(Im . 
-B)
-
-j! 
-i! 
-
-
-j=0 i=0 
-
-.. 
-
-
-= 
-11 
-(Aj . 
-Bi)
-
-j! 
-i! 
-
-
-j=0 i=0 
-
-= 
-exp(A). 
-exp(B), 
-
-
+308 20 The Kronecker Product and Linear Matrix Equations 
 where we have used the properties of the matrix exponential series 
 (cp. Sect. 17.1). . 
 
@@ -31514,7 +31138,7 @@ Km,m , Bj .
 Kn,n , j = 
 1,...,q, and C . 
 Km,n an 
-equationofthe form 
+equation of the form 
 
 A1XB1 + 
 A2XB2 + 
@@ -31522,7 +31146,7 @@ A2XB2 +
 AqXBq = 
 C (20.2) 
 
-is called a linear matrix equation forthe unknown matrix X . 
+is called a linear matrix equation for the unknown matrix X . 
 Km,n . 
 
 
@@ -31560,8 +31184,8 @@ AX +
 XB = 
 C (20.3) 
 
-hasa unique solutionifand onlyifA and .B have no commoneigenvalue.If all 
-eigenvaluesofAandB havenegativereal parts,thenthe unique solutionof(20.3) 
+hasa unique solution if and only ifA and .B have no common eigenvalue.If all 
+eigenvalues of A and B have negative real parts,then the unique solution of(20.3) 
 is given by 
 
 . 
@@ -31576,15 +31200,15 @@ exp(tA)Cexp(tB)dt.
 
 0 
 
-(Asin Sect.17.2 theintegralis defined entrywise.) 
+(Asin Sect.17.2 the integral is defined entrywise.) 
 
 3JamesJosephSylvester (1814–1897). 
 
 
-20 TheKronecker Productand Linear Matrix Equations 309 
+20 The Kronecker Product and Linear Matrix Equations 309 
 
-Proof AnalogoustotherepresentationinTheorem 20.11,wecan writetheSylvester 
-equation(20.3)as 
+Proof Analogous to the representation in Theorem 20.11,we can write the Sylvester 
+equation (20.3)as 
 
 (In . 
 A+ 
@@ -31597,127 +31221,34 @@ If Aand Bhave the eigenvalues .1,...,.m and .1,...,.n, respectively, then G=
 In. 
 A+ 
 BT. 
-Im by(3)inTheorem 20.9hastheeigenvalues .k+.,k= 
-1,...,m, 
+Im by(3)inTheorem 20.9 has the eigenvalues .k+.,k= 
 
-. 
-= 
-1,...,n.Thus, Gisinvertible, and the Sylvester equationis uniquelysolvable, 
-if and onlyif.k + 
-.. 
-
-= 
-0for allk= 
-1,...,m and . 
-= 
-1,...,n. 
-Let Aand Bbe matriceswitheigenvaluesthathavenegativerealparts.Then Aand 
-.Bhaveno commoneigenvalues and(20.3)hasaunique solution. LetJA = 
+1,...,n.Thus, G is invertible, and the Sylvester equation is uniquely solvable, 
+
+Let Aand Bbe matrices with eigenvalues that have negative real parts.Then A and 
+.Bhaveno common eigenvalues and(20.3)has a unique solution. LetJA = 
 S.1AS 
 and JB = 
 T.1BT be Jordan canonical forms of Aand B.We consider the linear 
 differential equation 
 
-dZ 
-
-= 
-AZ + 
-ZB, 
-Z(0) 
-= 
-C, 
-(20.4)
-
-dt 
-
 thatis solvedby thefunction 
 
-Z :[0,.) 
-> 
-Cm,n , 
-Z(t) 
-:= 
-exp(tA)Cexp(tB) 
-
-
 (cp.Exercise 20.10).Thisfunctionsatisfies 
-
-lim Z(t) 
-= 
-lim exp(tA)Cexp(tB) 
-
-
-t>. 
-t>. 
-
-
-= 
-lim Sexp(tJA) 
-S.1CT exp(tJB)T.1 = 
-0. 
-
-
-. 
-. 
-
-
-t>. 
-. 
-. 
 
 
 constant
 
->0 >0 
 Integrationofequation(20.4)fromt = 
 0to t =. 
 yields 
 
-..
+(Here we use without proof the existence of the infinite integrals.)This implies that 
 
-.. 
-
-
-. 
-
-
-..
-
-.C=. 
-Z(0) 
-= 
-lim (Z(t). 
-Z(0)) 
-= 
-AZ(t)dt + 
-Z(t)dt B. 
-
-
-t>. 
-
-
-00 
-
-(Hereweuse without proof theexistenceof theinfinite integrals.)Thisimpliesthat 
-
-.. 
-
-
-. 
-
-
-
-
-X:= 
-. 
-Z(t)dt =. 
-exp(tA)Cexp(tB)dt 
-
-00 
 
 is the unique solutionof(20.3). . 
 
-Theorem 20.12 alsogivesthe solutionofanother important matrix equation. 
+Theorem 20.12 also gives the solution of another important matrix equation. 
 Corollary 20.13 For A,C. 
 Cn,n the Lyapunov equation4 
 
@@ -31728,7 +31259,7 @@ XAH =.C (20.5)
 
 
 310 
-20 TheKronecker Productand Linear Matrix Equations 
+20 The Kronecker Product and Linear Matrix Equations 
 
 If,furthermore,C is Hermitian positive definite,then also 
 
@@ -31740,1027 +31271,6 @@ XisHermitian positive
 definite. 
 
 Proof Since by assumption A and .AH have no common eigenvalues, the unique 
-solvabilityof(20.5)follows fromTheorem20.12, and thesolutionisgivenby the 
+solvability of(20.5)follows from Theorem20.12, and the solution is given by the 
 matrix 
-
-. 
-. 
-
-
-. 
-. 
-
-
-
-
-X =. 
-exp(tA)(.C) 
-exp tAHdt = 
-exp(tA)Cexp tAHdt. 
-
-
-0 
-0 
-
-
-
 If C is Hermitian positive definite,then X is Hermitian and for x .Cn,1 \{0}we 
-
-have 
-
-. 
-.
-
-. 
-. 
-
-
-. 
-. 
-
-
-HH 
-H 
-
-. 
-.
-
-xXx =xexp(tA)Cexp tAHdt x = 
-xexp(tA)Cexp tAHxdt > 
-0. 
-
-
-. 
-. 
-. 
-
-
-0 
-0 
-
->0 
-
-Thelastinequality followsfromthemonotonicityoftheintegralandthefactthatfor 
-
-x =0also exp(tAH)x =0, since exp tAHis invertible for every real t. . 
-
-
-Exercises 
-
-20.1 Prove Lemma 20.2. 
-20.2 Construct two square matrices A, 
-B with A.B =B.A. 
-20.3 Prove Lemma 20.4. 
-20.4 Prove Theorem 20.5 (3). 
-20.5 Prove Lemma 20.6. 
-20.6 Showthat 
-A.B is normalif A .Cm,m and B .Cn,n are normal. Is it true 
-that if A.B is unitary,then Aand B are unitary? 
-20.7 Use the singular value decompositions of A =VAAWAH .Cm,m and B = 
-VBBWBH .Cn,n to derivethe singularvalue decompositionof A.B. 
-20.8 Showthat for 
-A .Cm,m and B .Cn,n and thematrix2-norm, the equation 
-	A.B	2 =	A	2	B	2 holds. 
-20.9 Prove Theorem 20.11. 
-20.10 
-Let A.Cm,m , B .Cn,n and C .Cm,n. Showthat Z(t) 
-=exp(tA)Cexp(tB) 
-is the solution ofthe matrix differential equation dZ = 
-AZ +ZB with the
-dt 
-
-initial condition Z(0) 
-=C. 
-
-
-AppendixA 
-AShort Introduction to MATLAB 
-
-MATLAB1isan interactivesoftwaresystemfor numerical computations,simulations 
-and visualizations.Itcontainsalargenumberof predefined functionsandallows users 
-to implement theirprogramsinso-called m-files. 
-
-The name MATLAB originates from MATrix LABoratory, which indicates the 
-matrix orientationofthe software.Indeed, matrices arethe major objectsinMAT-
-LAB. Due to the simple and intuitive use of matrices, we consider MATLAB well 
-suitedfor teachingin the fieldofLinear Algebra. 
-
-Inthisshortintroductionweexplainthemost importantwaystoenterandoperate 
-with matricesinMATLAB. One can learnthe essentialmatrix operations as well as 
-important algorithms and conceptsinthe context of matrices (and Linear Algebra 
-in general) by actively using the MATLAB-Minutes in this book. These only use 
-predefined functions. 
-
-A matrix in MATLAB can be entered in form of a list of entries enclosed by 
-squarebrackets.The entriesinthelistare orderedbyrowsinthe natural orderofthe 
-indices, i.e., from “topto bottom” and “lefttoright”).A newrow starts afterevery 
-semicolon.Forexample, thematrix 
-
-.. 
-
-
-123 
-A= 
-456 is enteredinMATLABbytyping A=[12 3;4 5 6;7 8 9]; 
-
-.. 
-
-
-789 
-
-Asemicolon after the matrix A suppresses the output in MATLAB. If it is omitted 
-thenMATLABwritesoutallthe enteredor computed quantities.Forexample, after 
-entering 
-
-A=[12 3;4 5 6;7 89] 
-
-1MATLAB®isaregisteredtrademarkofTheMathWorks Inc. 
-
-©SpringerInternationalPublishing Switzerland 2015 
-
-J. Liesen andV.Mehrmann, Linear Algebra,SpringerUndergraduate 
-MathematicsSeries, DOI 10.1007/978-3-319-24346-7 
-
-AppendixA:AShortIntroductiontoMATLAB 
-
-MATLABgives the output 
-
-A= 
-123 
-456 
-789 
-
-One can access partsof matricesby the corresponding indices.The listofindices 
-from k to m is abbreviatedby 
-
-k:m . 
-A colon : means allrowsforgiven columnindices,orall columns forgiven row 
-indices.If Ais as above,then forexample 
-
-A(2,1) is the matrix [4], 
-A(3,1:2) is the matrix [78], 
-
-23 
-A(:,2:3) is the matrix 56 . 
-89 
-
-Thereare severalpredefined functions that produce matrices.In particular,for 
-given positive integers n and m, 
-
-eye(n) theidentity matrix In, 
-
-zeros(n,m) an n . 
-m matrix with all zeros, 
-
-ones(n,m) an n . 
-m matrix with all ones, 
-rand(n,m) an n . 
-m “random matrix”. 
-
-Severalmatrices(of appropriate sizes)becombinedtoanewmatrix.Forexample, 
-the commands 
-
-A=eye(2); B=[4;3]; C=[2 -1]; D=[-5]; E=[A B;C D] 
-
-lead to 
-
-E= 
-104 
-013 
-2-1-5 
-
-The helpfunctioninMATLABisstarted with the command help.Inorder to get 
-information about specific functions one adds the nameofthe function.Forexample: 
-
-
-AppendixA:AShortIntroductiontoMATLAB 
-
-Input: Information on: 
-help ops operations and operatorsinMATLAB 
-
-
-(in particular addition, multiplication, transposition) 
-help matfun MATLABfunctions that operatewith matrices 
-help gallery collection of example matrices 
-help det determinant 
-help expm matrix exponentialfunction 
-
-
-Selected HistoricalWorks on LinearAlgebra 
-
-
-(Wedescribethe contentoftheseworksusing modern terms.) 
-
-• 
-A. L. Cauchy, Sur l’equational’aidedelaquelleondetermine lesinegalitesseculaires des 
-mouvements desplanetes,Exercisesde Mathematiques,4(1829). 
-Provesthatreal symmetric matriceshave real eigenvalues. 
-• 
-H. Grassmann,Die linealeAusdehnungslehre,einneuerZweigder Mathematik,OttoWiegand, 
-Leipzig, 1844. 
-Contains thefirstdevelopmentof abstractvector spaces andlinear independence, including the 
-dimensionformula forsubspaces. 
-• 
-J. J. Sylvester, Additions to thearticlesinthe SeptemberNumberofthisJournal, “Onanew 
-Class of Theorems,” and on Pascal’sTheorem,PhilosophicalMagazine,37(1850),pp. 363–370. 
-Introduces theterms matrix andminor. 
-• 
-J. J. Sylvester,Ademonstrationofthe theoremthatevery homogeneous quadratic polynomial 
-isreduciblebyrealorthogonal substitutionstotheformofasumofpositiveandnegativesquares, 
-Philosophical Magazine,4(1852), pp. 138–142. 
-Proofof Sylvester’slawof inertia. 
-• 
-A. Cayley, A memoir on the theory of matrices, Proc. Royal Soc. of London, 148 (1858), 
-pp. 17–37. 
-Firstpresentationof matrices as independent algebraic objects, including thebasic matrix operations,
-the Cayley-Hamiltontheorem (withoutageneral proof)and theideaof a matrix square 
-root. 
-• 
-K. Weierstrass, ZurTheorie derbilinearen und quadratischen Formen, Monatsber. Konigl. 
-Preu.ischenAkad.Wiss. Berlin,(1868), pp. 311–338. 
-Proofof theWeierstrass normalform, whichimplies theJordan normalform. 
-• 
-C. Jordan, Traitedessubstitutionsetdesequations algebriques,Paris, 1870. 
-Contains theproofof theJordan normalformindependentofWeierstrass’work. 
-• 
-G. Frobenius, Ueberlineare Substitutionen und bilineare Formen,J. reine angew. Math., 84 
-(1878), pp. 1–63. 
-Contains theconcept of the minimal polynomial, the(arguably) first complete proofof the 
-Cayley-Hamiltontheorem,and resultsonequivalence, similarityandcongruenceofmatrices(or 
-bilinear forms). 
-• 
-G. Peano, CalcoloGeometricosecondo l’AusdehnungslehrediH.Grassmannpreceduto dalle 
-operazioni della logica deduttiva,Fratelli Bocca,Torino, 1888. 
-Containsthefirstaxiomatic definitionofvector spaces,which Peano called“sistemi lineari”,and 
-studies propertiesoflinear maps,including the(matrix)exponentialfunction andthe solutionof 
-differential equation systems. 
-©SpringerInternationalPublishing Switzerland 2015 
-
-J. Liesen andV.Mehrmann, Linear Algebra,SpringerUndergraduate 
-MathematicsSeries, DOI 10.1007/978-3-319-24346-7 
-
-Selected HistoricalWorksonLinear Algebra 
-
-• 
-I. Schur,Uber diecharakteristischenWurzeln einerlinearenSubstitutionmit einerAnwendung 
-auf dieTheorie derIntegralgleichungen,Math. Annalen, 66 (1909), pp. 488–510. 
-Proofof theSchur formof complexmatrices. 
-• 
-O. Toeplitz, DasalgebraischeAnalogon zu einem Satze vonFejer,Math. Zeitschrift,2(1918), 
-pp. 187–197. 
-Introduces theconceptof a normalbilinear form andprovesthe equivalenceofnormality and 
-unitary diagonalizability. 
-• 
-F. D. Murnaghan and A. Wintner, Acanonicalformforreal matrices underorthogonal 
-transformations,Proc. Natl. Acad.Sci.U.S.A.,17 (1931), pp. 417–420. 
-Proof of the real Schur form. 
-• 
-C. Eckart and G. Young,Aprincipal axistransformationfor non-hermitian matrices,Bull. 
-Amer.Math. Soc.,45(1939), pp. 118–121. 
-Proofof themodern formof thesingularvaluedecompositionof a generalcomplex matrix. 
-
-Bibliography 
-
-
-[BryL06] K. Bryan,T. Leise, The $25,000,000,000 eigenvector:the linear algebrabehind google. 
-SIAM Rev. 48, 569–581 (2006) 
-
-[Der03] H. Derksen, Thefundamental theoremofalgebra andlinear algebra. Am.Math. Monthly 
-110, 620–623 (2003) 
-
-[Ebb91] H.-D.Ebbinghaus et al., Numbers (Springer,NewYork, 1991) 
-
-[EstH10] E. Estrada, D.J. Higham, Networkpropertiesrevealed through matrix functions.SIAM 
-Rev. 52, 696–714 (2010) 
-
-[Hig08] N.J. Higham, Functionsof Matrices:Theoryand Computation (SIAM, Philadelphia, 2008) 
-
-[HorJ12] R.A. Horn,C.R.Johnson, Matrix Analysis, 2nd edn. (Cambridge University Press, Cambridge, 
-2012) 
-
-[HorJ91] R.A. Horn,C.R.Johnson, Topics in Matrix Analysis(Cambridge University Press, Cambridge, 
-1991) 
-
-[HorO96] R.A. Horn,I.Olkin,When does A. 
-A = 
-B. 
-B and whydoes one want to know? Amer. 
-Math. Monthly 103, 470–482 (1996) 
-
-[LanT85] P. Lancaster, M. Tismenetsky, The Theory of Matrices: With Applications, 2nd edn. 
-(Academic Press, SanDiego, 1985) 
-
-[Loe14] N. Loehr, Advanced Linear Algebra (CRC Press, Boca Raton, 2014) 
-
-[MolV03] C. Moler,C.Van Loan,Nineteen dubiousways to computetheexponentialofa matrix, 
-twenty-five yearslater.SIAMRev. 45, 349 (2003) 
-
-[Pta56] V. Ptak, Eine Bemerkung zur Jordanschen Normalform von Matrizen. Acta Sci. Math. 
-Szeged 17, 190–194 (1956) 
-
-[Sha91] H. Shapiro, A survey of canonical forms and invariants for unitary similarity. Linear 
-Algebra. Appl. 147, 101–167 (1991) 
-
-©SpringerInternationalPublishing Switzerland 2015 
-
-J. Liesen andV.Mehrmann, Linear Algebra,SpringerUndergraduate 
-MathematicsSeries, DOI 10.1007/978-3-319-24346-7 
-
-Index 
-
-
-A 
-
-Abuse ofnotation, 142 
-Adjacencymatrix, 259 
-Adjoint, 188 
-
-Euclidean vector space, 190 
-
-unitary vector space, 192 
-Adjunct matrix, 91 
-Adjungate matrix, 91 
-Algebraic multiplicity, 202 
-Alternating, 89 
-Anglebetweenvectors, 173 
-Annihilator, 164, 230 
-Assertion, 10 
-
-B 
-
-Backward substitution, 48 
-Basis, 119 
-
-dual, 156 
-Basis extension theorem, 120 
-Bessel’sidentity, 181 
-Bijective, 15 
-Bilinear form, 159 
-
-non-degenerate, 159 
-positivedefinite, 290 
-symmetric, 159 
-
-
-Binomialformula, 51 
-Bivariate polynomial, 132 
-Block matrix, 39 
-Block multiplication, 48 
-
-Canonical basis of Kn,m , 120 
-Cartesianproduct, 18 
-Cauchy-Schwarz inequality, 171 
-Cayley-Hamiltontheorem, 105 
-
-©SpringerInternationalPublishing Switzerland 2015 
-
-Centralizer, 33 
-
-Characteristic polynomial 
-of a matrix, 102 
-of an endomorphism, 202 
-
-Chemical reaction, 262 
-Choleskyfactorization, 289 
-Circuitsimulation, 6, 267 
-Codomain, 14 
-Column vector, 116 
-Commutative, 24 
-Commutative diagram, 146, 148 
-Companion matrix, 103 
-Complex numbers, 30 
-
-absolute value, 31 
-
-modulus, 31 
-Composition, 16 
-Congruent matrices, 161 
-Conjunction, 10 
-Contraposition, 11 
-Coordinate map, 146 
-Coordinates, 124 
-Coordinate transformation matrix, 128, 144 
-Cosine theorem, 173 
-Cramer’s rule, 96 
-Crossproduct, 182 
-Cycle, 97 
-Cyclic decomposition, 237 
-Cyclic subspace, 228 
-
-D 
-
-De Morganlaw, 21 
-Derivative of a polynomial, 152 
-Determinant, 82 
-
-alternating, 89 
-computation via LU-decomposition, 91 
-computationalformulas, 88 
-
-J. Liesen andV.Mehrmann, Linear Algebra,SpringerUndergraduate 
-MathematicsSeries, DOI 10.1007/978-3-319-24346-7 
-
-320 Index 
-
-continuous, 83 
-linear, 90 
-multiplicationtheorem, 90 
-normalized, 86 
-
-Diagonal matrix, 46 
-Diagonalizable, 203 
-Dimensionformula 
-
-forlinear maps, 140 
-
-for subspaces, 129 
-Dimension of a vector space, 123 
-Direct sum, 130, 226 
-Disjoint, 13 
-Disjunction, 10 
-Division with remainder, 214 
-Domain, 14 
-Dual basis, 156 
-Dual map, 157 
-Dual pair, 159 
-Dual space, 155 
-Duhamelintegral, 266 
-
-E 
-
-Echelonform, 57 
-Eigenspace, 200 
-Eigenvalue 
-
-algebraic multiplicity, 202 
-geometric multiplicity, 200 
-of a matrix, 106 
-of an endomorphism, 199 
-
-Eigenvector 
-of a matrix, 106 
-of an endomorphism, 199 
-
-Elementary matrices, 55 
-Elementary row operations, 57 
-Emptylist, 118 
-Empty map, 14 
-Emptyproduct, 27 
-Empty set, 12 
-Empty sum, 27, 118 
-Endomorphism, 135 
-
-diagonalizable, 203 
-direct sum, 226 
-nilpotent, 229 
-normal, 225, 271 
-orthogonal, 277 
-positive(semi-)definite, 288 
-selfadjoint, 195 
-simultaneous triangulation, 223 
-triangulation, 207 
-unitarily diagonalizable, 226, 272 
-unitary, 277 
-unitary triangulation, 210 
-
-Equivalence, 10 
-Equivalence class, 19 
-Equivalence normalform, 69 
-Equivalence relation, 18 
-
-congruent matrices, 161 
-equivalent matrices, 69 
-left equivalent matrices, 71 
-normalform, 19 
-similar matrices, 108 
-
-
-Equivalent matrices, 69, 148 
-Euclidean theorem, 217 
-Evaluation homomorphism, 152 
-Exchange lemma, 121 
-Exchange theorem, 122 
-Extended coefficient matrix, 75 
-
-F 
-
-Field, 28 
-Finite dimensional, 123 
-Fourier expansion,180 
-Fundamental TheoremofAlgebra, 218 
-
-G 
-
-Gaussian elimination algorithm, 57 
-Generalized eigenvector, 244 
-Geometric multiplicity, 200 
-Givens rotation, 280 
-GLn(R), 46 
-Grade of a vector, 227 
-Gram-Schmidt method, 175 
-Graph, 258 
-Group, 23 
-
-additive, 25 
-homomorphism, 25 
-multiplicative, 25 
-
-
-Group of units, 33 
-
-H 
-
-Hermitian, 162, 163 
-Hilbert matrix, 64, 71, 98 
-Homogeneous, 73, 263 
-Homomorphism, 135 
-Hooke’slaw, 268 
-Householder matrix, 185, 280 
-
-I 
-
-Identity, 15 
-Identity matrix, 38 
-Image, 15, 137 
-Implication, 10 
-
-
-Index 321 
-
-Index set, 13 
-Inertia, 286 
-Initial value problem, 261 
-Injective, 15 
-Innerproduct, 167 
-Insurancepremiums, 3, 43 
-Integral domain, 34 
-Invariant subspace, 200 
-Inverse, 17 
-Inverse map, 17 
-Invertible, 17, 28, 45 
-Isomorphism, 135 
-
-J 
-
-Jordan block, 234 
-Jordan canonical form, 238 
-algorithm for computing, 245 
-Jordan chain, 244 
-
-K 
-
-Kernel, 137 
-Kronecker delta-function, 38 
-Kronecker product, 303 
-Krylov subspace, 228 
-
-L 
-
-Lagrange basis, 153 
-Laplace expansion, 95 
-Leastsquaresapproximation, 6, 179, 301 
-Left adjoint, 188 
-Left ideal, 51 
-Linear, 2, 135 
-Linearfactor, 202 
-Linear form, 155 
-Linear functional, 155 
-Linearly independent, 118 
-Linear map, 135 
-
-change of bases, 148 
-dual, 157 
-matrix representation, 144 
-rank, 149 
-transpose, 158 
-
-
-Linear matrix equation, 308 
-Linear optimizationproblem, 5 
-Linear regression, 6, 178, 301 
-Linear span, 117 
-Linear system, 73 
-
-homogeneous, 73 
-non-homogeneous, 73 
-solution algorithm, 76 
-solution set, 73, 139 
-
-
-Logical values, 11 
-Low rank approximation, 299 
-LU-decomposition, 61 
-Lyapunov equation,309 
-
-M 
-
-Map, 14 
-MATLAB-Minute, 42, 49, 61, 64, 91, 108, 
-210, 223, 243, 258, 281, 298 
-
-Matrix, 37 
-(non-)singular, 45 
-block, 39 
-column-stochastic, 109 
-complex symmetric, 196 
-diagonal, 46 
-diagonal entries, 38 
-diagonalizable, 203 
-diagonally dominant, 94 
-empty, 38 
-Hermitian, 163 
-Hermitianpart, 291 
-Hermitiantranspose, 163 
-invertibility criteria, 94, 108 
-invertible, 45, 64, 71, 93 
-negative (semi-)definite, 288 
-nilpotent, 112 
-normal, 271 
-orthogonal, 177 
-positive, 110 
-positive(semi-)definite, 288 
-row-stochastic, 4 
-skew-Hermitianpart, 291 
-skew-symmetric, 42 
-square, 38 
-symmetric, 42 
-transpose, 42 
-triangular, 46 
-triangulation, 208 
-unitarily diagonalizable, 272 
-unitary, 177 
-unitary triangulation, 210 
-zerodivisor, 45, 69 
-
-Matrixexponentialfunction, 257 
-Matrix function, 253 
-Matrix operations, 39 
-Matrix representation 
-
-adjoint map, 195 
-bilinear form, 160 
-dual map, 157 
-linear map, 144 
-sesquilinear form, 163 
-
-
-Minimal polynomial, 241 
-
-
-322 Index 
-
-Minor, 91 
-Mobius transformation, 291 
-Monic, 103 
-Moore-Penroseinverse, 300 
-Multiplicationtheorem fordeterminants, 90 
-
-N 
-
-Negative (semi-)definite, 288 
-Network, 260 
-centrality, 260 
-communicability, 260 
-Neutral element, 23 
-Nilpotencyindex, 229 
-Nilpotent, 33, 112, 229 
-Non-homogeneous, 73, 263 
-Norm, 168 
-L2-, 169 
-.-, 170 
-p-, 169 
-Euclidean, 169 
-Frobenius, 169 
-induced by a scalar product, 172 
-maximum column sum, 170 
-maximum row sum, 170 
-unitarily invariant, 301 
-Normal, 225, 271 
-Normal form, 19 
-Normed space, 169 
-n-tuple, 18 
-Nullity, 140 
-Null ring, 38 
-Null space, 137 
-Null vector, 116 
-
-O 
-
-One-form, 155 
-Orderedpair, 18 
-Ordinary differential equation, 261 
-Orthogonalbasis, 173 
-Orthogonal complement, 182 
-Orthogonal endomorphism, 277 
-Orthogonal matrix, 177 
-Orthogonal vectors, 173 
-Orthonormalbasis, 173 
-
-P 
-
-PageRank algorithm,1, 109 
-Parallelogram identity,184 
-Parseval’s identity,181 
-People 
-Abel,Niels Henrik (1802–1829), 24 
-
-Bessel, FriedrichWilhelm (1784–1846), 
-181 
-
-Bezout,Etienne (1730–1783), 216 
-
-Cantor,Georg(1845–1918), 9,13,17 
-
-Cauchy, Augustin Louis (1789–1857), 
-98, 171, 257 
-
-Cayley, Arthur (1821–1895), 37, 105 
-
-Cholesky, Andre-Louis (1875–1918), 
-289 
-
-Collatz, Lothar (1910–1990), 1 
-
-Cramer,Gabriel (1704–1752), 95 
-
-Descartes, Rene (1596–1650), 17 
-
-Dodgson, Charles Lutwidge (1832– 
-1898), 37 
-
-Duhamel, Jean-Marie Constant (1797– 
-1872), 266 
-
-Eckart,CarlHenry (1902–1973), 296 
-
-Euclid of Alexandria (approx. 300 BC), 
-
-167 
-
-Fourier, Jean Baptiste Joseph (1768– 
-1830), 180 
-
-Frobenius, Ferdinand Georg (1849– 
-1917), 66, 105, 169 
-
-Gau., Carl Friedrich(1777–1855), 57, 
-218 
-
-Givens,Wallace (1910–1993), 280 
-
-Gram, Jorgen Pedersen (1850–1916), 
-
-175 
-
-Gra.mann, Hermann Gunther (1809– 
-1877), 23, 122 
-
-Hamilton, Sir William Rowan (1805– 
-1865), 41, 105, 116 
-
-Hermite, Charles(1822–1901), 57, 162 
-
-Hilbert,David(1862–1943), vii,23,64 
-
-Hooke, SirRobert (1635–1703), 268 
-
-Householder, Alston Scott(1904–1993), 
-
-185 
-
-Jordan, Marie Ennemond Camille 
-(1838–1922), 238, 296 
-
-Kirchhoff, Gustav Robert (1824–1887), 
-viii,7 
-
-Kronecker, Leopold (1832–1891), 38, 
-303 
-
-Krylov, Aleksey Nikolaevich (1863– 
-1945), 228 
-
-Lagrange, Joseph-Louis (1736–1813), 
-153 
-
-Laplace, Pierre-Simon (1749–1827), 95 
-
-Leibniz, Gottfried Wilhelm (1646– 
-1716), 82 
-
-Lyapunov, Alexandr Mikhailovich 
-(1857–1918), 309 
-
-
-Index 323 
-
-Mobius,AugustFerdinand (1790–1868), 
-
-291 
-
-Moore, Eliakim Hastings (1862–1932), 
-
-300 
-
-Parseval, Marc-Antoine (1755–1836), 
-
-181 
-Peano, Giuseppe (1858–1932), 13 
-Penrose, SirRoger(1931–), 300 
-Perron, Oskar(1880–1975), 111 
-Ptak,Vlastimil (1925–1999), 227 
-Pythagoras of Samos(approx. 570-495 
-
-BC), 173 
-Ruffini,Paolo (1765–1822), 215 
-Sarrus, Pierre Frederic (1798–1861), 83 
-Schmidt, Erhard (1876–1959), 175, 296 
-Schur,Issai(1875–1941), 209, 292 
-Schwarz, Hermann Amandus (1843– 
-
-1921), 171 
-Steinitz,Ernst (1871–1928), 122 
-Sylvester, James Joseph (1814–1897), 
-
-37, 91, 105, 140, 287, 296, 308 
-Toeplitz,Otto(1881–1940),240, 271 
-Vandermonde, Alexandre-Theophile 
-
-(1735–1796), 98 
-Weierstra., Karl Theodor Wilhelm 
-(1815–1897), 29, 238 
-Wilkinson, James Hardy (1919–1986), 
-
-98 
-
-Zehfuss, Johann Georg (1832–1901), 
-
-303 
-
-Permutation, 81 
-associated permutation matrix, 87 
-inversion, 82 
-
-Permutation matrix, 49 
-Perron eigenvector, 111 
-Pivotpositions, 64 
-Polardecomposition, 297 
-Polarizationidentity, 165 
-Polynomial, 31 
-
-common root, 224 
-constant, 213 
-coprime, 214 
-degree, 31, 103, 213 
-divisor, 214 
-irreducible, 214 
-monic, 103 
-multiplicity of a root, 216 
-
-
-Positive definite, 167, 288, 290 
-Positive semidefinite, 288 
-Power set, 14 
-Predicate, 10 
-Pre-image, 15, 137 
-Principalaxestransformation, 282 
-
-Principal vector, 244 
-Projection, 197, 249 
-Proof by contraposition, 11 
-Pseudoinverse, 300 
-Pythagorean theorem, 173 
-
-Q 
-
-QR-decomposition, 176 
-Quadraticform, 165, 283 
-Quadric, 285 
-Quantifiers, 11 
-Quotient field, 34 
-Quotient set, 19 
-
-R 
-
-Rank, 66, 149 
-Rank-nullity theorem, 140 
-Rationalfunctions, 34 
-Reflection matrix, 280 
-Reflexive, 18 
-Relation, 18 
-Residue class, 20 
-Restriction, 15 
-Right adjoint, 188 
-Right-hand rule, 183 
-Ring, 26 
-
-multiplicativeinverse, 28 
-of matrices, 45 
-of polynomials, 31 
-
-Ring homomorphism, 51 
-Root of a polynomial, 107 
-
-simple, 250 
-Rotation matrix, 280 
-Row vector, 116 
-
-S 
-
-Sarrus rule, 83 
-Scalar product, 167 
-Schur complement, 52, 292 
-Schur form 
-
-of a matrix, 210 
-of an endomorphism, 210 
-real, 274 
-
-Schur’s theorem, 209 
-Selfadjoint, 195 
-Sesquilinear form, 162 
-Set,9 
-
-cardinality, 14 
-difference, 13 
-intersection, 13 
-union, 13 
-
-
-
-324 Index 
-
-Sherman-Morrison-Woodburyformula, 52 
-Sign, 82 
-Signature, 82 
-Signature formulaofLeibniz, 82 
-Similar matrices, 108, 148 
-Singularvaluedecomposition(SVD), 296 
-Skew-symmetric, 42 
-Standard basis of Kn,m , 120 
-Standard scalar product of Cn,1, 168 
-Standard scalar product of Rn,1, 168 
-Stephanos’theorem, 307 
-Subfield, 29 
-Subgroup, 25 
-Subring, 34 
-Subset, 11 
-Subspace, 117 
-
-complement, 133 
-
-invariant, 200 
-Surjective, 15 
-Sylvester equation, 308 
-Sylvester’slawof inertia, 287 
-Symmetric, 18, 42, 159 
-Symmetric group, 82 
-System of linear differential equations, 263 
-
-T 
-
-Tensor product,303 
-Toeplitz matrix,240 
-Trace,103, 113, 168 
-Transitive,18 
-Transposition,42, 84 
-Triangleinequality,169 
-Triangular matrix,46 
-
-Triangulation,207 
-
-U 
-
-Unit circle, 170 
-Unit vectors, 120 
-Unitarily diagonalizable, 226, 272 
-Unitary endomorphism, 277 
-Unitary matrix, 177 
-Unitarytriangulation, 210 
-
-V 
-
-Vandermonde matrix,98 
-Vec map, 305 
-Vector product,182 
-Vector space,115 
-
-Euclidean, 167 
-of bilinear forms, 164 
-of continuous functions, 116 
-of homomorphisms, 136 
-of matrices, 116 
-of polynomials, 116 
-unitary, 167 
-
-W 
-
-Wilkinson matrix,91, 98 
-
-Z 
-
-Zero divisor, 29, 45, 69 
-Zero matrix, 38 
-Zero vector space, 118 
-
-

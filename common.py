@@ -1,6 +1,8 @@
 from __future__ import unicode_literals
 import re
 
+def check_wordset(wordset):
+    return all(letter.isalpha() or letter.isspace() or letter in ['-','\''] for letter in wordset)
 
 def create_gap_filled_question(body, subject):
     question = body.replace(subject, '_' * len(subject))
