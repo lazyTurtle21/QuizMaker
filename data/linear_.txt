@@ -1,9 +1,9 @@
 addition act
 adjacency matrix obj
 adjoint matrix mtrx
-adjunct matrix mtrx
-adjoint of a matrix obj
 adjoint obj
+adjoint of a matrix obj
+adjunct matrix mtrx
 affine set obj
 affine transformation act
 algebraic multiplicity obj
@@ -16,8 +16,8 @@ back-substitution act
 basis obj
 best approximation act
 best rank one approximations act
-block typ
 block matrix mtrx
+block typ
 cartesian product act
 cauchy-buniakowsky-schwarz trm
 cauchy-schwarz-buniakowsky trm
@@ -32,20 +32,21 @@ closure under addition and scalar multiplication act
 coefficient matrix mtrx
 cofactor expansion act
 cofactor obj
-column obj
 column exchange act
 column expansion act
 column method trm
+column obj
 column space obj
 column vector obj
 complex conjugate obj
 complex euclidean inner product act
 complex matrix mtrx
-complex symmetric matrix mtrx
 complex n-tuple obj
 complex number obj
+complex symmetric matrix mtrx
 complex vector space obj
 condition number obj
+conjugate transpose mtrx
 conjugate transpose obj
 consistent linear system obj
 consistent system obj
@@ -53,7 +54,7 @@ coordinate obj
 coordinate vector obj
 cosine obj
 cosine theorem trm
-cramer’s rule trm
+cramer␙s rule trm
 cross product term obj
 dependent typ
 dependent variable obj
@@ -65,8 +66,8 @@ diagonal typ
 diagonalizable matrix mtrx
 diagonalizable typ
 diagonalization act
-difference equation obj
 difference act
+difference equation obj
 differential equation obj
 dimension obj
 dimension theorem trm
@@ -80,20 +81,18 @@ eigenspace obj
 eigenvalue decomposition act
 eigenvalue obj
 eigenvector obj
-elementary typ
 elementary matrix mtrx
 elementary row operation act
+elementary typ
 empty set obj
-nonempty set obj
 entry obj
-even number obj
-odd number obj
 equal matrices obj
-euclidean typ
 euclidean norm obj
 euclidean space obj
 euclidean theorem trm
+euclidean typ
 euclidean vector space obj
+even number obj
 factor obj
 factorization act
 finite element method trm
@@ -110,17 +109,17 @@ game theory trm
 gauss-jordan act
 gauss-jordan method trm
 gaussian elimination act
-gauss–jordan elimination act
+gauss␓jordan elimination act
 general solution obj
 general solution to a linear system obj
 geometric multiplicity obj
 gram-schmidt act
 gram-schmidt method trm
-gram-schmidt process trm
+gram-schmidt method trm
 gram-schmidt orthogonalization act
-hermitian matrix mtrx
+gram-schmidt process trm
 hermite normal form typ
-conjugate transpose mtrx
+hermitian matrix mtrx
 hermitian transpose mtrx
 hermitian typ
 homogeneous typ
@@ -139,12 +138,11 @@ intersection of spaces obj
 intersection of vector spaces obj
 inverse obj
 invertible matrix mtrx
-gram-Schmidt method trm
 invertible typ
 isomorphism trm
 iterative method trm
-kronecker product act
 kronecker form typ
+kronecker product act
 least squares act
 least squares approximation act
 least squares error trm
@@ -154,7 +152,6 @@ least squares solution obj
 least-squares solution obj
 length obj
 line obj
-linear typ
 linear combination obj
 linear dependence trm
 linear equation obj
@@ -165,6 +162,7 @@ linear map obj
 linear span obj
 linear system obj
 linear transformation act
+linear typ
 linearly dependent set obj
 linearly independent set obj
 lower triangular matrix mtrx
@@ -187,37 +185,39 @@ minor obj
 modulus obj
 multiplication act
 multiplication theorem trm
-negative definite typ
-negative semidefinite typ
 negative definite matrix mtrx
-negative semidefinite matrix mtrx
 negative definite quadratic form typ
+negative definite typ
+negative semidefinite matrix mtrx
 negative semidefinite quadratic form typ
+negative semidefinite typ
 network models trm
 non-homogeneous typ
+nonempty set obj
 noninvertible matrix mtrx
 noninvertible typ
 nonsingular matrix mtrx
 nonsingular typ
 nontrivial solution obj
 norm obj
-normal typ
 normal equation obj
+normal matrix mtrx
 normal to a line obj
 normal to a plane obj
-normal matrix mtrx
+normal typ
 normalized vector obj
 normalizing act
 null space obj
 nullity obj
 nullspace obj
+odd number obj
+orthogonal basis obj
 orthogonal change of variable act
+orthogonal complement obj
+orthogonal matrix mtrx
 orthogonal projection obj
 orthogonal set obj
 orthogonal typ
-orthogonal basis obj
-orthogonal complement obj
-orthogonal matrix mtrx
 orthogonal vectors obj
 orthogonally diagonalizable matrix mtrx
 orthonormal basis obj
@@ -238,25 +238,25 @@ point obj
 point-normal equation obj
 polar decomposition act
 polar form of z obj
-positive definite typ
-positive semidefinite typ
 positive definite matrix mtrx
-positive semidefinite matrix mtrx
 positive definite quadratic form typ
+positive definite typ
+positive semidefinite matrix mtrx
 positive semidefinite quadratic form typ
+positive semidefinite typ
 principal axes theorem trm
 product act
 projection matrix mtrx
 projection obj
 property obj
-pythagoras’s law trm
+pythagoras␙s law trm
 pythagorean theorem trm
 qr decomposition act
 qr factorization act
 quadratic form typ
 rank obj
-rank-nullity theorem trm
 rank of a matrix obj
+rank-nullity theorem trm
 real matrix mtrx
 real part obj
 reduced row echelon form typ
@@ -273,16 +273,16 @@ row reduction act
 row space obj
 row vector obj
 row-column method trm
-scalar typ
 scalar matrix mtrx
 scalar multiplication act
 scalar product act
+scalar typ
 schur's theorem trm
 schwarz inequality trm
 semidefinite quadratic form typ
 set obj
-similar typ
 similar matrices obj
+similar typ
 similarity invariant obj
 similarity transformation act
 simplex method trm
@@ -319,20 +319,20 @@ triangular typ
 trigonometric polynomial obj
 trivial solution obj
 unit vector obj
-unitary typ
-unitary matrix mtrx
 unitarily diagonalizable matrix mtrx
+unitary matrix mtrx
+unitary typ
 unitary vector space obj
 upper triangular matrix mtrx
 vandermonde matrix mtrx
-vector obj
 vector form typ
+vector obj
 vector product act
 vector space obj
 vector subspace obj
-wronskian obj
 wilkinson matrix mtrx
-zero subspace obj
-zero vector space obj
+wronskian obj
 zero matrix mtrx
 zero obj
+zero subspace obj
+zero vector space obj

@@ -2074,30 +2074,30 @@ are commutative groups.Inall thesegroups the neutral
 elementisthe number0(zero)andtheinverseof a is the number .a.Instead 
 of a +(.b we usually write a .b.Since the operationisthe addition, these 
 groups are also called additivegroups. 
-The natural numbers N with the additiondo not formagroup, since thereisno 
+The natural numbers N with the addition do not form a group, since thereisno 
 neutral element in N.Ifwe consider theset N0,which includes also the number 
 0(zero),then0+a =a +0=a for all a .N0,but only a =0has an inverse 
-element in N.Hence also N0 with the addition does not formagroup. 
+element in N.Hence also N0 with the addition does not form a group. 
 
-(2) The sets Q \{0}and R \{0}with theusual multiplicationform commutative 
-groups.Inthese multiplicativegroups,the neutralelementisthe number1(one) 
-and theinverse elementof a is the number 1 (or a.1). Instead of a ·b.1 we also 
+(2) The sets Q \{0}and R \{0}with the usual multiplication form commutative 
+groups.In these multiplicative groups,the neutral element is the number1(one) 
+and the inverse element of a is the number 1 (or a.1). Instead of a ·b.1 we also 
 a 
 
 a
 
 write b or a/b. 
-Theintegers Z with themultiplicationdo not formagroup. Theset Z includes 
-the number1, forwhich1·a =a ·1=a for all a .Z,but no a .Z\{.11}
+The integers Z with the multiplication do not form a group. The set Z includes 
+the number1, for which 1·a =a ·1=a for all a .Z,but no a .Z\{.11}
 has an inverse element in Z. 
 
 
 Definition 3.4 Let (G . 
-beagroup and H .G.If(H . 
-isagroup, thenitis 
+be a group and H .G.If(H . 
+is a group, then it is 
 called a subgroup of (G .. 
 
-Thenexttheoremgivesanalternative characterizationofa subgroup. 
+The next theorem gives an alternative characterization of a subgroup. 
 
 Theorem 3.5 (H . 
 isasubgroupof thegroup (G . 
@@ -5165,18 +5165,18 @@ Gij(.
 = 
 In. 
 
-5.2 TheEchelonForm andGaussian Elimination 
-The constructiveproofof thefollowing theorem reliesonthe Gaussian elimination 
-algorithm.1Foragivenmatrix A. 
-Kn m,where Kisafield, this algorithm constructs 
+5.2 The Echelon Form and Gaussian Elimination 
+The constructive proof of the following theorem relies on the Gaussian elimination 
+algorithm.1For a given matrix A. 
+Kn m,where K is a field, this algorithm constructs 
 amatrix S . 
 GLn(K such that SA = 
 C is quasi-upper triangular.We obtainthis 
 special form by left-multiplication of A with elementary matrices Pij, Mij(. 
 and 
 Gij(. 
-.Eachof theseleft-multiplications correspondstothe applicationof oneof 
-theso-called “elementaryrow operations”tothe matrix A: 
+.Each of these left-multiplications corresponds to the application of one of 
+the so-called “elementary row operations”to the matrix A: 
 
 • 
 Pij:exchange two rows of A. 
@@ -5186,13 +5186,13 @@ Mi(.
 • 
 Gij(. 
 :add a multiple of one row of Ato another row of A. 
-Weassumethatthe entriesofAareinafield (rather thanaring) becauseintheproof 
-ofthetheoremwerequirethat nonzero entriesof Aareinvertible.Ageneralizationof 
-theresultwhich holdsover certain rings (e.g.the integers Z)isgivenbythe Hermite 
-normalform,2 whichplays an important rolein Number Theory. 
+We assume that the entries of A are in a field (rather than a ring) because in the proof 
+of the theorem we require that nonzero entries of A are invertible.A generalization of 
+the result which holds over certain rings (e.g.the integers Z)is given by the Hermite 
+normal form,2 which plays an important role in Number Theory. 
 
 Theorem 5.2 LetKbeafield and letA. 
-Knm.Thenthereexistinvertible matrices 
+Knm.Then there exist invertible matrices 
 S1 St . 
 Kn n (these are products of elementary matrices) such that C := 
 St ···S1Aisin echelon form, i.e., eitherC =0or 
@@ -5206,105 +5206,14 @@ solutionmethods.Adetailed commentaryand analysiswaswrittenby LiuHui (approx.
 2CharlesHermite (1822–1901). 
 
 
-5 The EchelonFormand theRankofMatrices 
+5 The Echelon Form and the Rank of Matrices 
 
-C = 
-
-
-. 
-. 
-
-
-. 
-
-
-. 
-
-
-. 
-
-
-. 
-
-
-. 
-
-
-. 
-
-
-. 
-
-
-. 
-
-
-. 
-
-
-. 
-
-
-1 . 
-0 
-1 
-. 
-0 
-0 
-1 
-. 
-0 
-0 
-0 
-
-. 
-
-
-0 
-
-. 
-
-
-. 
-
-
-. 
-
-
-. 
-
-
-. 
-
-
-.
-
-0 
-
-.
-
-0 
-
-. 
-
-
-.
-
-1 
-
-. 
-
-
-. 
-
-
-0 
 
 Here . 
-denotes an arbitrary (zero or nonzero) entryofC. 
+denotes an arbitrary (zero or nonzero) entry of C. 
 More precisely, C =[cij] 
 is either the zero matrix, or there exists a sequence of 
-natural numbersj1 jr (theseare calledthe “steps”ofthe echelon form), where 
+natural numbersj1 jr (these are called the “steps”of the echelon form), where 
 1. 
 j1 < 
 ···< 
@@ -5316,7 +5225,7 @@ ji,
 (2) cij =0for r < 
 i .n and 1. 
 j.m, 
-(3) ci ji =1for 1.i .r and allother entriesin columnji arezero. 
+(3) ci ji =1for 1.i .r and all other entries in column ji are zero. 
 If n = 
 m, then A . 
 Kn n is invertible if and onlyifC = 
@@ -5325,7 +5234,7 @@ St ···S1.
 
 Proof If A=0, then we sett =1, S1 = 
 In, C =0and we are done. 
-Nowlet A=0and let j1be theindexofthe first columnof 
+Now let A=0and let j1be the index of the first column of 
 
 (1
 
@@ -5339,140 +5248,29 @@ ij
 
 (1
 
-that does not consistof all zeros. Let abe the first entry in this column that is 
+that does not consist of all zeros. Let abe the first entry in this column that is 
 
 i1 j1 
 
-nonzero, i.e., A(1 has theform 
+non zero, i.e., A(1 has the form 
 
-. 
-. 
-. 
-0 . 
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-0 
-. 
-. 
-A(1 = 
-. 
-. 
-. 
-0 . 
-. 
-. 
-a(1 
-i1 j1 . 
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-j1 
-
-We then proceed as follows:First wepermute therows i1 and1(if i1 > 
+We then proceed as follows:First we permute the rows i1 and1(if i1 > 
 1).Then we 
 
 .1 
 
 (1
 
-normalize thenew firstrow, i.e.,we multiplyit with a.Finally we eliminate
+normalize the new first row, i.e.,we multiply it with a.Finally we eliminate
 
 i1 j1 
 
-the nonzeroelements below thefirst entryin column j1. Permuting and normalizing 
+the nonzero elements below the first entry in column j1. Permuting and normalizing 
 leads to 
 
 
-5.2 The EchelonFormand Gaussian Elimination 59 
-.. 
+5.2 The Echelon Form and Gaussian Elimination 59 
 
-
-. 
-1 
-. 
-
-
-. 
-(1 
-
-. 
-.a
-. 
-
-
-(1 (1 .1 
-.. 
-2 j1 
-.
-
-A
-
-(1 = 
-a.:= 
-M1 aA(1 = 
-. 
-0 
-. 
-. 
-.
-
-ij i1 j1 
-P1 i1 
-
-.. 
-
-
-. 
-(1 
-. 
-
-
-a
-
-nj1 
-
-j1 
 
 If i1 =1, then we set P11 := 
 In.Inorderto eliminatebelowthe1in column j1,we 
@@ -5598,7 +5396,7 @@ of A(k that is not completely zero, as well as the first nonzero entry a(k in th
 
 ik jk 
 
-column. Then permuting and normalizingyieldsthe matrix 
+column. Then permuting and normalizing yields the matrix 
 
 .1 
 
@@ -5612,7 +5410,7 @@ Mk aikjk
 Pkik 
 
 
-5 The EchelonFormand theRankofMatrices 
+5 The Echelon Forma nd the Rank of Matrices 
 
 If k=ik,then we set Pkk := 
 In.k+1.Now 
@@ -5636,7 +5434,7 @@ Ik.10
 
 where Tis an elementary matrix of size (n.k+1 .(n.k+1. 
 
-If we continue this procedureinductively, it will end after r . 
+If we continue this procedure inductively, it will end after r . 
 min{nm} 
 steps 
 with either A(r+1 =0or A(r+1 =[]. 
@@ -5646,102 +5444,14 @@ After rsteps we have
 Sr ···S1A(1 = 
 
 
-. 
-. 
-
-
-. 
-
-
-. 
-
-
-. 
-
-
-. 
-
-
-. 
-
-
-. 
-
-
-. 
-
-
-. 
-
-
-. 
-
-
-. 
-
-
-1 . 
-. 
-1 
-. 
-. 
-. 
-1 
-. 
-0 
-0 
-0 
-
-
-
-0 
-
-1 
-0 
-
-. 
-. 
-
-
-. 
-
-
-. 
-
-
-. 
-
-
-. 
-
-
-. 
-
-
-(5.4) 
-. 
-
-
-. 
-
-
-. 
-
-
-. 
-
-
-. 
-
-
 By construction, the entries1in(5.4)arein the positions 
 
 (1 j1 (2 j2 (r jr 
 
 If r = 
-1, then S1A(1 is in echelon form (see thediscussion at thebeginning of 
+1, then S1A(1 is in echelon form (see the discussion at thebeginning of 
 theproof). If r > 
-1, then we still have to eliminatethe nonzero entries above the1 
+1, then we still have to eliminate the nonzero entries above the1 
 
 (1
 
@@ -5769,8 +5479,8 @@ For t:=
 StSt.1 ···S1Ain echelon form. 
 
 Suppose now that n=mand that C= 
-StSt.1 ···S1Aisin echelon form.If Ais 
-invertible,then Cisaproductofinvertible matricesandthusinvertible.Aninvertible 
+StSt.1 ···S1A is in echelon form.If A is 
+invertible,then C is a product  of invertible matrices and thus invertible.An  invertible 
 matrix cannot have a row containing only zeros, so that r = 
 nand hence C= 
 In. 
@@ -5778,12 +5488,12 @@ If, on the other hand, C =
 In, then the invertibility of the elementary matrices 
 
 
-5.2 The EchelonFormand Gaussian Elimination 61 
+5.2 The Echelon Form and Gaussian Elimination 61 
 impliesthat S. 
 1 ··· 
 S. 
 1 = 
-A.Asaproductofinvertible matrices, Ais invertible and
+A.As a product of invertible matrices, Ais invertible and
 1 t 
 
 A. 
@@ -5793,211 +5503,8 @@ A.
 St ··· 
 S1. . 
 
-Inthe literature,the echelonformis sometimes called reducedrow echelon form. 
-Example5.3 Transformation ofa matrix from Q35 to echelon form vialeftmulti
-
-
-plication with elementary matrices: 
-
-.. 
-
-
-02133 
-
-..
-
-02011 
-
-02011 
-
-. 
-
-
-j1 = 
-2 i1 = 
-10 
-.> 
-. 
-0 
-
-1
-
-M12 0 
-
-. 
-
-
-0 
-
-1 
-
-.> 
-
-
-..
-
-133
-
-10
-
-222 
-
-.> 
-
-
-..
-
-2011 0
-
-G13(. 
-2
-
-2011 0 
-
-.
-
-133 
-
-222 j2 = 
-3 i2 = 
-2 
-
-. 
-
-
-. 
-
-
-.>
-
-0 
-
-0 
-
-. 
-1. 
-2 . 
-2
-
-G12(. 
-2 
-
-0 
-
-0 
-
-. 
-1. 
-2 . 
-2 M2(. 
-1 
-
-.
-
-133
-
-1 
-
-222 
-
-.
-
-2011 
-0 . 
-1. 
-2. 
-2 
-
-. 
-
-
-0 
-
-. 
-
-
-0 
-0 
-
-1 
-0 
-0 
-
-.
-
-133 
-222 
-
-.
-
-122 
-. 
-1. 
-2. 
-2 
-
-. 
-
-
-1 1 
-2 
-1 
-3 3 
-2 2 
-220 
-0 0 00 
-
-.. 
-
-
-1 0 
-1 
-1 1 
-2 2 
-220 
-0 0 00 
-
-.
-
-0 
-
-0 
-
-.> 
-. 
-
-
-. 
-.> 
-. 
-
-
-. 
-
-
-
-0
-
-. 
-0 
-
-. 
-T 
-. 
-
-
-.
-
-. 
-1
-
-G23(1 
-
-G12 2 
-
-0
-
-0 
+Inthe literature,the echelon form is sometimes called reduced row echelon form. 
+Example5.3 Transformation ofa matrix from Q35 to echelon form via left multiplication with elementary matrices: 
 
 MATLAB-Minute. 
 
@@ -6038,49 +5545,6 @@ In.Since the matrices
 S1 Sn areinvertible,itfollows that U isinvertibleif and onlyif Ais invertible. 
 
 For i =1 n every matrix Si has theform 
-
-.. 
-
-
-1 
-
-.. 
-
-
-.. 
-
-
-.. 
-
-
-..
-
-1 
-
-.. 
-
-
-..
-
-Si = 
-sii Piji 
-
-.. 
-
-
-..
-
-si+1 i 1 
-
-.. 
-
-
-.. 
-
-
-.. 
-
-
 sn i 1 
 
 where ji . 
@@ -6090,301 +5554,16 @@ In (if ji =
 i, then no permutation was 
 necessary). Therefore, 
 
-... 
-. 
-
-
-11 
-
-... 
-. 
-
-
-... 
-. 
-
-
-... 
-. 
-
-
-... 
-.
-
-Sn ···S1 = 
-
-
-. 
-1 
-.. 
-1 
-. 
-Pn.1 jn.1 
-
-... 
-. 
-
-
-. 
-1 
-.. 
-.
-
-sn.1 n.1 
-snn snn.1 
-
-
-1 
-
-.. 
-
-
-. 
-.. 
-.
-
-1 
-
-1 
-
-.. 
-s11 
-
-. 
-. 
-.... 
-
-
-. 
-.. 
-s22 
-.. 
-s21 1 
-. 
-
-
-. 
-. 
-.... 
-
-
-. 
-1 
-.. 
-s32 
-.. 
-s31 
-. 
-
-
-··· 
-
-
-.. 
-Pn.2 jn.2 
-. 
-1 
-. 
-P2 j2 
-. 
-1 
-. 
-P1 j1 
-
-. 
-. 
-....
-
-sn.2 n.2 
-
-.. 
-
-
-. 
-.. 
-. 
-
-
-..
-
-sn.1 n.21 
-
-sn 21 sn 11 
-sn n.2 
-
-01 
 
 Theformof the permutationmatrices for k = 
 2 n .1and= 
 1 k .1 
 impliesthat 
 
-. 
-... 
-
-
-11 
-
-. 
-... 
-
-
-. 
-... 
-
-
-. 
-... 
-
-
-. 
-...
-
-11 
-
-. 
-... 
-
-
-. 
-...
-
-Pkjk s. 
-= 
-s. 
-Pk jk 
-
-. 
-... 
-
-
-. 
-...
-
-s+1 . 
-1 
-s
-+1 . 
-1 
-
-. 
-... 
-
-
-.
-
-.. 
-. 
-
-
-. 
-... 
-
-
-sn . 
-1 
-sn . 
-1 
-
-
 5.2 The EchelonFormand Gaussian Elimination 63 
 holds for certain 
-sj. 
-. 
-K, j=. 
-+1 n.Hence, 
 
-Sn ···S1 = 
-
-
-.. 
-
-
-.. 
-1
-
-1 
-
-.. 
-
-
-. 
-... 
-
-
-. 
-... 
-
-
-. 
-...
-
-1 
-
-. 
-... 
-···
-
-1 
-
-. 
-... 
-
-
-. 
-sn.2 n.2 
-. 
-
-
-..
-
-sn.1 n.1 
-
-.. 
-
-
-sn.1 n.21 
-sn nsn n.1 sn n 
-sn n.21 
-... 
-. 
-
-
-1 s11 
-
-... 
-.
-
-s22 
-s21 1 
-
-... 
-. 
-
-
-... 
-. 
-
-
-s32 1 
-s31 1 
-
-... 
-. 
-Pn.1 jn.1 ···P1 j1 
-
-... 
-. 
-
-
-... 
-. 
-
-
-sn21 
-sn 11 
-
-Theinvertiblelowertriangular matrices and the permutationmatrices form groups 
+The invertible lower triangular matrices and the permutation matrices form groups 
 with respect to the matrix multiplication (cp. Theorems 4.13 and 4.16). Thus, 
 
 Sn ···S1 = 
@@ -9666,7 +8845,7 @@ This propertyis calledthe linearity of the determinant map with respect to the r
 of A.Analogously we have the linearity with respect to the columns of A.Linear 
 maps willbe studiedin detailinlater chapters. 
 
-Thenextresultis calledthe multiplicationtheorem for determinants. 
+Thenextresultis calledthe multiplication theorem for determinants. 
 
 Theorem 7.15 IfKisa field andAB . 
 Kn n, then det(AB = 
@@ -9727,8 +8906,8 @@ A.1 =(det(A .1. .
 Since our proof reliesonTheorem 5.2,whichisvalid formatrices overa field 
 K,wehaveformulatedTheorem7.15 for AB . 
 Kn n.However,the multiplication 
-theoremfor determinantsalso holdsformatricesoveracommutativering Rwith unit. 
-Adirectproofbasedonthesignatureformulaof Leibnizcanbefound,forexample, 
+theorem for determinants also holds for matrices over a commutative ring Rwith unit. 
+A direct proof based on the signature formula of Leibnizcanbefound,forexample, 
 in the book “Advanced Linear Algebra” by Loehr [Loe14, Sect.5.13]. That book 
 also containsaproofofthe Cauchy-Binet formula for det( 
 AB with A . 
@@ -10007,7 +9186,7 @@ A.1 .
 
 Proof If 
 
-In,then themultiplicationtheorem for determinantsyields
+In,then the multiplication theorem for determinants yields
 
 AA = 
 
@@ -11282,7 +10461,7 @@ A).
 R, so that 
 thetwoexpressions cannotbe thesame,even for n =1. 
 
-Thefollowing resultis calledthe Cayley-Hamiltontheorem.1 
+Thefollowing resultis calledthe Cayley-Hamilton theorem.1 
 
 Theorem 8.6 For every matrix A . 
 Rn,n and its characteristic polynomial PA . 
@@ -11368,10 +10547,10 @@ it for n =3.Hedidnotfeelit necessarytogiveaproofforgeneral n.SirWilliam RowanHam
 4in 1853inthecontextofhisinvestigationsof 
 quaternions.Oneof thefirstproofsfor general n wasgivenby FerdinandGeorgFrobenius (1849– 
 1917)in 1878. JamesJosephSylvester (1814–1897) coined thenameof the theoremin 1884by 
-calling it the “no-little-marvelous Hamilton-Cayleytheorem”. 
+calling it the “no-little-marvelous Hamilton-Cayley theorem”. 
 
 
-8 The CharacteristicPolynomialand EigenvaluesofMatrices 
+8 The Characteristic Polynomial and Eigenvalues of Matrices 
 
 
 
@@ -11599,7 +10778,7 @@ Kn,n aresimilar, thenPA =
 PB. 
 
 Proof If A= 
-ZBZ.1,then themultiplicationtheorem for determinantsyields 
+ZBZ.1,then the multiplication theorem for determinants yields 
 
 PA = 
 det(tIn . 
@@ -11619,8 +10798,8 @@ PB
 (cp. the remarks below Theorem 7.15). . 
 
 
-Theorem8.12and(1)inTheorem 8.8showthattwosimilarmatriceshavethesame 
-eigenvalues.The conditionthat Aand B aresimilarissufficient,but not necessary 
+Theorem8.12and(1)inTheorem 8.8show that two similar matrices have the same 
+eigenvalues.The condition that A and B are similar is sufficient,but not necessary 
 for PA = 
 PB. 
 
@@ -11946,8 +11125,8 @@ A=
 
 .40 2 
 
-Verify theCayley-Hamiltontheorem in each casebydirect computation. Are 
-twoofthe matrices A,B,C similar? 
+Verify the Cayley-Hamilton theorem in each case by direct computation. Are 
+two of the matrices A,B,C similar? 
 
 8.2 Let Rbe a commutative ring with unit and n . 
 2. 
@@ -11968,7 +11147,7 @@ A .
 Rn,n. Apply Theorem7.18 to the matrix tIn . 
 A . 
 (R[t )
-and deriveanalternativeproofoftheCayley-Hamiltontheoremfromthe 
+and derive an alternative proof of the Cayley-Hamilton theorem from the 
 formula det(tIn . 
 A)In = 
 (tIn . 
@@ -12662,7 +11841,7 @@ m.N0
 andevery polynomial p .K[t]isalinear combinationoffinitely manyvectors 
 of the system. 
 
-Thenext resultis calledthe basis extensiontheorem. 
+The next result is called the basis extension theorem. 
 
 Theorem 9.14 Let V be a vector space and let v1 ,...,vr ,w1 ,...,w. 
 .V, where 
@@ -12737,10 +11916,10 @@ span{v1 ,v2 ,v3}.Wehave span{v1 ,v2 ,v3 ,w1 ,w2}=V.Ifwe extend {v1 ,v2 ,v3}by
 w1,then we get the linearly independentvectors v1 ,v2 ,v3 ,w1 whichindeed span V. 
 Thus, {v1 ,v2 ,v3 ,w1}is a basis of V. 
 
-Bythebasisextensiontheoremeveryvectorspacethatisspannedbyfinitelymany 
-vectors hasabasis consistingoffinitely manyelements.Acentralresultofthe theory 
+By the basis extension theorem every vector space that is spanned by finitely many 
+vectors has a basis consisting of finitely many elements.A central result of the theory 
 of vector spaces is that every such basis has the same number of elements. In order 
-to show this result we first prove thefollowing exchangelemma. 
+to show this result we first prove the following exchange lemma. 
 
 m
 
@@ -12872,7 +12051,7 @@ span{w1 ,...,wr+1 ur+2 um}=span{w1 ,...,wr ur+1 um}
 
 If we continue this construction until r =n .1, then we obtain 
 
-2Inthe literature,histheoremis sometimes calledthe Steinitzexchangetheorem afterErnst Steinitz 
+2Inthe literature,histheoremis sometimes calledthe Steinitz exchange theorem afterErnst Steinitz 
 (1871–1928).The resultwasfirstprovedin 1862by HermannGunther Gra.mann(1809–1877). 
 
 
@@ -21554,7 +20733,7 @@ detailedstatement about the uniquenessisgivenin Lemma 14.22.
 
 In the next chapter we will prove the Fundamental Theorem of Algebra, which 
 states that every non-constant polynomial over C decomposes into linear factors. 
-This result has thefollowing corollary,whichis known as Schur’s theorem.1 
+This result has thefollowing corollary,whichis known as Schur's theorem.1 
 
 1IssaiSchur (1875–1941). 
 
@@ -22397,8 +21576,8 @@ h
 The polynomial pdivides bothterms on theright hand side, and thus also p|h. . 
 
 
-By recursive applicationofLemma 15.9 we obtainthe Euclidean theorem,which 
-describesaprimefactor decompositioninthe ringof polynomials. 
+By recursive application of Lemma 15.9 we obtain the Euclidean theorem,which 
+describes a prime factor decomposition in the ring of polynomials. 
 
 Theorem 15.10 Every polynomial p . 
 .0 . 
@@ -22492,7 +21671,7 @@ p2 pk, we finally obtain k =,
 We have seen above that the existence of roots of a polynomial depends on the 
 field over which it is considered. The field C is special in this sense, since herethe 
 Fundamental Theorem of Algebra3 guarantees that every non-constant polynomial 
-hasaroot.Inorderto usethistheoremin our context,we first presentanequivalent 
+hasaroot.In order to use this theorem in our context,we first presentanequivalent 
 formulationinthe languageof Linear Algebra. 
 
 Theorem 15.11 The following statements are equivalent: 
@@ -23068,7 +22247,7 @@ T
 and B do not have a common eigenvalue, while [11 T and [.1 1 are common 
 eigenvectors of Aand B. 
 
-UsingCorollary 15.15, Schur’s theorem (Corollary 14.20)canbe generalized as 
+UsingCorollary 15.15, Schur's theorem (Corollary 14.20)canbe generalized as 
 follows. 
 
 Theorem 15.17 If V ={0}isafinite dimensional unitary vector spaceandf1 f2 . 
@@ -24935,8 +24114,7 @@ linear factor (t ..
 d isadivisorofp. 
 Let V be a finite dimensional K-vector space and let f . 
 L(VV , where we 
-do not assume that Pf decomposes into linearfactors. From theCayley-Hamilton 
-theorem (Theorem 8.6)weknowthatPf( 
+do not assume that Pf decomposes into linearfactors. From the Cayley-Hamilton theorem (Theorem 8.6)weknowthatPf( 
 f 0.L(VV ,i.e., thereexistsamonic 
 polynomial ofdegree at mostdim(V ,which annihilatesthe endomorphism f.Let 
 p1 p2 .K[t]betwomonic polynomialsof smallest possibledegreewith p1( 
@@ -27499,13 +26677,13 @@ For t =0we obtain y0 =y0 +c, where c =0and hence
 y =y. 
 
 
-In the above theoremswehaveshown that fortheexplicit solutionof systemsof 
-linear ordinarydifferential equationsof first order,wehaveto computethe matrix 
-exponentialfunction.Whilewehaveintroducedthis functionusingtheJordan canonicalformofthegivenmatrix, 
-numerical computationsbasedontheJordan canonical 
+In the above theorems we have shown that for the explicit solution of systems of 
+linear ordinary differential equations of first order,we have to compute the matrix 
+exponential function.While we have introduced this function using the Jordan canonical form of thegivenmatrix, 
+numerical computations based on the Jordan canonical 
 form are not advisable(cp. Example 16.20). Becauseofits significant practical relevance, 
 numerous different algorithms for computingthe matrixexponentialfunction 
-have been proposed. But, as showninthe article [MolV03],noexistingalgorithmis 
+have been proposed. But, as showninthe article [MolV03],no existing algorithmis 
 completely satisfactory. 
 
 Example 17.13 Theexamplefromcircuitsimulationpresentedin Sect. 1.5 leadto 
@@ -27966,7 +27144,7 @@ isanormalmatrixthatis not diagonalizable(overR).Considered as element ofC2 2 ,
 it has theeigenvalues1+2iand1.2iand it is unitarily diagonalizable. 
 
 To discussthe caseofreal normalmatricesin more detail,we firstprovea “real 
-version” of Schur’s theorem. 
+version” of Schur's theorem. 
 
 
 274 18 Special ClassesofEndomorphisms 
@@ -28891,7 +28069,7 @@ Hence B is an orthonormal basis of V.
 . 
 
 
-This theorem has thefollowing “matrixversion”. 
+This theorem has thefollowing “matrix version”. 
 
 Corollary 18.18 
 
@@ -30724,7 +29902,7 @@ n with UHU =In.If AandB arereal,then
 U can also be chosen to be real. 
 (Hint: One direction is trivial. For the other direction consider the unitary 
 diagonalization of AHA =BHB.Thisyieldsthe matrix W in theSVD of A 
-and of B. Showthe assertionusing thesetwo decompositions.Thistheorem 
+and of B. Show the assertion using these two decompositions.This theorem 
 and its applications can be found in the article [HorO96].) 
 
 
@@ -30732,7 +29910,7 @@ Chapter20
 TheKroneckerProductand LinearMatrix 
 Equations 
 
-Manyapplications,in particularthestability analysisofdifferential equations,lead 
+Manyapplications,in particular the stability analysis of differential equations,lead 
 to linear matrix equations, such as AX + 
 XB = 
 C.Herethe matrices A, 
@@ -30742,7 +29920,7 @@ given and the goal is to determine a matrix X that solves the equation(we willgi
 a formal definition below). In the description of the solutions of such equations, 
 theKronecker product,1 another productof matrices,isuseful.In this chapter we 
 developthe most important propertiesofthisproducts and we study its applicationin 
-the context oflinear matrix equations.Manymoreresults on this topic canbe found 
+the context oflinear matrix equations.Many more results on this topic canbe found 
 in the books [HorJ91, LanT85]. 
 
 Definition 20.1 If K is a field, A=[aij]. 
@@ -30922,7 +30100,7 @@ m
 (3) rank(A.B) 
 =rank(A)rank(B) 
 =rank(B.A). 
-Proof (1)From(1)inLemma 20.3andthemultiplicationtheoremfor determinants 
+Proof (1)From(1)inLemma 20.3and the multiplication theorem for determinants 
 (cp. Theorem 7.15)we get 
 
 det(A.B) 
@@ -30931,7 +30109,7 @@ det(A.B)
 det(Im .B). 
 
 
-ByLemma20.4 thereexistsapermutationmatrix Pwith A.In =P(In.A)PT . 
+ByLemma20.4 there exists a permutation matrix Pwith A.In =P(In.A)PT . 
 This impliesthat 
 
 n
@@ -31043,7 +30221,7 @@ Kn,n we define the matrix
 Here we have to be careful with the order of the factors, since in general Ai . 
 
 
-The following result is known as Stephanos’ theorem. 2 
+The following result is known as Stephanos' theorem. 2 
 
 2 Named after Cyparissos Stephanos (1857–1917) who in 1900 showed besides this result also the 
 assertion of Lemma 20.3. 
