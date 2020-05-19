@@ -109,7 +109,7 @@ def get_distractors(chapter_sentences, key, key_sent, ner_model, num_distractors
              and score[1] not in max_scores:
             max_scores.append(score[1])
     for i in range(len(max_scores)):
-        if plural:
+        if plural and max_scores[i][-1] != 's':
             words = max_scores[i].split()
             max_scores[i] = ''
             if len(words) > 1:
