@@ -4,6 +4,6 @@ nltk>=3.2.5
 numpy==1.16.4
 pandas==0.21.0
 networkx==2.4
-requests==2.20.0
+requests==2.31.0
 matplotlib==2.1.2
 textblob
